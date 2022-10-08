@@ -2,13 +2,14 @@
 import numpy as np
 import random
 import math
-from model.DP import AirPrice
-import model.RL
+import sys
+sys.path.append('RL-DDPG/')
+import RL
+from DP import AirPrice
 import tensorflow as tf
 import pandas as pd
 import numpy as np
-import sys
-sys.path.append('model/RL-DDPG/DDPG/')
+sys.path.append('RL-DDPG/DDPG/')
 from DDPG import DDPG
 import config
 
