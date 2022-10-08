@@ -9,7 +9,7 @@ Use the following command to run the codes: python chasing.py
 # Repo Structure
 
 The structure of our code and description of important files are given as follows:
-├────DP/:  code of dynamic pricing
+├────DP.py:  code of dynamic pricing
 ├────RL-DDPG/: code of RL  
 ├────data/  
 │    ├────YIK_QZH_COMPLETE_WBL/:  historical data of shipping waybill
