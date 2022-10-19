@@ -1,38 +1,37 @@
 #%%
+import tensorflow as tf
 import numpy as np
 import random
 import math
+from DP import AirPrice
 import sys
 sys.path.append('RL-DDPG/')
 import RL
-from DP import AirPrice
-import tensorflow as tf
-import pandas as pd
-import numpy as np
 sys.path.append('RL-DDPG/DDPG/')
 from DDPG import DDPG
 import config
 
-def expert(base, expert_range):
+#%% pricing function
+def expert(base, expert_range): #expert pricing
     if random.random() < 0.5:
         price = base+expert_range*random.random()
     else:
         price = base-expert_range*random.random()
     return price
 
-def decision_table(volume,volume_round,C,i,T,price):
+def decision_table(volume,volume_round,C,i,T,price): # decision table pricing
     utilize = volume/C*100
     utilize_round = (volume-volume_round)/C*100
-    #分成三段涨价
+    # increase price
     fix_rate_up = T/3
-    if i < int(T/3):
+    if i < int(fix_rate_up):
         if (utilize_round < 50) and (utilize >= 50):
             price = price+30
         elif (utilize_round<70) and (utilize >= 70):
             price = price+20
         elif (utilize_round < 80) and (utilize >= 80):
             price = price+40
-    elif (i >= int(T/3)) and (i < int(T/3*2)):
+    elif (i >= int(fix_rate_up)) and (i < int(fix_rate_up*2)):
         if (utilize_round < 60) and (utilize >= 60):
             price = price+50
         elif (utilize_round<70) and (utilize >= 70):
@@ -49,7 +48,7 @@ def decision_table(volume,volume_round,C,i,T,price):
         elif (utilize_round < 80) and (utilize >= 80):
             price = price+60
 
-    #分成14天/28次降价
+    # decrease price
     fix_rate_down = T/28
     if i < int(T/2):
         for j in range(0,14):
@@ -64,85 +63,70 @@ def decision_table(volume,volume_round,C,i,T,price):
 
     return price
 
-def get_price_RL(input_array, c):
+def get_price_RL(input_array, c): # RL pricing
     action = ddpg.action(input_array, c)
     return(action[0][0])
 
 #%% parameter
 T = 5000
-N = 5 #Category
+N = 5 # Categories of containers
 c = np.zeros(N)
-for i in range(0,N):
-    c[i] = 200
-m = 5 #remaining inventory >= m, purchase
-for i in range(0,5):
-    c[i] = c[i] + m #add m
-t_a = np.arange(0, T/2, T/10) #start sell time matrix
-t_e = np.arange(T/5, T/10*7, T/10) #end sell time matrix
-C = c[0] #max inventory
-W = 2 #max A_t
+m = 5 # when remaining inventory >= m, buyers can purchase goods
+t_a = np.arange(0, T/2, T/10) # start sell time matrix
+t_e = np.arange(T/5, T/10*7, T/10) # end sell time matrix
+C = c[0] # max inventory
+W = 2 # max A_t
 T_end = int(T/10*6)+1
 
-
 #%% define price、buy、profit & c matrix
-Gamma = 5 #Base strategy
-p = np.zeros(Gamma*T*N).reshape(Gamma,T,N)
-buy = np.zeros(Gamma*T*N).reshape(Gamma,T,N)
-profit = np.zeros(Gamma*T*N).reshape(Gamma,T,N)
-c_Gamma = np.zeros(Gamma*N).reshape(Gamma,N) #remaing inventory of gamma
-t_Gamma = np.zeros(Gamma*N).reshape(Gamma,N)
+Gamma = 5 # Base strategy
+p = np.zeros(Gamma*T*N).reshape(Gamma,T,N) # price
+buy = np.zeros(Gamma*T*N).reshape(Gamma,T,N) # buyer
+profit = np.zeros(Gamma*T*N).reshape(Gamma,T,N) # profit
+c_Gamma = np.zeros(Gamma*N).reshape(Gamma,N) # remaing inventory of gamma
+t_Gamma = np.zeros(Gamma*N).reshape(Gamma,N) # the buyer index when the category of containers is sold out
+
+#%% define base_price
+base_price = np.array([2000, 2500, 3000, 3500, 4000])
+
+#%% generate valuation
+v = np.zeros(T*5).reshape(T,5)
+for i in range(0,T_end):
+    for j in range(0,5):
+        v[i,j] = random.random()*base_price[j]+base_price[j]*0.5
+
+#%% determine inventory
+for i in range(0,N):
+    c[i] = 200
+for i in range(0,5):
+    c[i] = c[i] + m # add m
+for gamma in range(1, Gamma): #initial inventory
+    c_Gamma[gamma] = c
 
 #%% define expert & expert continuous price
-# gamma 0: random
+# gamma
 # 1: expert continuous price
 # 2: decision table price
 # 3: DP price
 # 4: DDPG price
-base_price = np.array([2000, 2500, 3000, 3500, 4000])
-for gamma in range(0,Gamma):
-    # if gamma == 0: #expert price
-    #     base = np.array([2000, 2500, 3000, 3500, 4000])
-    #     range_expert = base/40
-    #     for i in range(0,T_end):
-    #             p[gamma,i] = expert(base, range_expert)
-    if gamma == 0:
-        for i in range(0,T_end):
-            for j in range(0,5):
-                p[gamma,i,j]=(random.random()+0.1)*base_price[j]+base_price[j]*0.5
-    if gamma == 1: #expert continuous price
-        base = np.array([2000, 2500, 3000, 3500, 4000])
-        range_expert = base/40
-        expert_upper_bound = base * 1.5
-        expert_lower_bound = base * 0.5
-        for i in range(0,T_end):
-                base = expert(base, range_expert)
-                for j in range(0,N):
-                    if base[j] >= expert_upper_bound[j]:
-                        base[j] = expert_upper_bound[j]
-                    elif base[j] <= expert_lower_bound[j]:
-                        base[j] = expert_lower_bound[j]
-                p[gamma,i] = base
-    # if gamma == 4: #fix rate price
-    #     fix_rate = 1/Gamma
-    #     for i in range(0,T_end):
-    #         for j in range(0,5):
-    #             p[gamma,i,j]= fix_rate*gamma*base_price[j]+base_price[j]*0.5
-    if gamma == 4:
-        for i in range(0,T_end):
-            for j in range(0,5):
-                p[gamma,i,j]=(random.random()+0.1)*base_price[j]+base_price[j]*0.5
+# expert pricing parameter
+base = base_price[:]
+range_expert = base_price/40
+expert_upper_bound = base_price * 1.5
+expert_lower_bound = base_price * 0.5
 
-DP = [] #DP instance
+# DP instance
+DP = []
 for i in range(0,Gamma):
     DP.append(AirPrice(real_min_demand_level = base_price[i]*0.5, real_max_demand_level=base_price[i]*1.5, max_days=14, num_tickets=c[i]))
 fix_rate_DP = T/5/14
-round_RL = 14
+round_RL = 14 # adjustment round of dynamic pricing
 fix_rate_RL = np.zeros(N)
 for i in range(0,N):
     fix_rate_RL[i] = int((t_e[i] - t_a[i])/round_RL)
 fix_rate_RL = fix_rate_RL.astype(int)
 
-#%% RL
+# RL pricing instance
 tf.reset_default_graph()
 c_RL = np.zeros(128, dtype=float)
 
@@ -152,26 +136,21 @@ ddpg.load_weights('RL-DDPG/DDPG/weights_real_train/')
 
 input_array = np.zeros(15).reshape(5, 3)
 
-#%% generate valuation
-v = np.zeros(T*5).reshape(T,5)
-for i in range(0,T_end):
-    for j in range(0,5):
-        v[i,j] = random.random()*base_price[j]+base_price[j]*0.5
-# v = np.zeros(T*5).reshape(T,5)
-# for i in range(0,T_end):
-#     for j in range(0,5):
-#         v[i,j] = base_price[j] + random.random()*base_price[j]*0.3
-
 #%% sales procedure of strategy set
-for gamma in range(0, Gamma): #initial inventory
-    c_Gamma[gamma] = c
-for gamma in range(0,Gamma):
+for gamma in range(1,Gamma):
     for i in range(0,T_end):
         for j in range(0,5):
-            if gamma == 2: #decision_table定价
+            if gamma == 1: # expert pricing
+                base[j] = expert(base[j], range_expert[j])
+                if base[j] >= expert_upper_bound[j]:
+                    base[j] = expert_upper_bound[j]
+                elif base[j] <= expert_lower_bound[j]:
+                    base[j] = expert_lower_bound[j]
+                p[gamma, i, j] = base[j]
+            if gamma == 2: # decision_table pricing
                 volume = np.zeros(N)
-                volume_round = np.zeros(N) #until last round
-                if i == t_a[j]: #initial price
+                volume_round = np.zeros(N) # until last round
+                if i == t_a[j]: # initial price
                     p[gamma,i,j] = 2000 + 500*j
                     if (c_Gamma[gamma,j] >= m) and (i >= t_a[j]) and (i < t_e[j]):
                         for k in range(0,m):
@@ -206,7 +185,7 @@ for gamma in range(0,Gamma):
             else:
                 if (gamma == 3) and (i >= t_a[j]) and (i < t_e[j]):  # DP price
                     p[gamma, i, j] = DP[j].get_price(14 - int((i-t_a[j]) / fix_rate_DP), c_Gamma[gamma, j])
-                if gamma == 4:
+                if gamma == 4: # RL price
                     if (i >= t_a[j]) and (i < t_e[j]):
                         if (i == t_a[j]):
                             p[gamma,i,j] = base_price[j]
@@ -220,10 +199,10 @@ for gamma in range(0,Gamma):
                                 input_array[e][0] = p[gamma,i-1,j]
                                 input_array[e][1] = volume_RL
                                 input_array[e][2] = max(0,round_RL-int((i-t_a[j])/fix_rate_RL[j]))
-                            p_RL = get_price_RL(input_array, c_RL)
+                            p[gamma,i,j] += get_price_RL(input_array, c_RL)
                         else:
                             p[gamma,i,j] = p[gamma,i-1,j]
-                #剩余库存大于m时，才可进行售卖3
+                # DP and RL selling
                 if (c_Gamma[gamma,j] >= m) and (i >= t_a[j]) and (i < t_e[j]):
                     for k in range(0,m):
                         if math.pow(0.95,k)*v[i,j] >= p[gamma,i,j]:
@@ -233,34 +212,37 @@ for gamma in range(0,Gamma):
                 elif (t_Gamma[gamma, j] == 0) and (i >= t_a[j]) and (i < t_e[j]):
                     t_Gamma[gamma, j] = i
 
-#%% define chasing
+#%% define parameters for BIRD
+# BIRD parameter
 epsilon = pow(C*W/T,0.5)
 p_chasing = np.zeros(T*5).reshape(T,5)
 c_chasing = c
 buy_chasing = np.zeros(T*5).reshape(T,5)
 profit_chasing = np.zeros(T*5).reshape(T,5)
 t_chasing = np.zeros(N)
-#OLSC parameter
-R_gamma = np.zeros(Gamma) #%%reward last round
+
+# OLSC parameter
+R_gamma = np.zeros(Gamma) # reward last round
 D = 2
-profit_gamma = np.zeros(Gamma) #target strategy
-profit_add_gamma = np.zeros(Gamma) #target strategy profit increment
-##assuimng not sell for buy 1
+profit_gamma = np.zeros(Gamma) # target strategy
+profit_add_gamma = np.zeros(Gamma) # target strategy profit increment
+
+#%% BIRD pricing and selling (assuimng not sell for buyer 1)
 for i in range(1,T):
     if random.random() <= epsilon:
         for j in range(0,5):
             p_chasing[i,j] = 1
     else:
-        #Select target strategy
+        # Select target strategy
         R_gamma = np.zeros(Gamma)
-        for gamma in range(0,Gamma):
+        for gamma in range(1,Gamma):
             for j in range(0,N):
                 profit_gamma[gamma] = profit_gamma[gamma]+profit[gamma,i-1,j]
                 R_gamma[gamma] = R_gamma[gamma]+profit[gamma,i-1,j]
         R = max(0.05, np.max(R_gamma))
 
         profit_add_gamma = np.zeros(Gamma)
-        for gamma in range(0,Gamma):
+        for gamma in range(1,Gamma):
             for j in range(0,N):
                 profit_add_gamma[gamma] = profit_add_gamma[gamma]+p[gamma,i,j]*m/pow(D/(R*R*T),0.5)
 
@@ -285,19 +267,13 @@ for i in range(1,T):
 #%% Profit and remaining inventory for gamma
 profit_item = np.zeros(Gamma*N).reshape(Gamma,N)
 profit_all = np.zeros(Gamma)
-for gamma in range(0,Gamma):
+for gamma in range(1,Gamma):
     for i in range(0,N):
         for j in range (0,T_end):
             profit_item[gamma,i] = profit_item[gamma,i] + profit[gamma,j,i]
         profit_all[gamma] = profit_all[gamma]+profit_item[gamma,i]
 
-#print(profit_item)
-print(profit_all)
-print(c_Gamma)
-print(t_Gamma)
-
-
-#%%
+#%% profit and remaining inventory for BIRD
 profit_item_chasing = np.zeros(N)
 profit_all_chasing = 0
 for i in range(0,N):
@@ -305,27 +281,11 @@ for i in range(0,N):
         profit_item_chasing[i] = profit_item_chasing[i] + profit_chasing[j,i]
     profit_all_chasing = profit_all_chasing+profit_item_chasing[i]
 
-#print(profit_item_chasing)
-print(profit_all_chasing)
-print(c_chasing)
-print(t_chasing)
-
-
-
-#设置出价策略，假设是随机出价
-# fix_rate = 1/Gamma
-# for gamma in range(0, Gamma-1):
-#     for i in range(0,T_end):
-#         for j in range(0,5):
-#             p[gamma,i,j]= fix_rate*(gamma+1)
-# for gamma in range(Gamma-1,Gamma):
-#     for i in range(0,T_end):
-#         for j in range(0,5):
-#             p[gamma,i,j]=random.random()+0.1
-#
-# fix_rate = 1/(Gamma)
-# for gamma in range(0, Gamma):
-#     for i in range(0,T_end):
-#         for j in range(0,5):
-#             p[gamma,i,j]= fix_rate*gamma
+#%%
+print('Revenue of different pricing strategies:', end='\n')
+print('expert pricing: ', profit_all[1])
+print('decision table pricing: ', profit_all[2])
+print('dynamic pricing: ', profit_all[3])
+print('RL pricing: ', profit_all[4])
+print('BIRD: ', profit_all_chasing)
 
