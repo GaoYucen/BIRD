@@ -15,6 +15,9 @@ The structure of our code and description of important files are given as follow
 │    ├──RL-DDPG/: code of dynamic pricing  
 
 ├────data/
+
 │    ├───YIK_QZH_COMPLETE_WBL/:  historical data of shipping waybill 
+
 │    └───YIK_QZH_COMPLETE_CNTR_FRT/: historical data of shipping cost
+
 └────chasing.py: Main function of this project, used to test the performance of BIRD and other baseline strategies
