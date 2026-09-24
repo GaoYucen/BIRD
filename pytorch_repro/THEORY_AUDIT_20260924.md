@@ -114,3 +114,30 @@ selector.
 
 Therefore the current branch contains useful theory diagnostics, but it should
 not yet be labeled a complete theoretical reproduction of BIRD.
+
+
+## Update — 2026-09-25
+
+The previously open implementation gaps have now been addressed in the new
+paired/restartable path:
+
+- stateful base strategies now expose restartable interfaces;
+- a target switch instantiates a new pricing-strategy process from BIRD's
+  current inventory/time state;
+- buyer valuations, expert randomness, epsilon mask, and full-information
+  reward feedback are paired across compared methods;
+- exact Kalai--Vempala random-grid FLL is implemented;
+- exact symmetric-exponential FLL* coupling is also implemented;
+- independent FPL/FPL* versions are retained as high-switch reference points.
+
+The remaining qualification is about **finite-horizon constants**, not the
+algorithmic semantics. The ICDE theorem states asymptotic OLSC regret but does
+not uniquely fix every perturbation constant after mapping the experimental
+reward scale into [0,1). Therefore the implementation exposes a multiplier and
+reports a transparent sensitivity sweep.
+
+On the current five-seed paired protocol, FLL-128x gives mean loss 0.98% with
+354.2 target switches per 5000 buyers. FTL gives 1.52% loss with only 7.2
+switches but does not provide the same worst-case no-regret guarantee.
+Independent FPL*/FPL achieve near-zero loss while switching about 3750 times,
+illustrating why the lazy construction is relevant.
