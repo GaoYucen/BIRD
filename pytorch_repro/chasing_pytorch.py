@@ -235,6 +235,7 @@ def run_simulation(
         epsilon = 0.0
     else:
         epsilon = float(base_epsilon * epsilon_factor)
+    epsilon = float(np.clip(epsilon, 0.0, 1.0))
 
     p_chasing = np.zeros((T, N))
     c_chasing = c.copy()
