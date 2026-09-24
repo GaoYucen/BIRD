@@ -14,10 +14,13 @@ from restartable_strategies import (
 )
 from selectors_olsc import (
     FLLSelector,
+    FLLStarSelector,
+    FPLStarSelector,
     FTLSelector,
     OracleFixedSelector,
     UniformFPLSelector,
     theoretical_selector_epsilon,
+    theoretical_star_epsilon,
 )
 
 
@@ -34,6 +37,16 @@ def make_selector(name, rewards, ctx, multiplier, seed):
         return UniformFPLSelector(k, eps_sel, seed + 404_003), eps_sel
     if name == "fll":
         return FLLSelector(k, eps_sel, seed + 505_003), eps_sel
+    if name == "fpl-star":
+        eps_star = theoretical_star_epsilon(
+            k, ctx.T, ctx.sigma, multiplier=multiplier
+        )
+        return FPLStarSelector(k, eps_star, seed + 606_003), eps_star
+    if name == "fll-star":
+        eps_star = theoretical_star_epsilon(
+            k, ctx.T, ctx.sigma, multiplier=multiplier
+        )
+        return FLLStarSelector(k, eps_star, seed + 707_003), eps_star
     if name == "oracle-fixed":
         return OracleFixedSelector(best_local, k), None
     raise ValueError(name)
@@ -177,6 +190,9 @@ def run_bird(
     }
     if hasattr(selector, "grid_updates"):
         out["grid_updates"] = int(selector.grid_updates)
+    if hasattr(selector, "lazy_keeps"):
+        out["lazy_keeps"] = int(selector.lazy_keeps)
+        out["lazy_resets"] = int(selector.lazy_resets)
     return out
 
 
@@ -186,7 +202,7 @@ def main():
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument(
         "--selector",
-        choices=["ftl", "fpl", "fll", "oracle-fixed"],
+        choices=["ftl", "fpl", "fll", "fpl-star", "fll-star", "oracle-fixed"],
         default="fll",
     )
     ap.add_argument("--selector-multiplier", type=float, default=1.0)
