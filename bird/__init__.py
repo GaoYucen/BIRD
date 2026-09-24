@@ -1,8 +1,3 @@
-from .algorithm import MAIN_SELECTOR, MAIN_SELECTOR_MULTIPLIER, MAIN_VERSION, run_main_bird
+"""Modern PyTorch reproduction package for BIRD (ICDE 2023)."""
 
-__all__ = [
-    'MAIN_SELECTOR',
-    'MAIN_SELECTOR_MULTIPLIER',
-    'MAIN_VERSION',
-    'run_main_bird',
-]
+__version__ = "0.1.0"
