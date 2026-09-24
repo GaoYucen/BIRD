@@ -287,6 +287,300 @@
         "Expert": 1703
       }
     },
+    "FLLstar-16x": {
+      "BIRD": 2376338.2393658943,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2562389.1052474976,
+        "DP": 3025260.0,
+        "Decision Table": 2224500.0,
+        "Expert": 2789528.3743593385
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3025260.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1432,
+      "lazy_keeps": 4973,
+      "lazy_resets": 27,
+      "max_chasing_distance": 4.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        2.0,
+        4.0,
+        94.0,
+        0.0
+      ],
+      "restarts": 28,
+      "revenue_loss_pct": 21.450115382945782,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "fll-star",
+      "selector_epsilon": 0.0065308198940751865,
+      "selector_multiplier": 16.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 27,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 0,
+        "Decision Table": 2461,
+        "Expert": 2539
+      }
+    },
+    "FLLstar-1x": {
+      "BIRD": 2354911.278219041,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2562389.1052474976,
+        "DP": 3025260.0,
+        "Decision Table": 2224500.0,
+        "Expert": 2789528.3743593385
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3025260.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1432,
+      "lazy_keeps": 4999,
+      "lazy_resets": 1,
+      "max_chasing_distance": 4.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        114.0,
+        94.0,
+        4.0,
+        4.0,
+        0.0
+      ],
+      "restarts": 2,
+      "revenue_loss_pct": 22.15838380109343,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "fll-star",
+      "selector_epsilon": 0.00040817624337969916,
+      "selector_multiplier": 1.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 1,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 0,
+        "Decision Table": 959,
+        "Expert": 4041
+      }
+    },
+    "FLLstar-2x": {
+      "BIRD": 2354911.278219041,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2562389.1052474976,
+        "DP": 3025260.0,
+        "Decision Table": 2224500.0,
+        "Expert": 2789528.3743593385
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3025260.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1432,
+      "lazy_keeps": 4997,
+      "lazy_resets": 3,
+      "max_chasing_distance": 4.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        114.0,
+        94.0,
+        4.0,
+        4.0,
+        0.0
+      ],
+      "restarts": 4,
+      "revenue_loss_pct": 22.15838380109343,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "fll-star",
+      "selector_epsilon": 0.0008163524867593983,
+      "selector_multiplier": 2.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 0,
+        "Decision Table": 2684,
+        "Expert": 2316
+      }
+    },
+    "FLLstar-32x": {
+      "BIRD": 2694028.393131813,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2562389.1052474976,
+        "DP": 3025260.0,
+        "Decision Table": 2224500.0,
+        "Expert": 2789528.3743593385
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3025260.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1432,
+      "lazy_keeps": 4956,
+      "lazy_resets": 44,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        67.0,
+        3.0,
+        3.0,
+        89.0
+      ],
+      "restarts": 45,
+      "revenue_loss_pct": 10.948864126329207,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "fll-star",
+      "selector_epsilon": 0.013061639788150373,
+      "selector_multiplier": 32.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 44,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 0,
+        "Decision Table": 2485,
+        "Expert": 2515
+      }
+    },
+    "FLLstar-4x": {
+      "BIRD": 2697417.569462914,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2562389.1052474976,
+        "DP": 3025260.0,
+        "Decision Table": 2224500.0,
+        "Expert": 2789528.3743593385
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3025260.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1432,
+      "lazy_keeps": 4995,
+      "lazy_resets": 5,
+      "max_chasing_distance": 2.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        97.0,
+        85.0,
+        4.0,
+        2.0,
+        50.0
+      ],
+      "restarts": 6,
+      "revenue_loss_pct": 10.836834868311682,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "fll-star",
+      "selector_epsilon": 0.0016327049735187966,
+      "selector_multiplier": 4.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 5,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 0,
+        "Decision Table": 2606,
+        "Expert": 2394
+      }
+    },
+    "FLLstar-64x": {
+      "BIRD": 2842220.4124101456,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2562389.1052474976,
+        "DP": 3025260.0,
+        "Decision Table": 2224500.0,
+        "Expert": 2789528.3743593385
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3025260.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1432,
+      "lazy_keeps": 4913,
+      "lazy_resets": 87,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        28.0,
+        45.0,
+        65.0,
+        14.0,
+        2.0
+      ],
+      "restarts": 88,
+      "revenue_loss_pct": 6.050375425247892,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "fll-star",
+      "selector_epsilon": 0.026123279576300746,
+      "selector_multiplier": 64.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 87,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 0,
+        "Decision Table": 2486,
+        "Expert": 2514
+      }
+    },
+    "FLLstar-8x": {
+      "BIRD": 2569610.1999154636,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2562389.1052474976,
+        "DP": 3025260.0,
+        "Decision Table": 2224500.0,
+        "Expert": 2789528.3743593385
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3025260.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1432,
+      "lazy_keeps": 4991,
+      "lazy_resets": 9,
+      "max_chasing_distance": 4.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        35.0,
+        2.0,
+        59.0,
+        56.0,
+        0.0
+      ],
+      "restarts": 10,
+      "revenue_loss_pct": 15.061508765677543,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "fll-star",
+      "selector_epsilon": 0.0032654099470375932,
+      "selector_multiplier": 8.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 9,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 0,
+        "Decision Table": 2452,
+        "Expert": 2548
+      }
+    },
     "FPL-16x": {
       "BIRD": 3032050.078161118,
       "C": 205.0,
@@ -565,6 +859,286 @@
         "DP": 1272,
         "Decision Table": 1226,
         "Expert": 1260
+      }
+    },
+    "FPLstar-16x": {
+      "BIRD": 3037030.293435804,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2562389.1052474976,
+        "DP": 3025260.0,
+        "Decision Table": 2224500.0,
+        "Expert": 2789528.3743593385
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3025260.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1432,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        1.0,
+        3.0,
+        4.0,
+        3.0
+      ],
+      "restarts": 3762,
+      "revenue_loss_pct": -0.38906716896412474,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.0065308198940751865,
+      "selector_multiplier": 16.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3761,
+      "target_counts": {
+        "DDPG": 1254,
+        "DP": 1283,
+        "Decision Table": 1212,
+        "Expert": 1251
+      }
+    },
+    "FPLstar-1x": {
+      "BIRD": 3045910.002410943,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2562389.1052474976,
+        "DP": 3025260.0,
+        "Decision Table": 2224500.0,
+        "Expert": 2789528.3743593385
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3025260.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1432,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        1.0,
+        1.0,
+        4.0,
+        3.0
+      ],
+      "restarts": 3758,
+      "revenue_loss_pct": -0.6825860392476399,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.00040817624337969916,
+      "selector_multiplier": 1.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3757,
+      "target_counts": {
+        "DDPG": 1262,
+        "DP": 1241,
+        "Decision Table": 1259,
+        "Expert": 1238
+      }
+    },
+    "FPLstar-2x": {
+      "BIRD": 3037030.293435804,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2562389.1052474976,
+        "DP": 3025260.0,
+        "Decision Table": 2224500.0,
+        "Expert": 2789528.3743593385
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3025260.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1432,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        1.0,
+        3.0,
+        4.0,
+        3.0
+      ],
+      "restarts": 3760,
+      "revenue_loss_pct": -0.38906716896412474,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.0008163524867593983,
+      "selector_multiplier": 2.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3759,
+      "target_counts": {
+        "DDPG": 1263,
+        "DP": 1244,
+        "Decision Table": 1254,
+        "Expert": 1239
+      }
+    },
+    "FPLstar-32x": {
+      "BIRD": 3039787.7763753454,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2562389.1052474976,
+        "DP": 3025260.0,
+        "Decision Table": 2224500.0,
+        "Expert": 2789528.3743593385
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3025260.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1432,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        1.0,
+        3.0,
+        4.0,
+        3.0
+      ],
+      "restarts": 3761,
+      "revenue_loss_pct": -0.48021579551329213,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.013061639788150373,
+      "selector_multiplier": 32.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3760,
+      "target_counts": {
+        "DDPG": 1239,
+        "DP": 1347,
+        "Decision Table": 1163,
+        "Expert": 1251
+      }
+    },
+    "FPLstar-4x": {
+      "BIRD": 3037030.293435804,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2562389.1052474976,
+        "DP": 3025260.0,
+        "Decision Table": 2224500.0,
+        "Expert": 2789528.3743593385
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3025260.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1432,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        1.0,
+        3.0,
+        4.0,
+        3.0
+      ],
+      "restarts": 3760,
+      "revenue_loss_pct": -0.38906716896412474,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.0016327049735187966,
+      "selector_multiplier": 4.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3759,
+      "target_counts": {
+        "DDPG": 1262,
+        "DP": 1250,
+        "Decision Table": 1247,
+        "Expert": 1241
+      }
+    },
+    "FPLstar-64x": {
+      "BIRD": 3046869.535505022,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2562389.1052474976,
+        "DP": 3025260.0,
+        "Decision Table": 2224500.0,
+        "Expert": 2789528.3743593385
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3025260.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1432,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        0.0,
+        4.0,
+        4.0,
+        0.0
+      ],
+      "restarts": 3757,
+      "revenue_loss_pct": -0.7143034154096481,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.026123279576300746,
+      "selector_multiplier": 64.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3756,
+      "target_counts": {
+        "DDPG": 1210,
+        "DP": 1452,
+        "Decision Table": 1079,
+        "Expert": 1259
+      }
+    },
+    "FPLstar-8x": {
+      "BIRD": 3037030.293435804,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2562389.1052474976,
+        "DP": 3025260.0,
+        "Decision Table": 2224500.0,
+        "Expert": 2789528.3743593385
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3025260.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1432,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        1.0,
+        3.0,
+        4.0,
+        3.0
+      ],
+      "restarts": 3757,
+      "revenue_loss_pct": -0.38906716896412474,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.0032654099470375932,
+      "selector_multiplier": 8.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3756,
+      "target_counts": {
+        "DDPG": 1259,
+        "DP": 1262,
+        "Decision Table": 1235,
+        "Expert": 1244
       }
     },
     "FTL": {
@@ -936,6 +1510,300 @@
         "Expert": 1932
       }
     },
+    "FLLstar-16x": {
+      "BIRD": 2334484.667318889,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2599402.9013462067,
+        "DP": 3018110.0,
+        "Decision Table": 2106200.0,
+        "Expert": 3038133.626987357
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3038133.626987357,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1465,
+      "lazy_keeps": 4979,
+      "lazy_resets": 21,
+      "max_chasing_distance": 1.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        1.0,
+        0.0,
+        3.0,
+        4.0
+      ],
+      "restarts": 22,
+      "revenue_loss_pct": 23.160566520775895,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "fll-star",
+      "selector_epsilon": 0.0065308198940751865,
+      "selector_multiplier": 16.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 21,
+      "target_counts": {
+        "DDPG": 2432,
+        "DP": 0,
+        "Decision Table": 2568,
+        "Expert": 0
+      }
+    },
+    "FLLstar-1x": {
+      "BIRD": 1742657.4702796936,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2599402.9013462067,
+        "DP": 3018110.0,
+        "Decision Table": 2106200.0,
+        "Expert": 3038133.626987357
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3038133.626987357,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1465,
+      "lazy_keeps": 4999,
+      "lazy_resets": 1,
+      "max_chasing_distance": 1.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        4.0,
+        116.0,
+        110.0,
+        100.0
+      ],
+      "restarts": 2,
+      "revenue_loss_pct": 42.64052592025948,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "fll-star",
+      "selector_epsilon": 0.00040817624337969916,
+      "selector_multiplier": 1.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 1,
+      "target_counts": {
+        "DDPG": 814,
+        "DP": 0,
+        "Decision Table": 4186,
+        "Expert": 0
+      }
+    },
+    "FLLstar-2x": {
+      "BIRD": 2007173.8855190277,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2599402.9013462067,
+        "DP": 3018110.0,
+        "Decision Table": 2106200.0,
+        "Expert": 3038133.626987357
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3038133.626987357,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1465,
+      "lazy_keeps": 4997,
+      "lazy_resets": 3,
+      "max_chasing_distance": 1.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        95.0,
+        116.0,
+        2.0,
+        1.0
+      ],
+      "restarts": 4,
+      "revenue_loss_pct": 33.933982768580165,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "fll-star",
+      "selector_epsilon": 0.0008163524867593983,
+      "selector_multiplier": 2.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3,
+      "target_counts": {
+        "DDPG": 2231,
+        "DP": 0,
+        "Decision Table": 2769,
+        "Expert": 0
+      }
+    },
+    "FLLstar-32x": {
+      "BIRD": 2428932.198945999,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2599402.9013462067,
+        "DP": 3018110.0,
+        "Decision Table": 2106200.0,
+        "Expert": 3038133.626987357
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3038133.626987357,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1465,
+      "lazy_keeps": 4946,
+      "lazy_resets": 54,
+      "max_chasing_distance": 1.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        3.0,
+        4.0,
+        0.0,
+        3.0
+      ],
+      "restarts": 55,
+      "revenue_loss_pct": 20.051831250274795,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "fll-star",
+      "selector_epsilon": 0.013061639788150373,
+      "selector_multiplier": 32.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 54,
+      "target_counts": {
+        "DDPG": 2452,
+        "DP": 0,
+        "Decision Table": 2548,
+        "Expert": 0
+      }
+    },
+    "FLLstar-4x": {
+      "BIRD": 2177559.3166275024,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2599402.9013462067,
+        "DP": 3018110.0,
+        "Decision Table": 2106200.0,
+        "Expert": 3038133.626987357
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3038133.626987357,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1465,
+      "lazy_keeps": 4997,
+      "lazy_resets": 3,
+      "max_chasing_distance": 3.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        95.0,
+        2.0,
+        1.0,
+        1.0
+      ],
+      "restarts": 4,
+      "revenue_loss_pct": 28.325755744101638,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "fll-star",
+      "selector_epsilon": 0.0016327049735187966,
+      "selector_multiplier": 4.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3,
+      "target_counts": {
+        "DDPG": 2324,
+        "DP": 0,
+        "Decision Table": 2676,
+        "Expert": 0
+      }
+    },
+    "FLLstar-64x": {
+      "BIRD": 2575059.5555574037,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2599402.9013462067,
+        "DP": 3018110.0,
+        "Decision Table": 2106200.0,
+        "Expert": 3038133.626987357
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3038133.626987357,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1465,
+      "lazy_keeps": 4916,
+      "lazy_resets": 84,
+      "max_chasing_distance": 4.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        3.0,
+        3.0,
+        0.0,
+        4.0
+      ],
+      "restarts": 85,
+      "revenue_loss_pct": 15.24205740381282,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "fll-star",
+      "selector_epsilon": 0.026123279576300746,
+      "selector_multiplier": 64.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 84,
+      "target_counts": {
+        "DDPG": 2507,
+        "DP": 0,
+        "Decision Table": 2493,
+        "Expert": 0
+      }
+    },
+    "FLLstar-8x": {
+      "BIRD": 2311037.049949646,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2599402.9013462067,
+        "DP": 3018110.0,
+        "Decision Table": 2106200.0,
+        "Expert": 3038133.626987357
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3038133.626987357,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1465,
+      "lazy_keeps": 4986,
+      "lazy_resets": 14,
+      "max_chasing_distance": 1.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        1.0,
+        0.0,
+        4.0,
+        3.0
+      ],
+      "restarts": 15,
+      "revenue_loss_pct": 23.932343547334593,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "fll-star",
+      "selector_epsilon": 0.0032654099470375932,
+      "selector_multiplier": 8.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 14,
+      "target_counts": {
+        "DDPG": 2720,
+        "DP": 0,
+        "Decision Table": 2280,
+        "Expert": 0
+      }
+    },
     "FPL-16x": {
       "BIRD": 2942756.8686583787,
       "C": 205.0,
@@ -1214,6 +2082,286 @@
         "DP": 1306,
         "Decision Table": 1204,
         "Expert": 1281
+      }
+    },
+    "FPLstar-16x": {
+      "BIRD": 3025100.971824116,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2599402.9013462067,
+        "DP": 3018110.0,
+        "Decision Table": 2106200.0,
+        "Expert": 3038133.626987357
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3038133.626987357,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1465,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        2.0,
+        2.0,
+        1.0,
+        2.0
+      ],
+      "restarts": 3736,
+      "revenue_loss_pct": 0.4289691226045377,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.0065308198940751865,
+      "selector_multiplier": 16.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3735,
+      "target_counts": {
+        "DDPG": 1270,
+        "DP": 1258,
+        "Decision Table": 1159,
+        "Expert": 1313
+      }
+    },
+    "FPLstar-1x": {
+      "BIRD": 3026480.971824116,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2599402.9013462067,
+        "DP": 3018110.0,
+        "Decision Table": 2106200.0,
+        "Expert": 3038133.626987357
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3038133.626987357,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1465,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        2.0,
+        2.0,
+        1.0,
+        2.0
+      ],
+      "restarts": 3754,
+      "revenue_loss_pct": 0.3835464990654796,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.00040817624337969916,
+      "selector_multiplier": 1.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3753,
+      "target_counts": {
+        "DDPG": 1276,
+        "DP": 1222,
+        "Decision Table": 1237,
+        "Expert": 1265
+      }
+    },
+    "FPLstar-2x": {
+      "BIRD": 3026480.971824116,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2599402.9013462067,
+        "DP": 3018110.0,
+        "Decision Table": 2106200.0,
+        "Expert": 3038133.626987357
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3038133.626987357,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1465,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        2.0,
+        2.0,
+        1.0,
+        2.0
+      ],
+      "restarts": 3757,
+      "revenue_loss_pct": 0.3835464990654796,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.0008163524867593983,
+      "selector_multiplier": 2.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3756,
+      "target_counts": {
+        "DDPG": 1276,
+        "DP": 1224,
+        "Decision Table": 1227,
+        "Expert": 1273
+      }
+    },
+    "FPLstar-32x": {
+      "BIRD": 3028530.971824116,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2599402.9013462067,
+        "DP": 3018110.0,
+        "Decision Table": 2106200.0,
+        "Expert": 3038133.626987357
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3038133.626987357,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1465,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        2.0,
+        2.0,
+        1.0,
+        1.0
+      ],
+      "restarts": 3736,
+      "revenue_loss_pct": 0.3160708626487628,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.013061639788150373,
+      "selector_multiplier": 32.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3735,
+      "target_counts": {
+        "DDPG": 1259,
+        "DP": 1292,
+        "Decision Table": 1103,
+        "Expert": 1346
+      }
+    },
+    "FPLstar-4x": {
+      "BIRD": 3026480.971824116,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2599402.9013462067,
+        "DP": 3018110.0,
+        "Decision Table": 2106200.0,
+        "Expert": 3038133.626987357
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3038133.626987357,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1465,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        2.0,
+        2.0,
+        1.0,
+        2.0
+      ],
+      "restarts": 3753,
+      "revenue_loss_pct": 0.3835464990654796,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.0016327049735187966,
+      "selector_multiplier": 4.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3752,
+      "target_counts": {
+        "DDPG": 1273,
+        "DP": 1229,
+        "Decision Table": 1220,
+        "Expert": 1278
+      }
+    },
+    "FPLstar-64x": {
+      "BIRD": 3024002.9946165704,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2599402.9013462067,
+        "DP": 3018110.0,
+        "Decision Table": 2106200.0,
+        "Expert": 3038133.626987357
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3038133.626987357,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1465,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        4.0,
+        3.0,
+        0.0,
+        1.0
+      ],
+      "restarts": 3705,
+      "revenue_loss_pct": 0.4651089815558513,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.026123279576300746,
+      "selector_multiplier": 64.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3704,
+      "target_counts": {
+        "DDPG": 1233,
+        "DP": 1382,
+        "Decision Table": 980,
+        "Expert": 1405
+      }
+    },
+    "FPLstar-8x": {
+      "BIRD": 3026480.971824116,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2599402.9013462067,
+        "DP": 3018110.0,
+        "Decision Table": 2106200.0,
+        "Expert": 3038133.626987357
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3038133.626987357,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1465,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        2.0,
+        2.0,
+        1.0,
+        2.0
+      ],
+      "restarts": 3750,
+      "revenue_loss_pct": 0.3835464990654796,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.0032654099470375932,
+      "selector_multiplier": 8.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3749,
+      "target_counts": {
+        "DDPG": 1272,
+        "DP": 1240,
+        "Decision Table": 1196,
+        "Expert": 1292
       }
     },
     "FTL": {
@@ -1585,6 +2733,300 @@
         "Expert": 44
       }
     },
+    "FLLstar-16x": {
+      "BIRD": 2272109.9824744635,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2586652.9013404846,
+        "DP": 3035045.0,
+        "Decision Table": 2169210.0,
+        "Expert": 2531075.962536138
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3035045.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1467,
+      "lazy_keeps": 4975,
+      "lazy_resets": 25,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        3.0,
+        2.0,
+        4.0,
+        4.0
+      ],
+      "restarts": 26,
+      "revenue_loss_pct": 25.13751913152973,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "fll-star",
+      "selector_epsilon": 0.0065308198940751865,
+      "selector_multiplier": 16.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 25,
+      "target_counts": {
+        "DDPG": 2497,
+        "DP": 0,
+        "Decision Table": 2503,
+        "Expert": 0
+      }
+    },
+    "FLLstar-1x": {
+      "BIRD": 1492870.0,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2586652.9013404846,
+        "DP": 3035045.0,
+        "Decision Table": 2169210.0,
+        "Expert": 2531075.962536138
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3035045.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1467,
+      "lazy_keeps": 4999,
+      "lazy_resets": 1,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        137.0,
+        100.0,
+        118.0,
+        116.0,
+        86.0
+      ],
+      "restarts": 2,
+      "revenue_loss_pct": 50.81226143269705,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "fll-star",
+      "selector_epsilon": 0.00040817624337969916,
+      "selector_multiplier": 1.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 1,
+      "target_counts": {
+        "DDPG": 1295,
+        "DP": 0,
+        "Decision Table": 3705,
+        "Expert": 0
+      }
+    },
+    "FLLstar-2x": {
+      "BIRD": 2057534.360031128,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2586652.9013404846,
+        "DP": 3035045.0,
+        "Decision Table": 2169210.0,
+        "Expert": 2531075.962536138
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3035045.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1467,
+      "lazy_keeps": 4996,
+      "lazy_resets": 4,
+      "max_chasing_distance": 2.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        137.0,
+        2.0,
+        0.0,
+        4.0,
+        69.0
+      ],
+      "restarts": 5,
+      "revenue_loss_pct": 32.207451288823464,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "fll-star",
+      "selector_epsilon": 0.0008163524867593983,
+      "selector_multiplier": 2.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 4,
+      "target_counts": {
+        "DDPG": 2066,
+        "DP": 0,
+        "Decision Table": 2934,
+        "Expert": 0
+      }
+    },
+    "FLLstar-32x": {
+      "BIRD": 2377232.74394989,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2586652.9013404846,
+        "DP": 3035045.0,
+        "Decision Table": 2169210.0,
+        "Expert": 2531075.962536138
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3035045.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1467,
+      "lazy_keeps": 4953,
+      "lazy_resets": 47,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        3.0,
+        4.0,
+        4.0,
+        4.0
+      ],
+      "restarts": 48,
+      "revenue_loss_pct": 21.67388806591368,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "fll-star",
+      "selector_epsilon": 0.013061639788150373,
+      "selector_multiplier": 32.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 47,
+      "target_counts": {
+        "DDPG": 2494,
+        "DP": 0,
+        "Decision Table": 2506,
+        "Expert": 0
+      }
+    },
+    "FLLstar-4x": {
+      "BIRD": 2275836.171272278,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2586652.9013404846,
+        "DP": 3035045.0,
+        "Decision Table": 2169210.0,
+        "Expert": 2531075.962536138
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3035045.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1467,
+      "lazy_keeps": 4993,
+      "lazy_resets": 7,
+      "max_chasing_distance": 1.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        2.0,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "restarts": 8,
+      "revenue_loss_pct": 25.0147470211388,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "fll-star",
+      "selector_epsilon": 0.0016327049735187966,
+      "selector_multiplier": 4.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 7,
+      "target_counts": {
+        "DDPG": 2419,
+        "DP": 0,
+        "Decision Table": 2581,
+        "Expert": 0
+      }
+    },
+    "FLLstar-64x": {
+      "BIRD": 2441572.2341918945,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2586652.9013404846,
+        "DP": 3035045.0,
+        "Decision Table": 2169210.0,
+        "Expert": 2531075.962536138
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3035045.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1467,
+      "lazy_keeps": 4917,
+      "lazy_resets": 83,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        2.0,
+        0.0,
+        3.0,
+        1.0
+      ],
+      "restarts": 84,
+      "revenue_loss_pct": 19.554002191338366,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "fll-star",
+      "selector_epsilon": 0.026123279576300746,
+      "selector_multiplier": 64.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 83,
+      "target_counts": {
+        "DDPG": 2472,
+        "DP": 0,
+        "Decision Table": 2528,
+        "Expert": 0
+      }
+    },
+    "FLLstar-8x": {
+      "BIRD": 2242605.0185108185,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2586652.9013404846,
+        "DP": 3035045.0,
+        "Decision Table": 2169210.0,
+        "Expert": 2531075.962536138
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3035045.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1467,
+      "lazy_keeps": 4986,
+      "lazy_resets": 14,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        4.0,
+        2.0,
+        4.0,
+        4.0
+      ],
+      "restarts": 15,
+      "revenue_loss_pct": 26.10966168505513,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "fll-star",
+      "selector_epsilon": 0.0032654099470375932,
+      "selector_multiplier": 8.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 14,
+      "target_counts": {
+        "DDPG": 2338,
+        "DP": 0,
+        "Decision Table": 2662,
+        "Expert": 0
+      }
+    },
     "FPL-16x": {
       "BIRD": 2955815.995036084,
       "C": 205.0,
@@ -1863,6 +3305,286 @@
         "DP": 1297,
         "Decision Table": 1211,
         "Expert": 1261
+      }
+    },
+    "FPLstar-16x": {
+      "BIRD": 2985291.462018426,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2586652.9013404846,
+        "DP": 3035045.0,
+        "Decision Table": 2169210.0,
+        "Expert": 2531075.962536138
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3035045.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1467,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        0.0,
+        0.0,
+        1.0,
+        3.0,
+        2.0
+      ],
+      "restarts": 3758,
+      "revenue_loss_pct": 1.6393014924514777,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.0065308198940751865,
+      "selector_multiplier": 16.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3757,
+      "target_counts": {
+        "DDPG": 1229,
+        "DP": 1325,
+        "Decision Table": 1225,
+        "Expert": 1221
+      }
+    },
+    "FPLstar-1x": {
+      "BIRD": 2985578.9864257206,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2586652.9013404846,
+        "DP": 3035045.0,
+        "Decision Table": 2169210.0,
+        "Expert": 2531075.962536138
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3035045.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1467,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        0.0,
+        0.0,
+        1.0,
+        3.0,
+        2.0
+      ],
+      "restarts": 3765,
+      "revenue_loss_pct": 1.6298280115872872,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.00040817624337969916,
+      "selector_multiplier": 1.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3764,
+      "target_counts": {
+        "DDPG": 1228,
+        "DP": 1278,
+        "Decision Table": 1268,
+        "Expert": 1226
+      }
+    },
+    "FPLstar-2x": {
+      "BIRD": 2985578.9864257206,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2586652.9013404846,
+        "DP": 3035045.0,
+        "Decision Table": 2169210.0,
+        "Expert": 2531075.962536138
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3035045.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1467,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        0.0,
+        0.0,
+        1.0,
+        3.0,
+        2.0
+      ],
+      "restarts": 3761,
+      "revenue_loss_pct": 1.6298280115872872,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.0008163524867593983,
+      "selector_multiplier": 2.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3760,
+      "target_counts": {
+        "DDPG": 1230,
+        "DP": 1280,
+        "Decision Table": 1266,
+        "Expert": 1224
+      }
+    },
+    "FPLstar-32x": {
+      "BIRD": 3031506.2581394287,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2586652.9013404846,
+        "DP": 3035045.0,
+        "Decision Table": 2169210.0,
+        "Expert": 2531075.962536138
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3035045.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1467,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        3.0
+      ],
+      "restarts": 3749,
+      "revenue_loss_pct": 0.11659602610739932,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.013061639788150373,
+      "selector_multiplier": 32.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3748,
+      "target_counts": {
+        "DDPG": 1236,
+        "DP": 1374,
+        "Decision Table": 1174,
+        "Expert": 1216
+      }
+    },
+    "FPLstar-4x": {
+      "BIRD": 2985578.9864257206,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2586652.9013404846,
+        "DP": 3035045.0,
+        "Decision Table": 2169210.0,
+        "Expert": 2531075.962536138
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3035045.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1467,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        0.0,
+        0.0,
+        1.0,
+        3.0,
+        2.0
+      ],
+      "restarts": 3762,
+      "revenue_loss_pct": 1.6298280115872872,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.0016327049735187966,
+      "selector_multiplier": 4.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3761,
+      "target_counts": {
+        "DDPG": 1228,
+        "DP": 1287,
+        "Decision Table": 1260,
+        "Expert": 1225
+      }
+    },
+    "FPLstar-64x": {
+      "BIRD": 3020432.7184467493,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2586652.9013404846,
+        "DP": 3035045.0,
+        "Decision Table": 2169210.0,
+        "Expert": 2531075.962536138
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3035045.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1467,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        0.0,
+        0.0,
+        1.0,
+        4.0,
+        2.0
+      ],
+      "restarts": 3716,
+      "revenue_loss_pct": 0.48145189126522797,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.026123279576300746,
+      "selector_multiplier": 64.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3715,
+      "target_counts": {
+        "DDPG": 1227,
+        "DP": 1509,
+        "Decision Table": 1062,
+        "Expert": 1202
+      }
+    },
+    "FPLstar-8x": {
+      "BIRD": 2985291.462018426,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2586652.9013404846,
+        "DP": 3035045.0,
+        "Decision Table": 2169210.0,
+        "Expert": 2531075.962536138
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3035045.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1467,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        0.0,
+        0.0,
+        1.0,
+        3.0,
+        2.0
+      ],
+      "restarts": 3754,
+      "revenue_loss_pct": 1.6393014924514777,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.0032654099470375932,
+      "selector_multiplier": 8.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3753,
+      "target_counts": {
+        "DDPG": 1230,
+        "DP": 1300,
+        "Decision Table": 1245,
+        "Expert": 1225
       }
     },
     "FTL": {
@@ -2234,6 +3956,300 @@
         "Expert": 451
       }
     },
+    "FLLstar-16x": {
+      "BIRD": 3115315.8141591367,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2613373.3758563995,
+        "DP": 3028520.0,
+        "Decision Table": 2156010.0,
+        "Expert": 2903342.083954317
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3028520.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1470,
+      "lazy_keeps": 4985,
+      "lazy_resets": 15,
+      "max_chasing_distance": 1.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        2.0,
+        3.0,
+        4.0,
+        3.0
+      ],
+      "restarts": 16,
+      "revenue_loss_pct": -2.865948191167195,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "fll-star",
+      "selector_epsilon": 0.0065308198940751865,
+      "selector_multiplier": 16.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 15,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 1905,
+        "Decision Table": 577,
+        "Expert": 2518
+      }
+    },
+    "FLLstar-1x": {
+      "BIRD": 2900889.9890922233,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2613373.3758563995,
+        "DP": 3028520.0,
+        "Decision Table": 2156010.0,
+        "Expert": 2903342.083954317
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3028520.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1470,
+      "lazy_keeps": 4999,
+      "lazy_resets": 1,
+      "max_chasing_distance": 2.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        3.0,
+        1.0,
+        4.0,
+        4.0
+      ],
+      "restarts": 2,
+      "revenue_loss_pct": 4.214270036446075,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "fll-star",
+      "selector_epsilon": 0.00040817624337969916,
+      "selector_multiplier": 1.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 1,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 0,
+        "Decision Table": 1839,
+        "Expert": 3161
+      }
+    },
+    "FLLstar-2x": {
+      "BIRD": 2440859.6454327116,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2613373.3758563995,
+        "DP": 3028520.0,
+        "Decision Table": 2156010.0,
+        "Expert": 2903342.083954317
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3028520.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1470,
+      "lazy_keeps": 4998,
+      "lazy_resets": 2,
+      "max_chasing_distance": 2.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        3.0,
+        1.0,
+        4.0,
+        112.0
+      ],
+      "restarts": 3,
+      "revenue_loss_pct": 19.404209137376952,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "fll-star",
+      "selector_epsilon": 0.0008163524867593983,
+      "selector_multiplier": 2.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 2,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 0,
+        "Decision Table": 2346,
+        "Expert": 2654
+      }
+    },
+    "FLLstar-32x": {
+      "BIRD": 3006287.4335975,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2613373.3758563995,
+        "DP": 3028520.0,
+        "Decision Table": 2156010.0,
+        "Expert": 2903342.083954317
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3028520.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1470,
+      "lazy_keeps": 4973,
+      "lazy_resets": 27,
+      "max_chasing_distance": 3.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        0.0,
+        3.0,
+        2.0,
+        0.0,
+        1.0
+      ],
+      "restarts": 28,
+      "revenue_loss_pct": 0.7341066396292588,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "fll-star",
+      "selector_epsilon": 0.013061639788150373,
+      "selector_multiplier": 32.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 27,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 2229,
+        "Decision Table": 231,
+        "Expert": 2540
+      }
+    },
+    "FLLstar-4x": {
+      "BIRD": 2159814.8945382764,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2613373.3758563995,
+        "DP": 3028520.0,
+        "Decision Table": 2156010.0,
+        "Expert": 2903342.083954317
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3028520.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1470,
+      "lazy_keeps": 4997,
+      "lazy_resets": 3,
+      "max_chasing_distance": 2.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        3.0,
+        110.0,
+        71.0,
+        105.0
+      ],
+      "restarts": 4,
+      "revenue_loss_pct": 28.68414623187972,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "fll-star",
+      "selector_epsilon": 0.0016327049735187966,
+      "selector_multiplier": 4.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 0,
+        "Decision Table": 2189,
+        "Expert": 2811
+      }
+    },
+    "FLLstar-64x": {
+      "BIRD": 3107989.374216659,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2613373.3758563995,
+        "DP": 3028520.0,
+        "Decision Table": 2156010.0,
+        "Expert": 2903342.083954317
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3028520.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1470,
+      "lazy_keeps": 4944,
+      "lazy_resets": 56,
+      "max_chasing_distance": 3.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        3.0,
+        3.0,
+        0.0,
+        3.0
+      ],
+      "restarts": 57,
+      "revenue_loss_pct": -2.6240333303613315,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "fll-star",
+      "selector_epsilon": 0.026123279576300746,
+      "selector_multiplier": 64.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 56,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 2250,
+        "Decision Table": 265,
+        "Expert": 2485
+      }
+    },
+    "FLLstar-8x": {
+      "BIRD": 2633901.2886425974,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2613373.3758563995,
+        "DP": 3028520.0,
+        "Decision Table": 2156010.0,
+        "Expert": 2903342.083954317
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3028520.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1470,
+      "lazy_keeps": 4994,
+      "lazy_resets": 6,
+      "max_chasing_distance": 1.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        81.0,
+        3.0,
+        4.0,
+        105.0
+      ],
+      "restarts": 7,
+      "revenue_loss_pct": 13.030084376441383,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "fll-star",
+      "selector_epsilon": 0.0032654099470375932,
+      "selector_multiplier": 8.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 6,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 0,
+        "Decision Table": 2410,
+        "Expert": 2590
+      }
+    },
     "FPL-16x": {
       "BIRD": 2970738.331484039,
       "C": 205.0,
@@ -2512,6 +4528,286 @@
         "DP": 1306,
         "Decision Table": 1213,
         "Expert": 1307
+      }
+    },
+    "FPLstar-16x": {
+      "BIRD": 3022617.053999647,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2613373.3758563995,
+        "DP": 3028520.0,
+        "Decision Table": 2156010.0,
+        "Expert": 2903342.083954317
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3028520.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1470,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        3.0,
+        1.0,
+        3.0,
+        4.0
+      ],
+      "restarts": 3733,
+      "revenue_loss_pct": 0.1949119041760651,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.0065308198940751865,
+      "selector_multiplier": 16.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3732,
+      "target_counts": {
+        "DDPG": 1235,
+        "DP": 1317,
+        "Decision Table": 1204,
+        "Expert": 1244
+      }
+    },
+    "FPLstar-1x": {
+      "BIRD": 3027786.3519090037,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2613373.3758563995,
+        "DP": 3028520.0,
+        "Decision Table": 2156010.0,
+        "Expert": 2903342.083954317
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3028520.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1470,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        3.0,
+        1.0,
+        3.0,
+        3.0
+      ],
+      "restarts": 3723,
+      "revenue_loss_pct": 0.0242246407815142,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.00040817624337969916,
+      "selector_multiplier": 1.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3722,
+      "target_counts": {
+        "DDPG": 1244,
+        "DP": 1265,
+        "Decision Table": 1278,
+        "Expert": 1213
+      }
+    },
+    "FPLstar-2x": {
+      "BIRD": 3027752.746971849,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2613373.3758563995,
+        "DP": 3028520.0,
+        "Decision Table": 2156010.0,
+        "Expert": 2903342.083954317
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3028520.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1470,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        3.0,
+        1.0,
+        3.0,
+        3.0
+      ],
+      "restarts": 3727,
+      "revenue_loss_pct": 0.025334256605573466,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.0008163524867593983,
+      "selector_multiplier": 2.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3726,
+      "target_counts": {
+        "DDPG": 1245,
+        "DP": 1269,
+        "Decision Table": 1269,
+        "Expert": 1217
+      }
+    },
+    "FPLstar-32x": {
+      "BIRD": 3024716.1581429373,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2613373.3758563995,
+        "DP": 3028520.0,
+        "Decision Table": 2156010.0,
+        "Expert": 2903342.083954317
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3028520.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1470,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        3.0,
+        0.0,
+        3.0,
+        4.0
+      ],
+      "restarts": 3743,
+      "revenue_loss_pct": 0.1256006847259603,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.013061639788150373,
+      "selector_multiplier": 32.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3742,
+      "target_counts": {
+        "DDPG": 1227,
+        "DP": 1350,
+        "Decision Table": 1147,
+        "Expert": 1276
+      }
+    },
+    "FPLstar-4x": {
+      "BIRD": 3022831.7081739884,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2613373.3758563995,
+        "DP": 3028520.0,
+        "Decision Table": 2156010.0,
+        "Expert": 2903342.083954317
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3028520.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1470,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        3.0,
+        1.0,
+        3.0,
+        4.0
+      ],
+      "restarts": 3725,
+      "revenue_loss_pct": 0.18782414598588132,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.0016327049735187966,
+      "selector_multiplier": 4.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3724,
+      "target_counts": {
+        "DDPG": 1245,
+        "DP": 1275,
+        "Decision Table": 1263,
+        "Expert": 1217
+      }
+    },
+    "FPLstar-64x": {
+      "BIRD": 3024796.135665361,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2613373.3758563995,
+        "DP": 3028520.0,
+        "Decision Table": 2156010.0,
+        "Expert": 2903342.083954317
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3028520.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1470,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        3.0,
+        0.0,
+        3.0,
+        4.0
+      ],
+      "restarts": 3724,
+      "revenue_loss_pct": 0.1229598726321491,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.026123279576300746,
+      "selector_multiplier": 64.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3723,
+      "target_counts": {
+        "DDPG": 1204,
+        "DP": 1441,
+        "Decision Table": 1026,
+        "Expert": 1329
+      }
+    },
+    "FPLstar-8x": {
+      "BIRD": 3022831.7081739884,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2613373.3758563995,
+        "DP": 3028520.0,
+        "Decision Table": 2156010.0,
+        "Expert": 2903342.083954317
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3028520.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1470,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        3.0,
+        1.0,
+        3.0,
+        4.0
+      ],
+      "restarts": 3736,
+      "revenue_loss_pct": 0.18782414598588132,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.0032654099470375932,
+      "selector_multiplier": 8.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3735,
+      "target_counts": {
+        "DDPG": 1242,
+        "DP": 1295,
+        "Decision Table": 1229,
+        "Expert": 1234
       }
     },
     "FTL": {
@@ -2883,6 +5179,300 @@
         "Expert": 34
       }
     },
+    "FLLstar-16x": {
+      "BIRD": 2881500.268573462,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2506205.889471054,
+        "DP": 3016930.0,
+        "Decision Table": 2175670.0,
+        "Expert": 2720136.74753319
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3016930.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1372,
+      "lazy_keeps": 4973,
+      "lazy_resets": 27,
+      "max_chasing_distance": 1.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        3.0,
+        2.0,
+        4.0,
+        2.0
+      ],
+      "restarts": 28,
+      "revenue_loss_pct": 4.488991505488625,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "fll-star",
+      "selector_epsilon": 0.0065308198940751865,
+      "selector_multiplier": 16.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 27,
+      "target_counts": {
+        "DDPG": 2327,
+        "DP": 2434,
+        "Decision Table": 0,
+        "Expert": 239
+      }
+    },
+    "FLLstar-1x": {
+      "BIRD": 2182699.5635967255,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2506205.889471054,
+        "DP": 3016930.0,
+        "Decision Table": 2175670.0,
+        "Expert": 2720136.74753319
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3016930.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1372,
+      "lazy_keeps": 4999,
+      "lazy_resets": 1,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        2.0,
+        4.0,
+        3.0,
+        0.0
+      ],
+      "restarts": 2,
+      "revenue_loss_pct": 27.651633826548,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "fll-star",
+      "selector_epsilon": 0.00040817624337969916,
+      "selector_multiplier": 1.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 1,
+      "target_counts": {
+        "DDPG": 3644,
+        "DP": 1356,
+        "Decision Table": 0,
+        "Expert": 0
+      }
+    },
+    "FLLstar-2x": {
+      "BIRD": 2182699.5635967255,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2506205.889471054,
+        "DP": 3016930.0,
+        "Decision Table": 2175670.0,
+        "Expert": 2720136.74753319
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3016930.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1372,
+      "lazy_keeps": 4997,
+      "lazy_resets": 3,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        2.0,
+        4.0,
+        3.0,
+        0.0
+      ],
+      "restarts": 4,
+      "revenue_loss_pct": 27.651633826548,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "fll-star",
+      "selector_epsilon": 0.0008163524867593983,
+      "selector_multiplier": 2.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3,
+      "target_counts": {
+        "DDPG": 3077,
+        "DP": 1923,
+        "Decision Table": 0,
+        "Expert": 0
+      }
+    },
+    "FLLstar-32x": {
+      "BIRD": 2863020.20547635,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2506205.889471054,
+        "DP": 3016930.0,
+        "Decision Table": 2175670.0,
+        "Expert": 2720136.74753319
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3016930.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1372,
+      "lazy_keeps": 4952,
+      "lazy_resets": 48,
+      "max_chasing_distance": 1.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0
+      ],
+      "restarts": 49,
+      "revenue_loss_pct": 5.101536811382759,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "fll-star",
+      "selector_epsilon": 0.013061639788150373,
+      "selector_multiplier": 32.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 48,
+      "target_counts": {
+        "DDPG": 815,
+        "DP": 2430,
+        "Decision Table": 0,
+        "Expert": 1755
+      }
+    },
+    "FLLstar-4x": {
+      "BIRD": 2357775.5560245514,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2506205.889471054,
+        "DP": 3016930.0,
+        "Decision Table": 2175670.0,
+        "Expert": 2720136.74753319
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3016930.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1372,
+      "lazy_keeps": 4992,
+      "lazy_resets": 8,
+      "max_chasing_distance": 1.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        2.0,
+        3.0,
+        3.0,
+        0.0
+      ],
+      "restarts": 9,
+      "revenue_loss_pct": 21.848516338643872,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "fll-star",
+      "selector_epsilon": 0.0016327049735187966,
+      "selector_multiplier": 4.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 8,
+      "target_counts": {
+        "DDPG": 2809,
+        "DP": 2191,
+        "Decision Table": 0,
+        "Expert": 0
+      }
+    },
+    "FLLstar-64x": {
+      "BIRD": 2906612.5500002475,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2506205.889471054,
+        "DP": 3016930.0,
+        "Decision Table": 2175670.0,
+        "Expert": 2720136.74753319
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3016930.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1372,
+      "lazy_keeps": 4895,
+      "lazy_resets": 105,
+      "max_chasing_distance": 2.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        2.0,
+        4.0,
+        3.0,
+        3.0
+      ],
+      "restarts": 106,
+      "revenue_loss_pct": 3.6566128481520104,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "fll-star",
+      "selector_epsilon": 0.026123279576300746,
+      "selector_multiplier": 64.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 105,
+      "target_counts": {
+        "DDPG": 2422,
+        "DP": 2460,
+        "Decision Table": 0,
+        "Expert": 118
+      }
+    },
+    "FLLstar-8x": {
+      "BIRD": 2864429.2161421743,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2506205.889471054,
+        "DP": 3016930.0,
+        "Decision Table": 2175670.0,
+        "Expert": 2720136.74753319
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3016930.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1372,
+      "lazy_keeps": 4988,
+      "lazy_resets": 12,
+      "max_chasing_distance": 1.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        2.0,
+        4.0,
+        4.0,
+        3.0
+      ],
+      "restarts": 13,
+      "revenue_loss_pct": 5.054833352375616,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "fll-star",
+      "selector_epsilon": 0.0032654099470375932,
+      "selector_multiplier": 8.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 12,
+      "target_counts": {
+        "DDPG": 595,
+        "DP": 2347,
+        "Decision Table": 0,
+        "Expert": 2058
+      }
+    },
     "FPL-16x": {
       "BIRD": 2987384.3658915404,
       "C": 205.0,
@@ -3161,6 +5751,286 @@
         "DP": 1324,
         "Decision Table": 1179,
         "Expert": 1297
+      }
+    },
+    "FPLstar-16x": {
+      "BIRD": 3045036.446061399,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2506205.889471054,
+        "DP": 3016930.0,
+        "Decision Table": 2175670.0,
+        "Expert": 2720136.74753319
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3016930.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1372,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        3.0,
+        2.0,
+        1.0,
+        1.0
+      ],
+      "restarts": 3775,
+      "revenue_loss_pct": -0.931624070210407,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.0065308198940751865,
+      "selector_multiplier": 16.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3774,
+      "target_counts": {
+        "DDPG": 1268,
+        "DP": 1258,
+        "Decision Table": 1206,
+        "Expert": 1268
+      }
+    },
+    "FPLstar-1x": {
+      "BIRD": 3033186.1792994356,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2506205.889471054,
+        "DP": 3016930.0,
+        "Decision Table": 2175670.0,
+        "Expert": 2720136.74753319
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3016930.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1372,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        3.0,
+        2.0,
+        4.0,
+        1.0
+      ],
+      "restarts": 3784,
+      "revenue_loss_pct": -0.5388318356553046,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.00040817624337969916,
+      "selector_multiplier": 1.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3783,
+      "target_counts": {
+        "DDPG": 1287,
+        "DP": 1210,
+        "Decision Table": 1248,
+        "Expert": 1255
+      }
+    },
+    "FPLstar-2x": {
+      "BIRD": 3033186.1792994356,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2506205.889471054,
+        "DP": 3016930.0,
+        "Decision Table": 2175670.0,
+        "Expert": 2720136.74753319
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3016930.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1372,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        3.0,
+        2.0,
+        4.0,
+        1.0
+      ],
+      "restarts": 3785,
+      "revenue_loss_pct": -0.5388318356553046,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.0008163524867593983,
+      "selector_multiplier": 2.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3784,
+      "target_counts": {
+        "DDPG": 1287,
+        "DP": 1212,
+        "Decision Table": 1245,
+        "Expert": 1256
+      }
+    },
+    "FPLstar-32x": {
+      "BIRD": 3037505.0340537885,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2506205.889471054,
+        "DP": 3016930.0,
+        "Decision Table": 2175670.0,
+        "Expert": 2720136.74753319
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3016930.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1372,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        0.0,
+        4.0,
+        3.0,
+        2.0,
+        1.0
+      ],
+      "restarts": 3765,
+      "revenue_loss_pct": -0.6819857952882076,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.013061639788150373,
+      "selector_multiplier": 32.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3764,
+      "target_counts": {
+        "DDPG": 1260,
+        "DP": 1305,
+        "Decision Table": 1158,
+        "Expert": 1277
+      }
+    },
+    "FPLstar-4x": {
+      "BIRD": 3033186.1792994356,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2506205.889471054,
+        "DP": 3016930.0,
+        "Decision Table": 2175670.0,
+        "Expert": 2720136.74753319
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3016930.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1372,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        3.0,
+        2.0,
+        4.0,
+        1.0
+      ],
+      "restarts": 3785,
+      "revenue_loss_pct": -0.5388318356553046,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.0016327049735187966,
+      "selector_multiplier": 4.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3784,
+      "target_counts": {
+        "DDPG": 1285,
+        "DP": 1217,
+        "Decision Table": 1240,
+        "Expert": 1258
+      }
+    },
+    "FPLstar-64x": {
+      "BIRD": 3031725.0373219047,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2506205.889471054,
+        "DP": 3016930.0,
+        "Decision Table": 2175670.0,
+        "Expert": 2720136.74753319
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3016930.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1372,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        0.0,
+        3.0,
+        3.0,
+        1.0,
+        4.0
+      ],
+      "restarts": 3759,
+      "revenue_loss_pct": -0.4904004177062336,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.026123279576300746,
+      "selector_multiplier": 64.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3758,
+      "target_counts": {
+        "DDPG": 1209,
+        "DP": 1411,
+        "Decision Table": 1081,
+        "Expert": 1299
+      }
+    },
+    "FPLstar-8x": {
+      "BIRD": 3033186.1792994356,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2506205.889471054,
+        "DP": 3016930.0,
+        "Decision Table": 2175670.0,
+        "Expert": 2720136.74753319
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3016930.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1372,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        3.0,
+        2.0,
+        4.0,
+        1.0
+      ],
+      "restarts": 3786,
+      "revenue_loss_pct": -0.5388318356553046,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "fpl-star",
+      "selector_epsilon": 0.0032654099470375932,
+      "selector_multiplier": 8.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3785,
+      "target_counts": {
+        "DDPG": 1277,
+        "DP": 1230,
+        "Decision Table": 1229,
+        "Expert": 1264
       }
     },
     "FTL": {
