@@ -46,9 +46,14 @@ def run_bird(
     selector_multiplier=1.0,
     T=5000,
     inventory=200,
+    ctx=None,
+    trajectories=None,
+    rewards=None,
 ):
-    ctx = make_context(seed=seed, T=T, inventory=inventory)
-    trajectories, rewards = generate_base_feedback(ctx, actor)
+    if ctx is None:
+        ctx = make_context(seed=seed, T=T, inventory=inventory)
+    if trajectories is None or rewards is None:
+        trajectories, rewards = generate_base_feedback(ctx, actor)
 
     selector, eps_sel = make_selector(
         selector_name,
