@@ -85,6 +85,7 @@ def run_bird(
     bird_inventory = ctx.initial_inventory.copy()
     bird_last_price = ctx.base_price.copy()
     bird_profit = np.zeros((ctx.T, ctx.N_total), dtype=float)
+    bird_sold_out_index = np.full(ctx.N_total, np.nan, dtype=float)
 
     target_name = None
     target_strategy = None
@@ -156,6 +157,9 @@ def run_bird(
                 missing_steps += 1
 
         target_strategy.update(t, q_target, target_price)
+        for j in range(ctx.N_total):
+            if np.isnan(bird_sold_out_index[j]) and bird_inventory[j] < ctx.m:
+                bird_sold_out_index[j] = float(t)
 
         # Full-information feedback is revealed after every buyer, even on an
         # epsilon no-purchase step.
@@ -173,12 +177,17 @@ def run_bird(
         "C": float(ctx.initial_inventory.max()),
         "N_active": int(ctx.N_active),
         "dchasing_epsilon": float(ctx.epsilon),
+        "dchasing_epsilon_theory": float(ctx.epsilon_theory),
         "sigma_delta": float(ctx.sigma),
         "reward_bound": float(ctx.reward_bound),
         "base_revenue": base_revenue,
         "best_fixed": best_name,
         "best_fixed_revenue": best_revenue,
         "BIRD": revenue,
+        "BIRD_category_revenue": [float(x) for x in bird_profit.sum(axis=0)],
+        "BIRD_sold_out_index": [
+            None if np.isnan(x) else float(x) for x in bird_sold_out_index
+        ],
         "revenue_loss_pct": float(loss_pct),
         "switches": int(selector.switches),
         "restarts": int(restarts),
