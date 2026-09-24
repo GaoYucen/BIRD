@@ -1,5 +1,6 @@
 import math
 from dataclasses import dataclass
+from functools import lru_cache
 
 import numpy as np
 
@@ -238,20 +239,28 @@ class DecisionTableStrategy(RestartableStrategy):
         super().update(t, sold, price_vector)
 
 
+@lru_cache(maxsize=8)
+def _cached_dp_models(inventory_tuple):
+    base_price = np.asarray([2000, 2500, 3000, 3500, 4000], dtype=float)
+    return tuple(
+        AirPrice(
+            real_min_demand_level=base_price[j] * 0.5,
+            real_max_demand_level=base_price[j] * 1.5,
+            max_days=14,
+            num_tickets=float(inventory_tuple[j]),
+        )
+        for j in range(5)
+    )
+
+
 class DPStrategy(RestartableStrategy):
     name = "DP"
 
     def __init__(self, ctx, actor=None):
         super().__init__(ctx, actor)
-        self.models = [
-            AirPrice(
-                real_min_demand_level=ctx.base_price[j] * 0.5,
-                real_max_demand_level=ctx.base_price[j] * 1.5,
-                max_days=14,
-                num_tickets=float(ctx.initial_inventory[j]),
-            )
-            for j in range(ctx.N_total)
-        ]
+        self.models = _cached_dp_models(
+            tuple(float(x) for x in ctx.initial_inventory)
+        )
 
     def reset(self, t, inventory, last_price=None):
         super().reset(t, inventory, last_price)
