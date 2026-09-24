@@ -164,7 +164,7 @@ class DecisionTableStrategy(RestartableStrategy):
 
     def reset(self, t, inventory, last_price=None):
         super().reset(t, inventory, last_price)
-        self.capacity = np.maximum(self.inventory.copy(), self.ctx.m)
+        self.capacity = self.ctx.initial_inventory.copy()
         # Reconstruct cumulative utilization from the current inventory state.
         self.volume = np.maximum(
             self.ctx.initial_inventory - self.inventory, 0.0
@@ -290,7 +290,7 @@ class DDPGStrategy(RestartableStrategy):
             ],
             dtype=int,
         )
-        self.episode_capacity = np.maximum(self.inventory.copy(), self.ctx.m)
+        self.episode_capacity = self.ctx.initial_inventory.copy()
         self.volume_since_adjust = np.zeros(self.ctx.N_total, dtype=float)
         self.c_rl = np.zeros(128, dtype=float)
         self.input_array = np.zeros((5, 3), dtype=float)
