@@ -62,7 +62,7 @@ def main():
     )
 
     eps_rows = []
-    for factor in [0.25, 0.5, 1.0, 2.0, 4.0]:
+    for factor in [0.25, 0.5, 1.0, 2.0]:
         for seed in range(args.sensitivity_seeds):
             r = run(seed, epsilon_factor=factor)
             for s in STRATEGIES:
