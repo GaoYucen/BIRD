@@ -137,19 +137,19 @@ def load_real_transitions(agent, path):
 
 
 def make_simulation(price, sale_path, count_path):
-    """Instantiate the legacy fitted simulator with modern NumPy scalar semantics.
+    """Create the simulator and normalize only legacy TF-era scalar quirks.
 
-    scipy.optimize.fmin returns a length-1 ndarray. The old TF-era stack
-    implicitly tolerated using that array as the Gamma scale, but current NumPy
-    then returns length-1 arrays for sales and eventually rejects the mixed
-    scalar/array sale_list. Keep the fitted value, but normalize it to a scalar.
+    The modern environment.Simulation is already scalar-safe. The compatibility
+    branch below is retained only if someone swaps back to the legacy simulator.
     """
     sim = Simulation(price, str(sale_path), str(count_path))
-    beta = float(np.asarray(sim.env.beta_est).reshape(-1)[0])
-    if not np.isfinite(beta) or beta <= 0:
-        beta = 8.0
-    sim.env.beta_est = beta
-    sim.env.popt = np.asarray(sim.env.popt, dtype=np.float64)
+    if hasattr(sim.env, "beta_est"):
+        beta = float(np.asarray(sim.env.beta_est).reshape(-1)[0])
+        if not np.isfinite(beta) or beta <= 0:
+            beta = 8.0
+        sim.env.beta_est = beta
+        if hasattr(sim.env, "popt"):
+            sim.env.popt = np.asarray(sim.env.popt, dtype=np.float64)
     return sim
 
 
