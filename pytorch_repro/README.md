@@ -1,5 +1,18 @@
 # PyTorch reproduction
 
+## Current main BIRD (article-body version)
+
+The frozen main implementation is **BIRD-FLL128-Restartable**.
+
+Entry point: `bird_main.py`
+
+Main ICDE-figure reproduction status:
+`MAIN_BIRD_ICDE_REPRO_20260925.md`
+
+All FTL/FPL/FPL*/FLL* alternatives, OracleFixed diagnostics, and older
+chasing implementations are retained for backup/ablation only and should not
+be presented as separate BIRD variants in the article body.
+
 This folder modernizes the executable path of the ICDE 2023 BIRD code without
 requiring Python 3.6 or TensorFlow 1.x.
 
