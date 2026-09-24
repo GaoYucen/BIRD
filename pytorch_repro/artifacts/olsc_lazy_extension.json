@@ -1,0 +1,674 @@
+{
+  "rows": [
+    {
+      "family": "fll",
+      "loss_pct": 0.8949911169580805,
+      "missing_steps": 0,
+      "multiplier": 64,
+      "restarts": 186,
+      "revenue": 2998184.191735114,
+      "seed": 0,
+      "selector_epsilon": 0.011957783690623043,
+      "switches": 185
+    },
+    {
+      "family": "fll",
+      "loss_pct": 2.209125947516003,
+      "missing_steps": 0,
+      "multiplier": 128,
+      "restarts": 358,
+      "revenue": 2958428.1963601774,
+      "seed": 0,
+      "selector_epsilon": 0.023915567381246085,
+      "switches": 357
+    },
+    {
+      "family": "fll",
+      "loss_pct": 4.496022656795024,
+      "missing_steps": 0,
+      "multiplier": 256,
+      "restarts": 708,
+      "revenue": 2889243.624973043,
+      "seed": 0,
+      "selector_epsilon": 0.04783113476249217,
+      "switches": 707
+    },
+    {
+      "family": "fll",
+      "loss_pct": 1.5888871993526767,
+      "missing_steps": 0,
+      "multiplier": 512,
+      "restarts": 1061,
+      "revenue": 2977192.031112863,
+      "seed": 0,
+      "selector_epsilon": 0.09566226952498434,
+      "switches": 1060
+    },
+    {
+      "family": "fll-star",
+      "loss_pct": 6.050375425247892,
+      "missing_steps": 0,
+      "multiplier": 64,
+      "restarts": 88,
+      "revenue": 2842220.4124101456,
+      "seed": 0,
+      "selector_epsilon": 0.026123279576300746,
+      "switches": 87
+    },
+    {
+      "family": "fll-star",
+      "loss_pct": 6.1991352914100695,
+      "missing_steps": 0,
+      "multiplier": 128,
+      "restarts": 182,
+      "revenue": 2837720.0396830877,
+      "seed": 0,
+      "selector_epsilon": 0.05224655915260149,
+      "switches": 181
+    },
+    {
+      "family": "fll-star",
+      "loss_pct": 11.509176217858249,
+      "missing_steps": 0,
+      "multiplier": 256,
+      "restarts": 327,
+      "revenue": 2677077.4955516215,
+      "seed": 0,
+      "selector_epsilon": 0.10449311830520298,
+      "switches": 326
+    },
+    {
+      "family": "fll-star",
+      "loss_pct": 3.5595383463732913,
+      "missing_steps": 0,
+      "multiplier": 512,
+      "restarts": 605,
+      "revenue": 2917574.7102225074,
+      "seed": 0,
+      "selector_epsilon": 0.20898623661040597,
+      "switches": 604
+    },
+    {
+      "family": "fll",
+      "loss_pct": -2.0670913721552973,
+      "missing_steps": 0,
+      "multiplier": 64,
+      "restarts": 197,
+      "revenue": 3100934.6250653616,
+      "seed": 1,
+      "selector_epsilon": 0.011957783690623043,
+      "switches": 196
+    },
+    {
+      "family": "fll",
+      "loss_pct": -0.7027894707267942,
+      "missing_steps": 0,
+      "multiplier": 128,
+      "restarts": 376,
+      "revenue": 3059485.3102244344,
+      "seed": 1,
+      "selector_epsilon": 0.023915567381246085,
+      "switches": 375
+    },
+    {
+      "family": "fll",
+      "loss_pct": 0.8126260467479938,
+      "missing_steps": 0,
+      "multiplier": 256,
+      "restarts": 556,
+      "revenue": 3013444.9617994484,
+      "seed": 1,
+      "selector_epsilon": 0.04783113476249217,
+      "switches": 555
+    },
+    {
+      "family": "fll",
+      "loss_pct": 0.06143356512223691,
+      "missing_steps": 0,
+      "multiplier": 512,
+      "restarts": 1059,
+      "revenue": 3036267.1931871213,
+      "seed": 1,
+      "selector_epsilon": 0.09566226952498434,
+      "switches": 1058
+    },
+    {
+      "family": "fll-star",
+      "loss_pct": 15.24205740381282,
+      "missing_steps": 0,
+      "multiplier": 64,
+      "restarts": 85,
+      "revenue": 2575059.5555574037,
+      "seed": 1,
+      "selector_epsilon": 0.026123279576300746,
+      "switches": 84
+    },
+    {
+      "family": "fll-star",
+      "loss_pct": 10.287347607467508,
+      "missing_steps": 0,
+      "multiplier": 128,
+      "restarts": 196,
+      "revenue": 2725590.2599998075,
+      "seed": 1,
+      "selector_epsilon": 0.05224655915260149,
+      "switches": 195
+    },
+    {
+      "family": "fll-star",
+      "loss_pct": 3.775421572523298,
+      "missing_steps": 0,
+      "multiplier": 256,
+      "restarts": 392,
+      "revenue": 2923431.274631992,
+      "seed": 1,
+      "selector_epsilon": 0.10449311830520298,
+      "switches": 391
+    },
+    {
+      "family": "fll-star",
+      "loss_pct": 2.8724281234649363,
+      "missing_steps": 0,
+      "multiplier": 512,
+      "restarts": 309,
+      "revenue": 2950865.422257327,
+      "seed": 1,
+      "selector_epsilon": 0.20898623661040597,
+      "switches": 308
+    },
+    {
+      "family": "fll",
+      "loss_pct": 6.516704544217214,
+      "missing_steps": 0,
+      "multiplier": 64,
+      "restarts": 176,
+      "revenue": 2837260.0845659627,
+      "seed": 2,
+      "selector_epsilon": 0.011957783690623043,
+      "switches": 175
+    },
+    {
+      "family": "fll",
+      "loss_pct": 0.6005819377314975,
+      "missing_steps": 0,
+      "multiplier": 128,
+      "restarts": 277,
+      "revenue": 3016817.067927977,
+      "seed": 2,
+      "selector_epsilon": 0.023915567381246085,
+      "switches": 276
+    },
+    {
+      "family": "fll",
+      "loss_pct": 3.4304854260406406,
+      "missing_steps": 0,
+      "multiplier": 256,
+      "restarts": 508,
+      "revenue": 2930928.223601225,
+      "seed": 2,
+      "selector_epsilon": 0.04783113476249217,
+      "switches": 507
+    },
+    {
+      "family": "fll",
+      "loss_pct": 1.800600567909484,
+      "missing_steps": 0,
+      "multiplier": 512,
+      "restarts": 440,
+      "revenue": 2980395.9624936916,
+      "seed": 2,
+      "selector_epsilon": 0.09566226952498434,
+      "switches": 439
+    },
+    {
+      "family": "fll-star",
+      "loss_pct": 19.554002191338366,
+      "missing_steps": 0,
+      "multiplier": 64,
+      "restarts": 84,
+      "revenue": 2441572.2341918945,
+      "seed": 2,
+      "selector_epsilon": 0.026123279576300746,
+      "switches": 83
+    },
+    {
+      "family": "fll-star",
+      "loss_pct": 17.05251871435703,
+      "missing_steps": 0,
+      "multiplier": 128,
+      "restarts": 202,
+      "revenue": 2517493.3833858427,
+      "seed": 2,
+      "selector_epsilon": 0.05224655915260149,
+      "switches": 201
+    },
+    {
+      "family": "fll-star",
+      "loss_pct": 8.561317269254003,
+      "missing_steps": 0,
+      "multiplier": 256,
+      "restarts": 140,
+      "revenue": 2775205.16828537,
+      "seed": 2,
+      "selector_epsilon": 0.10449311830520298,
+      "switches": 139
+    },
+    {
+      "family": "fll-star",
+      "loss_pct": 3.4954786412579173,
+      "missing_steps": 0,
+      "multiplier": 512,
+      "restarts": 183,
+      "revenue": 2928955.6502724336,
+      "seed": 2,
+      "selector_epsilon": 0.20898623661040597,
+      "switches": 182
+    },
+    {
+      "family": "fll",
+      "loss_pct": 6.336165615322324,
+      "missing_steps": 0,
+      "multiplier": 64,
+      "restarts": 237,
+      "revenue": 2836627.9571068403,
+      "seed": 3,
+      "selector_epsilon": 0.011957783690623043,
+      "switches": 236
+    },
+    {
+      "family": "fll",
+      "loss_pct": 3.359200562752153,
+      "missing_steps": 0,
+      "multiplier": 128,
+      "restarts": 404,
+      "revenue": 2926785.9391169385,
+      "seed": 3,
+      "selector_epsilon": 0.023915567381246085,
+      "switches": 403
+    },
+    {
+      "family": "fll",
+      "loss_pct": 1.1339528271452577,
+      "missing_steps": 0,
+      "multiplier": 256,
+      "restarts": 739,
+      "revenue": 2994178.0118393404,
+      "seed": 3,
+      "selector_epsilon": 0.04783113476249217,
+      "switches": 738
+    },
+    {
+      "family": "fll",
+      "loss_pct": 1.939496826101081,
+      "missing_steps": 0,
+      "multiplier": 512,
+      "restarts": 1149,
+      "revenue": 2969781.9507221635,
+      "seed": 3,
+      "selector_epsilon": 0.09566226952498434,
+      "switches": 1148
+    },
+    {
+      "family": "fll-star",
+      "loss_pct": -2.6240333303613315,
+      "missing_steps": 0,
+      "multiplier": 64,
+      "restarts": 57,
+      "revenue": 3107989.374216659,
+      "seed": 3,
+      "selector_epsilon": 0.026123279576300746,
+      "switches": 56
+    },
+    {
+      "family": "fll-star",
+      "loss_pct": -1.1583406252171893,
+      "missing_steps": 0,
+      "multiplier": 128,
+      "restarts": 106,
+      "revenue": 3063600.5775028276,
+      "seed": 3,
+      "selector_epsilon": 0.05224655915260149,
+      "switches": 105
+    },
+    {
+      "family": "fll-star",
+      "loss_pct": -0.3416434467293956,
+      "missing_steps": 0,
+      "multiplier": 256,
+      "restarts": 214,
+      "revenue": 3038866.740112889,
+      "seed": 3,
+      "selector_epsilon": 0.10449311830520298,
+      "switches": 213
+    },
+    {
+      "family": "fll-star",
+      "loss_pct": -0.5990819850016077,
+      "missing_steps": 0,
+      "multiplier": 512,
+      "restarts": 436,
+      "revenue": 3046663.3177321707,
+      "seed": 3,
+      "selector_epsilon": 0.20898623661040597,
+      "switches": 435
+    },
+    {
+      "family": "fll",
+      "loss_pct": 1.6646386829586715,
+      "missing_steps": 0,
+      "multiplier": 64,
+      "restarts": 225,
+      "revenue": 2966709.016182215,
+      "seed": 4,
+      "selector_epsilon": 0.011957783690623043,
+      "switches": 224
+    },
+    {
+      "family": "fll",
+      "loss_pct": -0.5546858357210243,
+      "missing_steps": 0,
+      "multiplier": 128,
+      "restarts": 361,
+      "revenue": 3033664.4833836183,
+      "seed": 4,
+      "selector_epsilon": 0.023915567381246085,
+      "switches": 360
+    },
+    {
+      "family": "fll",
+      "loss_pct": 4.9723261812199375,
+      "missing_steps": 0,
+      "multiplier": 256,
+      "restarts": 692,
+      "revenue": 2866918.3997409213,
+      "seed": 4,
+      "selector_epsilon": 0.04783113476249217,
+      "switches": 691
+    },
+    {
+      "family": "fll",
+      "loss_pct": 2.175277113285198,
+      "missing_steps": 0,
+      "multiplier": 512,
+      "restarts": 1291,
+      "revenue": 2951303.412186165,
+      "seed": 4,
+      "selector_epsilon": 0.09566226952498434,
+      "switches": 1290
+    },
+    {
+      "family": "fll-star",
+      "loss_pct": 3.6566128481520104,
+      "missing_steps": 0,
+      "multiplier": 64,
+      "restarts": 106,
+      "revenue": 2906612.5500002475,
+      "seed": 4,
+      "selector_epsilon": 0.026123279576300746,
+      "switches": 105
+    },
+    {
+      "family": "fll-star",
+      "loss_pct": 0.8832961556767694,
+      "missing_steps": 0,
+      "multiplier": 128,
+      "restarts": 198,
+      "revenue": 2990281.573290541,
+      "seed": 4,
+      "selector_epsilon": 0.05224655915260149,
+      "switches": 197
+    },
+    {
+      "family": "fll-star",
+      "loss_pct": 0.09812030077939421,
+      "missing_steps": 0,
+      "multiplier": 256,
+      "restarts": 466,
+      "revenue": 3013969.779209696,
+      "seed": 4,
+      "selector_epsilon": 0.10449311830520298,
+      "switches": 465
+    },
+    {
+      "family": "fll-star",
+      "loss_pct": -0.5445873622361583,
+      "missing_steps": 0,
+      "multiplier": 512,
+      "restarts": 936,
+      "revenue": 3033359.8195075113,
+      "seed": 4,
+      "selector_epsilon": 0.20898623661040597,
+      "switches": 935
+    }
+  ],
+  "summary": {
+    "fll": {
+      "128": {
+        "loss_pct": {
+          "max": 3.359200562752153,
+          "mean": 0.9822866283103672,
+          "min": -0.7027894707267942,
+          "std": 1.7679309129911873
+        },
+        "per_seed_loss": {
+          "0": 2.209125947516003,
+          "1": -0.7027894707267942,
+          "2": 0.6005819377314975,
+          "3": 3.359200562752153,
+          "4": -0.5546858357210243
+        },
+        "revenue": {
+          "max": 3059485.3102244344,
+          "mean": 2999036.1994026294,
+          "min": 2926785.9391169385,
+          "std": 54860.009019723206
+        },
+        "selector_epsilon": 0.023915567381246085,
+        "switches": {
+          "max": 403.0,
+          "mean": 354.2,
+          "min": 276.0,
+          "std": 47.357153630681815
+        }
+      },
+      "256": {
+        "loss_pct": {
+          "max": 4.9723261812199375,
+          "mean": 2.9690826275897706,
+          "min": 0.8126260467479938,
+          "std": 1.908889042080745
+        },
+        "per_seed_loss": {
+          "0": 4.496022656795024,
+          "1": 0.8126260467479938,
+          "2": 3.4304854260406406,
+          "3": 1.1339528271452577,
+          "4": 4.9723261812199375
+        },
+        "revenue": {
+          "max": 3013444.9617994484,
+          "mean": 2938942.644390796,
+          "min": 2866918.3997409213,
+          "std": 63881.249998530126
+        },
+        "selector_epsilon": 0.04783113476249217,
+        "switches": {
+          "max": 738.0,
+          "mean": 639.6,
+          "min": 507.0,
+          "std": 101.98921511610922
+        }
+      },
+      "512": {
+        "loss_pct": {
+          "max": 2.175277113285198,
+          "mean": 1.5131390543541354,
+          "min": 0.06143356512223691,
+          "std": 0.8390513228233262
+        },
+        "per_seed_loss": {
+          "0": 1.5888871993526767,
+          "1": 0.06143356512223691,
+          "2": 1.800600567909484,
+          "3": 1.939496826101081,
+          "4": 2.175277113285198
+        },
+        "revenue": {
+          "max": 3036267.1931871213,
+          "mean": 2982988.109940401,
+          "min": 2951303.412186165,
+          "std": 31848.458294108208
+        },
+        "selector_epsilon": 0.09566226952498434,
+        "switches": {
+          "max": 1290.0,
+          "mean": 999.0,
+          "min": 439.0,
+          "std": 326.9877673552942
+        }
+      },
+      "64": {
+        "loss_pct": {
+          "max": 6.516704544217214,
+          "mean": 2.6690817174601986,
+          "min": -2.0670913721552973,
+          "std": 3.702679588287647
+        },
+        "per_seed_loss": {
+          "0": 0.8949911169580805,
+          "1": -2.0670913721552973,
+          "2": 6.516704544217214,
+          "3": 6.336165615322324,
+          "4": 1.6646386829586715
+        },
+        "revenue": {
+          "max": 3100934.6250653616,
+          "mean": 2947943.1749310987,
+          "min": 2836627.9571068403,
+          "std": 112832.31429159275
+        },
+        "selector_epsilon": 0.011957783690623043,
+        "switches": {
+          "max": 236.0,
+          "mean": 203.2,
+          "min": 175.0,
+          "std": 25.91717577206282
+        }
+      }
+    },
+    "fll-star": {
+      "128": {
+        "loss_pct": {
+          "max": 17.05251871435703,
+          "mean": 6.652791428738835,
+          "min": -1.1583406252171893,
+          "std": 7.346274392382972
+        },
+        "per_seed_loss": {
+          "0": 6.1991352914100695,
+          "1": 10.287347607467508,
+          "2": 17.05251871435703,
+          "3": -1.1583406252171893,
+          "4": 0.8832961556767694
+        },
+        "revenue": {
+          "max": 3063600.5775028276,
+          "mean": 2826937.1667724214,
+          "min": 2517493.3833858427,
+          "std": 217275.10560145284
+        },
+        "selector_epsilon": 0.05224655915260149,
+        "switches": {
+          "max": 201.0,
+          "mean": 175.8,
+          "min": 105.0,
+          "std": 40.288956303185614
+        }
+      },
+      "256": {
+        "loss_pct": {
+          "max": 11.509176217858249,
+          "mean": 4.72047838273711,
+          "min": -0.3416434467293956,
+          "std": 5.213512867479359
+        },
+        "per_seed_loss": {
+          "0": 11.509176217858249,
+          "1": 3.775421572523298,
+          "2": 8.561317269254003,
+          "3": -0.3416434467293956,
+          "4": 0.09812030077939421
+        },
+        "revenue": {
+          "max": 3038866.740112889,
+          "mean": 2885710.091558314,
+          "min": 2677077.4955516215,
+          "std": 155779.72614354274
+        },
+        "selector_epsilon": 0.10449311830520298,
+        "switches": {
+          "max": 465.0,
+          "mean": 306.8,
+          "min": 139.0,
+          "std": 131.75811170474478
+        }
+      },
+      "512": {
+        "loss_pct": {
+          "max": 3.5595383463732913,
+          "mean": 1.7567551527716758,
+          "min": -0.5990819850016077,
+          "std": 2.142665325078565
+        },
+        "per_seed_loss": {
+          "0": 3.5595383463732913,
+          "1": 2.8724281234649363,
+          "2": 3.4954786412579173,
+          "3": -0.5990819850016077,
+          "4": -0.5445873622361583
+        },
+        "revenue": {
+          "max": 3046663.3177321707,
+          "mean": 2975483.7839983897,
+          "min": 2917574.7102225074,
+          "std": 60292.10830868835
+        },
+        "selector_epsilon": 0.20898623661040597,
+        "switches": {
+          "max": 935.0,
+          "mean": 492.8,
+          "min": 182.0,
+          "std": 292.40160738272283
+        }
+      },
+      "64": {
+        "loss_pct": {
+          "max": 19.554002191338366,
+          "mean": 8.37580290763795,
+          "min": -2.6240333303613315,
+          "std": 8.955059395232539
+        },
+        "per_seed_loss": {
+          "0": 6.050375425247892,
+          "1": 15.24205740381282,
+          "2": 19.554002191338366,
+          "3": -2.6240333303613315,
+          "4": 3.6566128481520104
+        },
+        "revenue": {
+          "max": 3107989.374216659,
+          "mean": 2774690.82527527,
+          "min": 2441572.2341918945,
+          "std": 266398.2680564926
+        },
+        "selector_epsilon": 0.026123279576300746,
+        "switches": {
+          "max": 105.0,
+          "mean": 83.0,
+          "min": 56.0,
+          "std": 17.53567791675018
+        }
+      }
+    }
+  }
+}
