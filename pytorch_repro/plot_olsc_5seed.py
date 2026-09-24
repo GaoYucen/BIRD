@@ -61,9 +61,45 @@ def main():
     ax.legend()
     save(fig, out, "switches_vs_multiplier")
 
+    fig, ax = plt.subplots(figsize=(8.2, 4.8))
+    for family in ["FPLstar", "FLLstar"]:
+        means = []
+        stds = []
+        for m in MULTIPLIERS:
+            x = df[df["method"] == f"{family}-{m}x"]["loss_pct"]
+            means.append(x.mean())
+            stds.append(x.std(ddof=1))
+        ax.errorbar(MULTIPLIERS, means, yerr=stds, marker="o", capsize=3, label=family)
+    ftl = df[df["method"] == "FTL"]["loss_pct"].mean()
+    oracle = df[df["method"] == "OracleFixed"]["loss_pct"].mean()
+    ax.axhline(ftl, linewidth=1, linestyle="--", label="FTL mean")
+    ax.axhline(oracle, linewidth=1, linestyle=":", label="OracleFixed mean")
+    ax.set_xscale("log", base=2)
+    ax.set_xlabel("Perturbation scale multiplier")
+    ax.set_ylabel("Revenue loss vs best fixed strategy (%)")
+    ax.set_title("Expert FPL*/FLL* finite-horizon sensitivity")
+    ax.legend()
+    save(fig, out, "loss_vs_multiplier_star")
+
+    fig, ax = plt.subplots(figsize=(8.2, 4.8))
+    for family in ["FPLstar", "FLLstar"]:
+        means = []
+        stds = []
+        for m in MULTIPLIERS:
+            x = df[df["method"] == f"{family}-{m}x"]["switches"]
+            means.append(x.mean())
+            stds.append(x.std(ddof=1))
+        ax.errorbar(MULTIPLIERS, means, yerr=stds, marker="o", capsize=3, label=family)
+    ax.set_xscale("log", base=2)
+    ax.set_xlabel("Perturbation scale multiplier")
+    ax.set_ylabel("Number of target switches")
+    ax.set_title("Expert selector stability under perturbation scaling")
+    ax.legend()
+    save(fig, out, "switches_vs_multiplier_star")
+
     shortlist = ["Expert","DP","DDPG","FTL","OracleFixed"]
     # Add the empirically lowest-mean FPL and FLL only for the compact summary plot.
-    for family in ["FPL","FLL"]:
+    for family in ["FPL","FLL","FPLstar","FLLstar"]:
         candidates = []
         for m in MULTIPLIERS:
             method = f"{family}-{m}x"
