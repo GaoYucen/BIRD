@@ -136,6 +136,23 @@ def load_real_transitions(agent, path):
     return added
 
 
+def make_simulation(price, sale_path, count_path):
+    """Instantiate the legacy fitted simulator with modern NumPy scalar semantics.
+
+    scipy.optimize.fmin returns a length-1 ndarray. The old TF-era stack
+    implicitly tolerated using that array as the Gamma scale, but current NumPy
+    then returns length-1 arrays for sales and eventually rejects the mixed
+    scalar/array sale_list. Keep the fitted value, but normalize it to a scalar.
+    """
+    sim = Simulation(price, str(sale_path), str(count_path))
+    beta = float(np.asarray(sim.env.beta_est).reshape(-1)[0])
+    if not np.isfinite(beta) or beta <= 0:
+        beta = 8.0
+    sim.env.beta_est = beta
+    sim.env.popt = np.asarray(sim.env.popt, dtype=np.float64)
+    return sim
+
+
 def sim_training(agent, sim, steps, warmup, batch_size, updates_per_step, noise_std):
     c = np.zeros(agent.c_dim, dtype=np.float32)
     state = np.zeros((agent.time_steps - 1, 3), dtype=np.float32)
@@ -227,10 +244,10 @@ def main():
         data_dir / "YIK_QZH_training_data_source.xlsx",
     )
 
-    sim = Simulation(
+    sim = make_simulation(
         2500,
-        str(data_dir / "2hours_price_setting_env.csv"),
-        str(data_dir / "num_count.pkl"),
+        data_dir / "2hours_price_setting_env.csv",
+        data_dir / "num_count.pkl",
     )
     sim_training(
         agent,
@@ -243,10 +260,10 @@ def main():
     )
 
     # A short deterministic policy evaluation on the same fitted simulator.
-    eval_sim = Simulation(
+    eval_sim = make_simulation(
         2500,
-        str(data_dir / "2hours_price_setting_env.csv"),
-        str(data_dir / "num_count.pkl"),
+        data_dir / "2hours_price_setting_env.csv",
+        data_dir / "num_count.pkl",
     )
     rewards = evaluate_policy(agent, eval_sim, episodes=20)
     summary = {
