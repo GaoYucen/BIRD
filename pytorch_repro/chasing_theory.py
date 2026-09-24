@@ -3,6 +3,7 @@ import json
 import math
 import random
 import sys
+from functools import lru_cache
 from pathlib import Path
 
 import numpy as np
@@ -26,9 +27,10 @@ def seed_all(seed):
     torch.manual_seed(seed)
 
 
+@lru_cache(maxsize=8)
 def _dp_models(inventory_with_buffer):
     base_price = np.array([2000, 2500, 3000, 3500, 4000], dtype=float)
-    return [
+    return tuple(
         AirPrice(
             real_min_demand_level=base_price[i] * 0.5,
             real_max_demand_level=base_price[i] * 1.5,
@@ -36,7 +38,7 @@ def _dp_models(inventory_with_buffer):
             num_tickets=float(inventory_with_buffer),
         )
         for i in range(5)
-    ]
+    )
 
 
 def generate_base_trajectories(actor, seed=10, T=5000, inventory=200):
