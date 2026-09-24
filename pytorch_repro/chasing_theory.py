@@ -221,8 +221,10 @@ def run_theory_bird(
     selector="ftpl",
     eta_multiplier=1.0,
     epsilon_override=None,
+    base=None,
 ):
-    base = generate_base_trajectories(actor, seed=seed, T=T, inventory=inventory)
+    if base is None:
+        base = generate_base_trajectories(actor, seed=seed, T=T, inventory=inventory)
 
     T = base["T"]
     m = base["m"]
