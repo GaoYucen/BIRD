@@ -1,0 +1,927 @@
+{
+  "0": {
+    "current": {
+      "T": 5000,
+      "base_epsilon": 0.2863564212655271,
+      "category_revenue": {
+        "BIRD": [
+          373329.01017141686,
+          228258.8362769268,
+          656907.9605501097,
+          482911.006424827,
+          761121.6902752421
+        ],
+        "DDPG": [
+          349771.5292739868,
+          452578.6470413208,
+          520653.4273223877,
+          558980.1409835815,
+          668155.360616684
+        ],
+        "DP": [
+          406500.0,
+          500625.0,
+          609840.0,
+          700945.0,
+          800960.0
+        ],
+        "Decision Table": [
+          273530.0,
+          370210.0,
+          448680.0,
+          521720.0,
+          684340.0
+        ],
+        "Expert": [
+          372585.8843221595,
+          649131.3297539096,
+          717294.6807282635,
+          450696.5851499743,
+          949074.0780959621
+        ]
+      },
+      "epsilon": 0.2863564212655271,
+      "epsilon_factor": 1.0,
+      "fixed_best": "Expert",
+      "inventory": 200,
+      "revenue": {
+        "BIRD": 2502528.503698523,
+        "DDPG": 2550139.105237961,
+        "DP": 3018870.0,
+        "Decision Table": 2298480.0,
+        "Expert": 3138782.5580502693
+      },
+      "revenue_loss_pct": 20.270727346814706,
+      "seed": 0
+    },
+    "ftl": {
+      "BIRD": 2750705.496042209,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2550139.105237961,
+        "DP": 3018870.0,
+        "Decision Table": 2298480.0,
+        "Expert": 3138782.5580502683
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3138782.5580502683,
+      "delta": 2863.5642126552707,
+      "epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1472,
+      "epsilon_theory": 0.2863564212655271,
+      "inventory": 200,
+      "max_chasing_distance": 2.0,
+      "max_observed_base_reward": 25915.707965098132,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        3.0,
+        3.0,
+        2.0,
+        2.0
+      ],
+      "restarts": 7,
+      "revenue_loss_pct": 12.363935851903124,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "ftl",
+      "selector_eta": null,
+      "sigma": 2863.5642126552707,
+      "switches": 6,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 2042,
+        "Decision Table": 11,
+        "Expert": 2947
+      }
+    },
+    "kv_fpl": {
+      "BIRD": 3026610.0,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2550139.105237961,
+        "DP": 3018870.0,
+        "Decision Table": 2298480.0,
+        "Expert": 3138782.5580502683
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3138782.5580502683,
+      "delta": 2863.5642126552707,
+      "epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1472,
+      "epsilon_theory": 0.2863564212655271,
+      "inventory": 200,
+      "max_chasing_distance": 4.0,
+      "max_observed_base_reward": 25915.707965098132,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        2.0
+      ],
+      "restarts": 1,
+      "revenue_loss_pct": 3.573760079766311,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "kv-fpl",
+      "selector_eta": 0.00018684037016598504,
+      "sigma": 2863.5642126552707,
+      "switches": 0,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 5000,
+        "Decision Table": 0,
+        "Expert": 0
+      }
+    },
+    "oracle_fixed": {
+      "BIRD": 3023090.065255724,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2550139.105237961,
+        "DP": 3018870.0,
+        "Decision Table": 2298480.0,
+        "Expert": 3138782.5580502683
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3138782.5580502683,
+      "delta": 2863.5642126552707,
+      "epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1472,
+      "epsilon_theory": 0.2863564212655271,
+      "inventory": 200,
+      "max_chasing_distance": 2.0,
+      "max_observed_base_reward": 25915.707965098132,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        36.0,
+        2.0,
+        2.0,
+        2.0
+      ],
+      "restarts": 1,
+      "revenue_loss_pct": 3.6859033926328957,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "oracle-fixed",
+      "selector_eta": null,
+      "sigma": 2863.5642126552707,
+      "switches": 0,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 0,
+        "Decision Table": 0,
+        "Expert": 5000
+      }
+    }
+  },
+  "1": {
+    "current": {
+      "T": 5000,
+      "base_epsilon": 0.2863564212655271,
+      "category_revenue": {
+        "BIRD": [
+          345473.7815086429,
+          396016.65356676443,
+          498797.39722987474,
+          632335.7421729681,
+          627724.7659368339
+        ],
+        "DDPG": [
+          323391.5645198822,
+          446476.27449035645,
+          534064.8508586884,
+          553818.7174472809,
+          620982.0742778778
+        ],
+        "DP": [
+          400500.0,
+          505525.0,
+          606750.0,
+          711515.0,
+          809280.0
+        ],
+        "Decision Table": [
+          231890.0,
+          336580.0,
+          444990.0,
+          536210.0,
+          662980.0
+        ],
+        "Expert": [
+          349560.45576743677,
+          577499.20527306,
+          761896.2932484365,
+          881331.6312713772,
+          598599.2154840137
+        ]
+      },
+      "epsilon": 0.2863564212655271,
+      "epsilon_factor": 1.0,
+      "fixed_best": "Expert",
+      "inventory": 200,
+      "revenue": {
+        "BIRD": 2500348.340415084,
+        "DDPG": 2478733.4815940857,
+        "DP": 3033570.0,
+        "Decision Table": 2212650.0,
+        "Expert": 3168886.8010443244
+      },
+      "revenue_loss_pct": 21.096949894484084,
+      "seed": 1
+    },
+    "ftl": {
+      "BIRD": 2813611.5918053202,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2478733.4815940857,
+        "DP": 3033570.0,
+        "Decision Table": 2212650.0,
+        "Expert": 3168886.801044324
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3168886.801044324,
+      "delta": 2863.5642126552707,
+      "epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1419,
+      "epsilon_theory": 0.2863564212655271,
+      "inventory": 200,
+      "max_chasing_distance": 3.0,
+      "max_observed_base_reward": 31197.1217823068,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        2.0,
+        2.0,
+        3.0,
+        1.0
+      ],
+      "restarts": 11,
+      "revenue_loss_pct": 11.211356906845674,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "ftl",
+      "selector_eta": null,
+      "sigma": 2863.5642126552707,
+      "switches": 10,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 1635,
+        "Decision Table": 1,
+        "Expert": 3364
+      }
+    },
+    "kv_fpl": {
+      "BIRD": 3034505.0,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2478733.4815940857,
+        "DP": 3033570.0,
+        "Decision Table": 2212650.0,
+        "Expert": 3168886.801044324
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3168886.801044324,
+      "delta": 2863.5642126552707,
+      "epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1419,
+      "epsilon_theory": 0.2863564212655271,
+      "inventory": 200,
+      "max_chasing_distance": 2.0,
+      "max_observed_base_reward": 31197.1217823068,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        2.0,
+        3.0,
+        3.0,
+        0.0
+      ],
+      "restarts": 1,
+      "revenue_loss_pct": 4.2406627147437925,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "kv-fpl",
+      "selector_eta": 0.00018684037016598504,
+      "sigma": 2863.5642126552707,
+      "switches": 0,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 5000,
+        "Decision Table": 0,
+        "Expert": 0
+      }
+    },
+    "oracle_fixed": {
+      "BIRD": 3139135.309461248,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2478733.4815940857,
+        "DP": 3033570.0,
+        "Decision Table": 2212650.0,
+        "Expert": 3168886.801044324
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3168886.801044324,
+      "delta": 2863.5642126552707,
+      "epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1419,
+      "epsilon_theory": 0.2863564212655271,
+      "inventory": 200,
+      "max_chasing_distance": 2.0,
+      "max_observed_base_reward": 31197.1217823068,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        1.0,
+        4.0,
+        3.0,
+        2.0
+      ],
+      "restarts": 1,
+      "revenue_loss_pct": 0.9388625549284713,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "oracle-fixed",
+      "selector_eta": null,
+      "sigma": 2863.5642126552707,
+      "switches": 0,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 0,
+        "Decision Table": 0,
+        "Expert": 5000
+      }
+    }
+  },
+  "2": {
+    "current": {
+      "T": 5000,
+      "base_epsilon": 0.2863564212655271,
+      "category_revenue": {
+        "BIRD": [
+          409544.7730171488,
+          410987.85228908877,
+          501076.81290646584,
+          482532.74216833455,
+          782170.0
+        ],
+        "DDPG": [
+          331214.4115924835,
+          420905.3607559204,
+          500243.9370803833,
+          536850.1762294769,
+          656450.6154956818
+        ],
+        "DP": [
+          408500.0,
+          505650.0,
+          603840.0,
+          711480.0,
+          808960.0
+        ],
+        "Decision Table": [
+          250860.0,
+          337280.0,
+          472140.0,
+          448000.0,
+          522170.0
+        ],
+        "Expert": [
+          405547.1047919916,
+          559723.1584381812,
+          736193.6526498027,
+          844282.0490269287,
+          879959.49101215
+        ]
+      },
+      "epsilon": 0.2863564212655271,
+      "epsilon_factor": 1.0,
+      "fixed_best": "Expert",
+      "inventory": 200,
+      "revenue": {
+        "BIRD": 2586312.180381038,
+        "DDPG": 2445664.501153946,
+        "DP": 3038430.0,
+        "Decision Table": 2030450.0,
+        "Expert": 3425705.4559190543
+      },
+      "revenue_loss_pct": 24.502785961580056,
+      "seed": 2
+    },
+    "ftl": {
+      "BIRD": 3050848.1266435273,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2445664.501153946,
+        "DP": 3038430.0,
+        "Decision Table": 2030450.0,
+        "Expert": 3425705.4559190543
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3425705.4559190543,
+      "delta": 2863.5642126552707,
+      "epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1469,
+      "epsilon_theory": 0.2863564212655271,
+      "inventory": 200,
+      "max_chasing_distance": 6.0,
+      "max_observed_base_reward": 25314.210834070323,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        0.0,
+        0.0,
+        2.0,
+        4.0,
+        1.0
+      ],
+      "restarts": 13,
+      "revenue_loss_pct": 10.94248568941721,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "ftl",
+      "selector_eta": null,
+      "sigma": 2863.5642126552707,
+      "switches": 12,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 1943,
+        "Decision Table": 2,
+        "Expert": 3055
+      }
+    },
+    "kv_fpl": {
+      "BIRD": 1384450.0,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2445664.501153946,
+        "DP": 3038430.0,
+        "Decision Table": 2030450.0,
+        "Expert": 3425705.4559190543
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3425705.4559190543,
+      "delta": 2863.5642126552707,
+      "epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1469,
+      "epsilon_theory": 0.2863564212655271,
+      "inventory": 200,
+      "max_chasing_distance": 0.0,
+      "max_observed_base_reward": 25314.210834070323,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        136.0,
+        119.0,
+        92.0,
+        124.0,
+        113.0
+      ],
+      "restarts": 1,
+      "revenue_loss_pct": 59.58642627585221,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "kv-fpl",
+      "selector_eta": 0.00018684037016598504,
+      "sigma": 2863.5642126552707,
+      "switches": 0,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 0,
+        "Decision Table": 5000,
+        "Expert": 0
+      }
+    },
+    "oracle_fixed": {
+      "BIRD": 3166028.810000452,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2445664.501153946,
+        "DP": 3038430.0,
+        "Decision Table": 2030450.0,
+        "Expert": 3425705.4559190543
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3425705.4559190543,
+      "delta": 2863.5642126552707,
+      "epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1469,
+      "epsilon_theory": 0.2863564212655271,
+      "inventory": 200,
+      "max_chasing_distance": 9.0,
+      "max_observed_base_reward": 25314.210834070323,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        2.0,
+        0.0,
+        0.0,
+        88.0
+      ],
+      "restarts": 1,
+      "revenue_loss_pct": 7.58023855991249,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "oracle-fixed",
+      "selector_eta": null,
+      "sigma": 2863.5642126552707,
+      "switches": 0,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 0,
+        "Decision Table": 0,
+        "Expert": 5000
+      }
+    }
+  },
+  "3": {
+    "current": {
+      "T": 5000,
+      "base_epsilon": 0.2863564212655271,
+      "category_revenue": {
+        "BIRD": [
+          412561.8691007017,
+          357612.1234862472,
+          460808.48862327257,
+          625267.2778766436,
+          550567.146590212
+        ],
+        "DDPG": [
+          350564.85085868835,
+          420787.2587966919,
+          457482.0742778778,
+          572921.090007782,
+          671978.2076892853
+        ],
+        "DP": [
+          400540.0,
+          510625.0,
+          603780.0,
+          711410.0,
+          801080.0
+        ],
+        "Decision Table": [
+          264930.0,
+          337350.0,
+          447420.0,
+          494980.0,
+          650130.0
+        ],
+        "Expert": [
+          386534.4188115045,
+          458864.8535060154,
+          625336.4766025315,
+          871789.2273510951,
+          464238.54788285645
+        ]
+      },
+      "epsilon": 0.2863564212655271,
+      "epsilon_factor": 1.0,
+      "fixed_best": "DP",
+      "inventory": 200,
+      "revenue": {
+        "BIRD": 2406816.905677077,
+        "DDPG": 2473733.4816303253,
+        "DP": 3027435.0,
+        "Decision Table": 2194810.0,
+        "Expert": 2806763.524154003
+      },
+      "revenue_loss_pct": 20.49979914755967,
+      "seed": 3
+    },
+    "ftl": {
+      "BIRD": 2667762.8178404537,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2473733.4816303253,
+        "DP": 3027435.0,
+        "Decision Table": 2194810.0,
+        "Expert": 2806763.5241540032
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3027435.0,
+      "delta": 2863.5642126552707,
+      "epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1400,
+      "epsilon_theory": 0.2863564212655271,
+      "inventory": 200,
+      "max_chasing_distance": 2.0,
+      "max_observed_base_reward": 21800.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        2.0,
+        3.0,
+        3.0,
+        0.0
+      ],
+      "restarts": 11,
+      "revenue_loss_pct": 11.880426240680519,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "ftl",
+      "selector_eta": null,
+      "sigma": 2863.5642126552707,
+      "switches": 10,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 4592,
+        "Decision Table": 4,
+        "Expert": 404
+      }
+    },
+    "kv_fpl": {
+      "BIRD": 3027080.0,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2473733.4816303253,
+        "DP": 3027435.0,
+        "Decision Table": 2194810.0,
+        "Expert": 2806763.5241540032
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3027435.0,
+      "delta": 2863.5642126552707,
+      "epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1400,
+      "epsilon_theory": 0.2863564212655271,
+      "inventory": 200,
+      "max_chasing_distance": 4.0,
+      "max_observed_base_reward": 21800.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        1.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0
+      ],
+      "restarts": 1,
+      "revenue_loss_pct": 0.01172609816560884,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "kv-fpl",
+      "selector_eta": 0.00018684037016598504,
+      "sigma": 2863.5642126552707,
+      "switches": 0,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 5000,
+        "Decision Table": 0,
+        "Expert": 0
+      }
+    },
+    "oracle_fixed": {
+      "BIRD": 3027080.0,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2473733.4816303253,
+        "DP": 3027435.0,
+        "Decision Table": 2194810.0,
+        "Expert": 2806763.5241540032
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3027435.0,
+      "delta": 2863.5642126552707,
+      "epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1400,
+      "epsilon_theory": 0.2863564212655271,
+      "inventory": 200,
+      "max_chasing_distance": 4.0,
+      "max_observed_base_reward": 21800.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        1.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0
+      ],
+      "restarts": 1,
+      "revenue_loss_pct": 0.01172609816560884,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "oracle-fixed",
+      "selector_eta": null,
+      "sigma": 2863.5642126552707,
+      "switches": 0,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 5000,
+        "Decision Table": 0,
+        "Expert": 0
+      }
+    }
+  },
+  "4": {
+    "current": {
+      "T": 5000,
+      "base_epsilon": 0.2863564212655271,
+      "category_revenue": {
+        "BIRD": [
+          391847.16495879233,
+          338009.1505363114,
+          383791.5691353545,
+          492395.0,
+          748367.5439350243
+        ],
+        "DDPG": [
+          326421.090007782,
+          398995.870552063,
+          505948.6822013855,
+          550613.9723262787,
+          697771.5292739868
+        ],
+        "DP": [
+          406520.0,
+          510600.0,
+          603870.0,
+          700735.0,
+          801200.0
+        ],
+        "Decision Table": [
+          279570.0,
+          330270.0,
+          429030.0,
+          497670.0,
+          631780.0
+        ],
+        "Expert": [
+          401189.42000797915,
+          572557.4515213043,
+          368652.9083377071,
+          826923.6362650393,
+          977503.2392812598
+        ]
+      },
+      "epsilon": 0.2863564212655271,
+      "epsilon_factor": 1.0,
+      "fixed_best": "Expert",
+      "inventory": 200,
+      "revenue": {
+        "BIRD": 2354410.4285654826,
+        "DDPG": 2479751.144361496,
+        "DP": 3022925.0,
+        "Decision Table": 2168320.0,
+        "Expert": 3146826.65541329
+      },
+      "revenue_loss_pct": 25.181438751469297,
+      "seed": 4
+    },
+    "ftl": {
+      "BIRD": 2787288.8450972927,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2479751.144361496,
+        "DP": 3022925.0,
+        "Decision Table": 2168320.0,
+        "Expert": 3146826.6554132896
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3146826.6554132896,
+      "delta": 2863.5642126552707,
+      "epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1461,
+      "epsilon_theory": 0.2863564212655271,
+      "inventory": 200,
+      "max_chasing_distance": 1.0,
+      "max_observed_base_reward": 40233.71507670256,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        3.0,
+        1.0,
+        4.0,
+        4.0
+      ],
+      "restarts": 7,
+      "revenue_loss_pct": 11.42540882248809,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "ftl",
+      "selector_eta": null,
+      "sigma": 2863.5642126552707,
+      "switches": 6,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 1786,
+        "Decision Table": 0,
+        "Expert": 3214
+      }
+    },
+    "kv_fpl": {
+      "BIRD": 3023470.0,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2479751.144361496,
+        "DP": 3022925.0,
+        "Decision Table": 2168320.0,
+        "Expert": 3146826.6554132896
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3146826.6554132896,
+      "delta": 2863.5642126552707,
+      "epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1461,
+      "epsilon_theory": 0.2863564212655271,
+      "inventory": 200,
+      "max_chasing_distance": 2.0,
+      "max_observed_base_reward": 40233.71507670256,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        3.0,
+        1.0,
+        4.0,
+        4.0
+      ],
+      "restarts": 1,
+      "revenue_loss_pct": 3.9200333835067402,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "kv-fpl",
+      "selector_eta": 0.00018684037016598504,
+      "sigma": 2863.5642126552707,
+      "switches": 0,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 5000,
+        "Decision Table": 0,
+        "Expert": 0
+      }
+    },
+    "oracle_fixed": {
+      "BIRD": 3056966.8965357514,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2479751.144361496,
+        "DP": 3022925.0,
+        "Decision Table": 2168320.0,
+        "Expert": 3146826.6554132896
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3146826.6554132896,
+      "delta": 2863.5642126552707,
+      "epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1461,
+      "epsilon_theory": 0.2863564212655271,
+      "inventory": 200,
+      "max_chasing_distance": 0.0,
+      "max_observed_base_reward": 40233.71507670256,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        3.0,
+        3.0,
+        4.0,
+        3.0
+      ],
+      "restarts": 1,
+      "revenue_loss_pct": 2.8555674880584228,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "oracle-fixed",
+      "selector_eta": null,
+      "sigma": 2863.5642126552707,
+      "switches": 0,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 0,
+        "Decision Table": 0,
+        "Expert": 5000
+      }
+    }
+  }
+}
