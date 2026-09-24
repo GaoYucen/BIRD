@@ -4,8 +4,8 @@ from functools import lru_cache
 
 import numpy as np
 
-from pricing_dp import AirPrice
-import pricing_rule as RL
+from .baselines.dp import AirPrice
+from .baselines import rule as RL
 
 
 BASE_NAMES = ["Expert", "Decision Table", "DP", "DDPG"]

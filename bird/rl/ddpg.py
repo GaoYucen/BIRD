@@ -6,7 +6,7 @@ import numpy as np
 import torch
 from torch import nn
 
-from model import ActorNet, CriticNet
+from .model import ActorNet, CriticNet
 
 
 class ReplayBuffer:

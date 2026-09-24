@@ -9,9 +9,9 @@ import torch
 from torch import nn
 from torch.utils.data import DataLoader, TensorDataset
 
-from environment import Simulation
-from ddpg import DDPGAgent
-from model import ActorNet
+from bird.rl.environment import Simulation
+from bird.rl.ddpg import DDPGAgent
+from bird.rl.model import ActorNet
 
 
 def seed_all(seed):
@@ -215,7 +215,7 @@ def evaluate_policy(agent, sim, episodes=20):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--data-dir", default="data")
-    ap.add_argument("--output", default="ddpg_actor_critic.pt")
+    ap.add_argument("--output", default="artifacts/checkpoints/ddpg_actor_critic.pt")
     ap.add_argument("--seed", type=int, default=10)
     ap.add_argument("--device", default="cpu")
     ap.add_argument("--pretrain-epochs", type=int, default=40)

@@ -1,4 +1,4 @@
-from bird_olsc import run_bird
+from .olsc import run_bird
 
 MAIN_SELECTOR = "fll"
 MAIN_SELECTOR_MULTIPLIER = 128.0

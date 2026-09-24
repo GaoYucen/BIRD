@@ -4,9 +4,9 @@ from pathlib import Path
 
 import numpy as np
 
-from bird_main import MAIN_VERSION, run_main_bird
-from actor import TorchActor
-from restartable_strategies import BASE_NAMES, generate_base_feedback, make_context
+from bird.algorithm import MAIN_VERSION, run_main_bird
+from bird.actor import TorchActor
+from bird.strategies import BASE_NAMES, generate_base_feedback, make_context
 
 
 PAPER_LABEL = {
@@ -78,8 +78,8 @@ def evaluate(actor, seed, T, effective_C, epsilon_override=None):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--actor", default="artifacts/ddpg_actor_critic.pt")
-    ap.add_argument("--output-dir", default="artifacts/icde_main_repro")
+    ap.add_argument("--actor", default="artifacts/checkpoints/ddpg_actor_critic.pt")
+    ap.add_argument("--output-dir", default="artifacts/results/icde_main")
     ap.add_argument("--search-seeds", type=int, default=80)
     args = ap.parse_args()
 

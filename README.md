@@ -1,56 +1,83 @@
 # BIRD — Modern PyTorch Reproduction
 
-This branch is the clean, self-contained PyTorch reproduction of the ICDE 2023 BIRD work.
+Clean, self-contained PyTorch reproduction of **BIRD (ICDE 2023)**.
 
 ## Main method
 
-**BIRD-FLL128-Restartable**
+**BIRD-FLL128-Restartable** is the only BIRD version used for article-body results.
 
-Article-body implementation:
-- bird_main.py — main BIRD entry
-- bird_olsc.py — DChasing + online strategy selection
-- restartable_strategies.py — Expert / DTP / DP / DDPG with restartable state
-- selectors_olsc.py — FPL / FLL family
-- pricing_dp.py and pricing_rule.py — compact baseline pricing helpers
+### Repository layout
 
-The paper body should refer only to BIRD-FLL128-Restartable as BIRD.
-Alternative selectors and modern diagnostics are kept under backup/.
+```text
+bird/                  # algorithm package
+  algorithm.py         # frozen article-body BIRD configuration
+  olsc.py              # DChasing + online strategy selection
+  strategies.py        # restartable Expert / DTP / DP / DDPG
+  selectors.py         # FPL / FLL family
+  actor.py             # checkpoint-backed actor wrapper
+  baselines/           # DP and rule-based baseline helpers
+  rl/                  # PyTorch DDPG model, agent, environment
+experiments/           # training and ICDE reproduction entry points
+docs/                  # theory audit and reproduction notes
+artifacts/
+  checkpoints/         # frozen DDPG checkpoint
+  results/             # numerical results
+  figures/             # publication-ready PNG + SVG figures
+data/                  # data required by the current workflow
+archive/               # old modern diagnostics / backup variants
+```
 
-## Reproduction
+## Quick start
 
-Frozen DDPG checkpoint: artifacts/ddpg_actor_critic.pt
+Install in editable mode:
 
-Run the ICDE-style main experiments:
+```bash
+pip install -e .
+```
 
-    python run_icde_main_repro.py --actor artifacts/ddpg_actor_critic.pt --output-dir artifacts/icde_main_repro --search-seeds 80
-    python plot_icde_main_repro.py --input artifacts/icde_main_repro/results.json --output artifacts/icde_main_repro/figures
+Reproduce the ICDE-style main results:
+
+```bash
+python -m experiments.reproduce_icde \
+  --actor artifacts/checkpoints/ddpg_actor_critic.pt \
+  --output-dir artifacts/results/icde_main \
+  --search-seeds 80
+
+python -m experiments.plot_icde \
+  --input artifacts/results/icde_main/results.json \
+  --output artifacts/figures/icde_main
+```
+
+Run the frozen main BIRD directly:
+
+```bash
+python -m bird.olsc \
+  --actor artifacts/checkpoints/ddpg_actor_critic.pt \
+  --selector fll \
+  --selector-multiplier 128 \
+  --seed 0
+```
 
 Retrain DDPG if needed:
 
-    python train_ddpg.py --data-dir data --output artifacts/ddpg_actor_critic.pt --device cpu --pretrain-epochs 40 --sim-steps 6000 --warmup 1000 --batch-size 64 --updates-per-step 1 --noise-std 5.0
+```bash
+python -m experiments.train_ddpg \
+  --data-dir data \
+  --output artifacts/checkpoints/ddpg_actor_critic.pt
+```
 
-## Main results
+## Main outputs
 
-- artifacts/main_5seed_summary.csv — compact baseline comparison
-- artifacts/icde_main_repro/results.json — raw ICDE Fig. 7–11 values
-- artifacts/icde_main_repro/figures/ — PNG + SVG figures
-- artifacts/route_data_summary.json — real multi-route data summary
+- `artifacts/results/main_5seed_summary.csv` — compact baseline comparison
+- `artifacts/results/icde_main/results.json` — raw Fig. 7–11 reproduction values
+- `artifacts/figures/icde_main/` — PNG + SVG figures
+- `artifacts/results/route_data_summary.json` — real multi-route data summary
 
 ## Documentation
 
-- MAIN_BIRD_ICDE_REPRO_20260925.md — main version and ICDE figure reproduction status
-- REPRO_PACKAGE.md — reproducibility package contents
-- THEORY_AUDIT_20260924.md — theory-to-code audit
-- OLSC_FLL_RESULTS_20260925.md — selector and switching diagnostics
+- `docs/main_reproduction.md` — main version and ICDE-figure reproduction status
+- `docs/reproducibility.md` — reproducibility package and commands
+- `docs/theory_audit.md` — theory-to-code audit
+- `docs/olsc_results.md` — selector / switching diagnostics
 
-## Data
-
-data/ contains only files still needed by the current PyTorch workflow and route-level follow-up:
-- x_pretrain.npy
-- y_pretrain.npy
-- YIK_QZH_training_data_source.xlsx
-- 2hours_price_setting_env.csv
-- num_count.pkl
-- all_info_qugang_zhida_TF_2019.csv
-
-The original TensorFlow/virtualenv implementation and four-year-old experimental scripts were intentionally removed from this branch. They remain available in repository history / the original branch.
+`archive/` is retained only for backup and ablation history; it is not part of the article-body implementation.

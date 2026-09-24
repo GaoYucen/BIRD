@@ -1,6 +1,6 @@
 import torch
 
-from model import ActorNet
+from .rl.model import ActorNet
 
 
 class TorchActor:

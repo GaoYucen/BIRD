@@ -197,17 +197,17 @@ pipeline is rebuilt explicitly.
 
 Generated from the single main BIRD version:
 
-- `artifacts/icde_main_repro/figures/fig7_representative_sequences.{png,svg}`
-- `artifacts/icde_main_repro/figures/fig8_revenue_loss_heatmap.{png,svg}`
-- `artifacts/icde_main_repro/figures/fig9_grid_views.{png,svg}`
-- `artifacts/icde_main_repro/figures/fig10_sensitivity.{png,svg}`
-- `artifacts/icde_main_repro/figures/fig11_sellout_index.{png,svg}`
+- `artifacts/figures/icde_main/fig7_representative_sequences.{png,svg}`
+- `artifacts/figures/icde_main/fig8_revenue_loss_heatmap.{png,svg}`
+- `artifacts/figures/icde_main/fig9_grid_views.{png,svg}`
+- `artifacts/figures/icde_main/fig10_sensitivity.{png,svg}`
+- `artifacts/figures/icde_main/fig11_sellout_index.{png,svg}`
 
 Raw values:
-- `artifacts/icde_main_repro/results.json`
+- `artifacts/results/icde_main/results.json`
 
 Main implementation entry:
-- `bird_main.py`
+- `bird/algorithm.py`
 
 Backup / ablation implementations remain in the repository but are not part of
 the article-body method definition.

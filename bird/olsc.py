@@ -3,8 +3,8 @@ import json
 
 import numpy as np
 
-from actor import TorchActor
-from restartable_strategies import (
+from .actor import TorchActor
+from .strategies import (
     BASE_NAMES,
     generate_base_feedback,
     make_context,
@@ -12,7 +12,7 @@ from restartable_strategies import (
     active,
     sell_units,
 )
-from selectors_olsc import (
+from .selectors import (
     FLLSelector,
     FLLStarSelector,
     FPLStarSelector,
@@ -207,7 +207,7 @@ def run_bird(
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--actor", default="artifacts/ddpg_actor_critic.pt")
+    ap.add_argument("--actor", default="artifacts/checkpoints/ddpg_actor_critic.pt")
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument(
         "--selector",

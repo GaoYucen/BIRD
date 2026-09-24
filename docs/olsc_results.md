@@ -153,9 +153,9 @@ For continued BIRD reproduction experiments:
 
 Files:
 
-- `restartable_strategies.py`
-- `selectors_olsc.py`
-- `bird_olsc.py`
+- `bird/strategies.py`
+- `bird/selectors.py`
+- `bird/olsc.py`
 - `run_olsc_5seed.py`
 - `run_lazy_extension_5seed.py`
 - `artifacts/olsc_5seed/`

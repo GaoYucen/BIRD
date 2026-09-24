@@ -161,8 +161,8 @@ def fig11(data, out):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--input", default="artifacts/icde_main_repro/results.json")
-    ap.add_argument("--output", default="artifacts/icde_main_repro/figures")
+    ap.add_argument("--input", default="artifacts/results/icde_main/results.json")
+    ap.add_argument("--output", default="artifacts/figures/icde_main")
     args = ap.parse_args()
 
     data = json.loads(Path(args.input).read_text(encoding="utf-8"))

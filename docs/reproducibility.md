@@ -7,13 +7,13 @@ Current branch: `pytorch-repro`
 **BIRD-FLL128-Restartable**
 
 Main entry:
-- `bird_main.py`
+- `bird/algorithm.py`
 
 Core implementation:
-- `bird_olsc.py` — BIRD execution and DChasing loop
-- `restartable_strategies.py` — restartable Expert / DTP / DP / DDPG
-- `selectors_olsc.py` — FPL / FLL / FPL* / FLL* selector implementations
-- `model.py`, `ddpg.py`, `train_ddpg.py` — PyTorch DDPG implementation and training
+- `bird/olsc.py` — BIRD execution and DChasing loop
+- `bird/strategies.py` — restartable Expert / DTP / DP / DDPG
+- `bird/selectors.py` — FPL / FLL / FPL* / FLL* selector implementations
+- `bird/rl/model.py`, `bird/rl/ddpg.py`, `train_bird/rl/ddpg.py` — PyTorch DDPG implementation and training
 
 The article body should use only **BIRD-FLL128-Restartable** as “BIRD”.
 Other selector variants and older chasing implementations are retained only for
@@ -28,26 +28,26 @@ ablation, diagnostics, and backup.
 
 ## Main numerical results
 
-- `artifacts/main_5seed_summary.csv` — compact baseline table
-- `artifacts/icde_main_repro/results.json` — raw values for ICDE Fig. 7–11 reproduction
+- `artifacts/results/main_5seed_summary.csv` — compact baseline table
+- `artifacts/results/icde_main/results.json` — raw values for ICDE Fig. 7–11 reproduction
 - `artifacts/olsc_5seed/summary.json` — selector comparison
 - `artifacts/olsc_lazy_extension.json` — high-scale FLL / FLL* sensitivity
-- `artifacts/route_data_summary.json` — real shipping-lane data summary for rebuilding Fig. 12
+- `artifacts/results/route_data_summary.json` — real shipping-lane data summary for rebuilding Fig. 12
 
 ## Main article figures
 
 All are committed in both PNG and editable vector SVG:
 
-- `artifacts/icde_main_repro/figures/fig7_representative_sequences.{png,svg}`
-- `artifacts/icde_main_repro/figures/fig8_revenue_loss_heatmap.{png,svg}`
-- `artifacts/icde_main_repro/figures/fig9_grid_views.{png,svg}`
-- `artifacts/icde_main_repro/figures/fig10_sensitivity.{png,svg}`
-- `artifacts/icde_main_repro/figures/fig11_sellout_index.{png,svg}`
+- `artifacts/figures/icde_main/fig7_representative_sequences.{png,svg}`
+- `artifacts/figures/icde_main/fig8_revenue_loss_heatmap.{png,svg}`
+- `artifacts/figures/icde_main/fig9_grid_views.{png,svg}`
+- `artifacts/figures/icde_main/fig10_sensitivity.{png,svg}`
+- `artifacts/figures/icde_main/fig11_sellout_index.{png,svg}`
 
 ## Reproduction scripts
 
-- `run_icde_main_repro.py`
-- `plot_icde_main_repro.py`
+- `experiments/reproduce_icde.py`
+- `experiments/plot_icde.py`
 - `run_olsc_5seed.py`
 - `run_lazy_extension_5seed.py`
 
@@ -56,22 +56,22 @@ Recommended main-result workflow after a DDPG checkpoint is available:
 ```bash
 cd pytorch_repro
 
-python run_icde_main_repro.py \
-  --actor artifacts/ddpg_actor_critic.pt \
+python experiments/reproduce_icde.py \
+  --actor artifacts/checkpoints/ddpg_actor_critic.pt \
   --output-dir artifacts/icde_main_repro \
   --search-seeds 80
 
-python plot_icde_main_repro.py \
-  --input artifacts/icde_main_repro/results.json \
+python experiments/plot_icde.py \
+  --input artifacts/results/icde_main/results.json \
   --output artifacts/icde_main_repro/figures
 ```
 
 To retrain the PyTorch DDPG checkpoint:
 
 ```bash
-python train_ddpg.py \
+python train_bird/rl/ddpg.py \
   --data-dir data \
-  --output artifacts/ddpg_actor_critic.pt \
+  --output artifacts/checkpoints/ddpg_actor_critic.pt \
   --device cpu \
   --pretrain-epochs 40 \
   --sim-steps 6000 \
