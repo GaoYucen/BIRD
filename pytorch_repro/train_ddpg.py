@@ -1,7 +1,6 @@
 import argparse
 import json
 import random
-import sys
 from pathlib import Path
 
 import numpy as np
@@ -10,11 +9,7 @@ import torch
 from torch import nn
 from torch.utils.data import DataLoader, TensorDataset
 
-ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "RL-DDPG" / "DDPG"))
-
-from sample_gen import Simulation
-
+from environment import Simulation
 from ddpg import DDPGAgent
 from model import ActorNet
 
