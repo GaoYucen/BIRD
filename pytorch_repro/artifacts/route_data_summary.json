@@ -1,0 +1,105 @@
+{
+  "shape": [
+    34449,
+    19
+  ],
+  "columns": [
+    "WBL_NUM",
+    "WBL_CNTR_UUID",
+    "CNTR_TYPE",
+    "IS_EMPTY",
+    "SOC",
+    "TRANS_TYPE",
+    "LEG_TYPE",
+    "IS_MAIN",
+    "POL_CDE",
+    "POL_NME",
+    "LDD_SVVD",
+    "POD_CDE",
+    "POD_NME",
+    "WBL_AUD_DT",
+    "MAIN_SVVD_SAILING_DATE",
+    "CGO_BRIEF_DESC_CDE",
+    "BKG_MTHD",
+    "CGO_BRIEF_DESC_CNNME",
+    "AMT"
+  ],
+  "lane_count": 14,
+  "top_lanes": [
+    {
+      "POL": "YIK",
+      "POD": "QZH",
+      "rows": 15743
+    },
+    {
+      "POL": "TSN",
+      "POD": "NSH",
+      "rows": 9699
+    },
+    {
+      "POL": "NSH",
+      "POD": "YIK",
+      "rows": 3999
+    },
+    {
+      "POL": "YIK",
+      "POD": "NSH",
+      "rows": 3312
+    },
+    {
+      "POL": "NSH",
+      "POD": "TSN",
+      "rows": 1683
+    },
+    {
+      "POL": "YUZ",
+      "POD": "NSH",
+      "rows": 3
+    },
+    {
+      "POL": "XHN",
+      "POD": "NSH",
+      "rows": 2
+    },
+    {
+      "POL": "SIH",
+      "POD": "NSH",
+      "rows": 2
+    },
+    {
+      "POL": "CSU",
+      "POD": "NSH",
+      "rows": 1
+    },
+    {
+      "POL": "GOM",
+      "POD": "NSH",
+      "rows": 1
+    },
+    {
+      "POL": "NZU",
+      "POD": "NSH",
+      "rows": 1
+    },
+    {
+      "POL": "TSH",
+      "POD": "NSH",
+      "rows": 1
+    },
+    {
+      "POL": "YNF",
+      "POD": "NSH",
+      "rows": 1
+    },
+    {
+      "POL": "ZSN",
+      "POD": "NSH",
+      "rows": 1
+    }
+  ],
+  "LDD_SVVD_count": 459,
+  "WBL_AUD_DT_min": "2019-04-10 14:47:00",
+  "WBL_AUD_DT_max": "2020-01-13 17:12:00",
+  "MAIN_SVVD_SAILING_DATE_min": "2019-04-21 06:10:00",
+  "MAIN_SVVD_SAILING_DATE_max": "2020-02-01 18:47:00"
+}
