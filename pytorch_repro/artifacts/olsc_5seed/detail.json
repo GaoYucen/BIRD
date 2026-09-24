@@ -1,0 +1,3247 @@
+{
+  "0": {
+    "FLL-16x": {
+      "BIRD": 2890602.9959027036,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2562389.1052474976,
+        "DP": 3025260.0,
+        "Decision Table": 2224500.0,
+        "Expert": 2789528.3743593385
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3025260.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1432,
+      "grid_updates": 60,
+      "max_chasing_distance": 4.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        1.0,
+        3.0,
+        4.0,
+        0.0,
+        0.0
+      ],
+      "restarts": 60,
+      "revenue_loss_pct": 4.4510886369203435,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "fll",
+      "selector_epsilon": 0.0029894459226557607,
+      "selector_multiplier": 16.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 59,
+      "target_counts": {
+        "DDPG": 2321,
+        "DP": 811,
+        "Decision Table": 83,
+        "Expert": 1785
+      }
+    },
+    "FLL-1x": {
+      "BIRD": 2457213.548204422,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2562389.1052474976,
+        "DP": 3025260.0,
+        "Decision Table": 2224500.0,
+        "Expert": 2789528.3743593385
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3025260.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1432,
+      "grid_updates": 4,
+      "max_chasing_distance": 3.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        4.0,
+        3.0,
+        2.0,
+        1.0
+      ],
+      "restarts": 4,
+      "revenue_loss_pct": 18.77678122857467,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "fll",
+      "selector_epsilon": 0.00018684037016598504,
+      "selector_multiplier": 1.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3,
+      "target_counts": {
+        "DDPG": 2422,
+        "DP": 578,
+        "Decision Table": 241,
+        "Expert": 1759
+      }
+    },
+    "FLL-2x": {
+      "BIRD": 2648877.031569909,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2562389.1052474976,
+        "DP": 3025260.0,
+        "Decision Table": 2224500.0,
+        "Expert": 2789528.3743593385
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3025260.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1432,
+      "grid_updates": 8,
+      "max_chasing_distance": 2.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        2.0,
+        3.0,
+        2.0,
+        2.0
+      ],
+      "restarts": 8,
+      "revenue_loss_pct": 12.441342840948916,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "fll",
+      "selector_epsilon": 0.0003736807403319701,
+      "selector_multiplier": 2.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 7,
+      "target_counts": {
+        "DDPG": 2419,
+        "DP": 693,
+        "Decision Table": 229,
+        "Expert": 1659
+      }
+    },
+    "FLL-32x": {
+      "BIRD": 2853533.592063524,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2562389.1052474976,
+        "DP": 3025260.0,
+        "Decision Table": 2224500.0,
+        "Expert": 2789528.3743593385
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3025260.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1432,
+      "grid_updates": 119,
+      "max_chasing_distance": 2.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        1.0,
+        1.0,
+        4.0,
+        0.0
+      ],
+      "restarts": 97,
+      "revenue_loss_pct": 5.676418157000594,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "fll",
+      "selector_epsilon": 0.005978891845311521,
+      "selector_multiplier": 32.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 96,
+      "target_counts": {
+        "DDPG": 2280,
+        "DP": 871,
+        "Decision Table": 32,
+        "Expert": 1817
+      }
+    },
+    "FLL-4x": {
+      "BIRD": 2668075.943781741,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2562389.1052474976,
+        "DP": 3025260.0,
+        "Decision Table": 2224500.0,
+        "Expert": 2789528.3743593385
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3025260.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1432,
+      "grid_updates": 16,
+      "max_chasing_distance": 3.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        2.0,
+        1.0,
+        4.0,
+        1.0
+      ],
+      "restarts": 16,
+      "revenue_loss_pct": 11.806722602958391,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "fll",
+      "selector_epsilon": 0.0007473614806639402,
+      "selector_multiplier": 4.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 15,
+      "target_counts": {
+        "DDPG": 2428,
+        "DP": 760,
+        "Decision Table": 215,
+        "Expert": 1597
+      }
+    },
+    "FLL-64x": {
+      "BIRD": 2998184.191735114,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2562389.1052474976,
+        "DP": 3025260.0,
+        "Decision Table": 2224500.0,
+        "Expert": 2789528.3743593385
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3025260.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1432,
+      "grid_updates": 239,
+      "max_chasing_distance": 2.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        2.0,
+        2.0,
+        4.0,
+        4.0
+      ],
+      "restarts": 186,
+      "revenue_loss_pct": 0.8949911169580805,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "fll",
+      "selector_epsilon": 0.011957783690623043,
+      "selector_multiplier": 64.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 185,
+      "target_counts": {
+        "DDPG": 2099,
+        "DP": 983,
+        "Decision Table": 13,
+        "Expert": 1905
+      }
+    },
+    "FLL-8x": {
+      "BIRD": 2626016.790423304,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2562389.1052474976,
+        "DP": 3025260.0,
+        "Decision Table": 2224500.0,
+        "Expert": 2789528.3743593385
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3025260.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1432,
+      "grid_updates": 31,
+      "max_chasing_distance": 2.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        1.0,
+        2.0,
+        3.0,
+        2.0,
+        2.0
+      ],
+      "restarts": 31,
+      "revenue_loss_pct": 13.196988344033114,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "fll",
+      "selector_epsilon": 0.0014947229613278803,
+      "selector_multiplier": 8.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 30,
+      "target_counts": {
+        "DDPG": 2317,
+        "DP": 814,
+        "Decision Table": 166,
+        "Expert": 1703
+      }
+    },
+    "FPL-16x": {
+      "BIRD": 3032050.078161118,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2562389.1052474976,
+        "DP": 3025260.0,
+        "Decision Table": 2224500.0,
+        "Expert": 2789528.3743593385
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3025260.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1432,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        4.0,
+        4.0,
+        2.0,
+        3.0
+      ],
+      "restarts": 3763,
+      "revenue_loss_pct": -0.22444610252071182,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "fpl",
+      "selector_epsilon": 0.0029894459226557607,
+      "selector_multiplier": 16.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3762,
+      "target_counts": {
+        "DDPG": 1227,
+        "DP": 1329,
+        "Decision Table": 1173,
+        "Expert": 1271
+      }
+    },
+    "FPL-1x": {
+      "BIRD": 3034810.194087681,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2562389.1052474976,
+        "DP": 3025260.0,
+        "Decision Table": 2224500.0,
+        "Expert": 2789528.3743593385
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3025260.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1432,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        4.0,
+        4.0,
+        2.0,
+        3.0
+      ],
+      "restarts": 3768,
+      "revenue_loss_pct": -0.31568176248259305,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "fpl",
+      "selector_epsilon": 0.00018684037016598504,
+      "selector_multiplier": 1.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3767,
+      "target_counts": {
+        "DDPG": 1255,
+        "DP": 1232,
+        "Decision Table": 1265,
+        "Expert": 1248
+      }
+    },
+    "FPL-2x": {
+      "BIRD": 3033605.481579466,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2562389.1052474976,
+        "DP": 3025260.0,
+        "Decision Table": 2224500.0,
+        "Expert": 2789528.3743593385
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3025260.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1432,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        4.0,
+        4.0,
+        2.0,
+        3.0
+      ],
+      "restarts": 3767,
+      "revenue_loss_pct": -0.2758599782982551,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "fpl",
+      "selector_epsilon": 0.0003736807403319701,
+      "selector_multiplier": 2.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3766,
+      "target_counts": {
+        "DDPG": 1253,
+        "DP": 1236,
+        "Decision Table": 1263,
+        "Expert": 1248
+      }
+    },
+    "FPL-32x": {
+      "BIRD": 3035175.9891796554,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2562389.1052474976,
+        "DP": 3025260.0,
+        "Decision Table": 2224500.0,
+        "Expert": 2789528.3743593385
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3025260.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1432,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        4.0,
+        3.0,
+        2.0,
+        3.0
+      ],
+      "restarts": 3730,
+      "revenue_loss_pct": -0.32777312295985944,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "fpl",
+      "selector_epsilon": 0.005978891845311521,
+      "selector_multiplier": 32.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3729,
+      "target_counts": {
+        "DDPG": 1196,
+        "DP": 1444,
+        "Decision Table": 1071,
+        "Expert": 1289
+      }
+    },
+    "FPL-4x": {
+      "BIRD": 3033605.481579466,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2562389.1052474976,
+        "DP": 3025260.0,
+        "Decision Table": 2224500.0,
+        "Expert": 2789528.3743593385
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3025260.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1432,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        4.0,
+        4.0,
+        2.0,
+        3.0
+      ],
+      "restarts": 3768,
+      "revenue_loss_pct": -0.2758599782982551,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "fpl",
+      "selector_epsilon": 0.0007473614806639402,
+      "selector_multiplier": 4.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3767,
+      "target_counts": {
+        "DDPG": 1250,
+        "DP": 1244,
+        "Decision Table": 1253,
+        "Expert": 1253
+      }
+    },
+    "FPL-64x": {
+      "BIRD": 3032938.035366957,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2562389.1052474976,
+        "DP": 3025260.0,
+        "Decision Table": 2224500.0,
+        "Expert": 2789528.3743593385
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3025260.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1432,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        4.0,
+        3.0,
+        1.0,
+        4.0
+      ],
+      "restarts": 3684,
+      "revenue_loss_pct": -0.25379753697060997,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "fpl",
+      "selector_epsilon": 0.011957783690623043,
+      "selector_multiplier": 64.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3683,
+      "target_counts": {
+        "DDPG": 1163,
+        "DP": 1626,
+        "Decision Table": 886,
+        "Expert": 1325
+      }
+    },
+    "FPL-8x": {
+      "BIRD": 3033027.8718056465,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2562389.1052474976,
+        "DP": 3025260.0,
+        "Decision Table": 2224500.0,
+        "Expert": 2789528.3743593385
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3025260.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1432,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        4.0,
+        4.0,
+        2.0,
+        3.0
+      ],
+      "restarts": 3772,
+      "revenue_loss_pct": -0.2567670813631376,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "fpl",
+      "selector_epsilon": 0.0014947229613278803,
+      "selector_multiplier": 8.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3771,
+      "target_counts": {
+        "DDPG": 1242,
+        "DP": 1272,
+        "Decision Table": 1226,
+        "Expert": 1260
+      }
+    },
+    "FTL": {
+      "BIRD": 3022459.495708975,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2562389.1052474976,
+        "DP": 3025260.0,
+        "Decision Table": 2224500.0,
+        "Expert": 2789528.3743593385
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3025260.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1432,
+      "max_chasing_distance": 4.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        0.0,
+        3.0,
+        2.0,
+        4.0,
+        4.0
+      ],
+      "restarts": 6,
+      "revenue_loss_pct": 0.09257069775903527,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "ftl",
+      "selector_epsilon": null,
+      "selector_multiplier": 1.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 5,
+      "target_counts": {
+        "DDPG": 16,
+        "DP": 4912,
+        "Decision Table": 52,
+        "Expert": 20
+      }
+    },
+    "OracleFixed": {
+      "BIRD": 3016325.0,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2562389.1052474976,
+        "DP": 3025260.0,
+        "Decision Table": 2224500.0,
+        "Expert": 2789528.3743593385
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3025260.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1432,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        4.0,
+        2.0,
+        4.0,
+        4.0
+      ],
+      "restarts": 1,
+      "revenue_loss_pct": 0.2953465156713803,
+      "reward_bound": 60000.0,
+      "seed": 0,
+      "selector": "oracle-fixed",
+      "selector_epsilon": null,
+      "selector_multiplier": 1.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 0,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 5000,
+        "Decision Table": 0,
+        "Expert": 0
+      }
+    }
+  },
+  "1": {
+    "FLL-16x": {
+      "BIRD": 3106993.7096326817,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2599402.9013462067,
+        "DP": 3018110.0,
+        "Decision Table": 2106200.0,
+        "Expert": 3038133.626987357
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3038133.626987357,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1465,
+      "grid_updates": 55,
+      "max_chasing_distance": 3.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        1.0,
+        1.0,
+        2.0,
+        4.0,
+        3.0
+      ],
+      "restarts": 51,
+      "revenue_loss_pct": -2.2665258049760917,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "fll",
+      "selector_epsilon": 0.0029894459226557607,
+      "selector_multiplier": 16.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 50,
+      "target_counts": {
+        "DDPG": 36,
+        "DP": 1005,
+        "Decision Table": 1829,
+        "Expert": 2130
+      }
+    },
+    "FLL-1x": {
+      "BIRD": 2167523.4333354165,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2599402.9013462067,
+        "DP": 3018110.0,
+        "Decision Table": 2106200.0,
+        "Expert": 3038133.626987357
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3038133.626987357,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1465,
+      "grid_updates": 5,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        95.0,
+        116.0,
+        110.0,
+        3.0
+      ],
+      "restarts": 5,
+      "revenue_loss_pct": 28.656086286607685,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "fll",
+      "selector_epsilon": 0.00018684037016598504,
+      "selector_multiplier": 1.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 4,
+      "target_counts": {
+        "DDPG": 100,
+        "DP": 630,
+        "Decision Table": 2153,
+        "Expert": 2117
+      }
+    },
+    "FLL-2x": {
+      "BIRD": 2812752.9910928924,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2599402.9013462067,
+        "DP": 3018110.0,
+        "Decision Table": 2106200.0,
+        "Expert": 3038133.626987357
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3038133.626987357,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1465,
+      "grid_updates": 7,
+      "max_chasing_distance": 4.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        74.0,
+        4.0,
+        0.0,
+        1.0
+      ],
+      "restarts": 7,
+      "revenue_loss_pct": 7.418391142918701,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "fll",
+      "selector_epsilon": 0.0003736807403319701,
+      "selector_multiplier": 2.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 6,
+      "target_counts": {
+        "DDPG": 46,
+        "DP": 720,
+        "Decision Table": 2119,
+        "Expert": 2115
+      }
+    },
+    "FLL-32x": {
+      "BIRD": 3153662.6896294896,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2599402.9013462067,
+        "DP": 3018110.0,
+        "Decision Table": 2106200.0,
+        "Expert": 3038133.626987357
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3038133.626987357,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1465,
+      "grid_updates": 119,
+      "max_chasing_distance": 2.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        4.0,
+        3.0,
+        0.0,
+        1.0
+      ],
+      "restarts": 101,
+      "revenue_loss_pct": -3.8026326958071346,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "fll",
+      "selector_epsilon": 0.005978891845311521,
+      "selector_multiplier": 32.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 100,
+      "target_counts": {
+        "DDPG": 32,
+        "DP": 1039,
+        "Decision Table": 1663,
+        "Expert": 2266
+      }
+    },
+    "FLL-4x": {
+      "BIRD": 3094157.3388812244,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2599402.9013462067,
+        "DP": 3018110.0,
+        "Decision Table": 2106200.0,
+        "Expert": 3038133.626987357
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3038133.626987357,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1465,
+      "grid_updates": 15,
+      "max_chasing_distance": 3.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        25.0,
+        3.0,
+        0.0,
+        19.0,
+        1.0
+      ],
+      "restarts": 15,
+      "revenue_loss_pct": -1.8440173729099891,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "fll",
+      "selector_epsilon": 0.0007473614806639402,
+      "selector_multiplier": 4.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 14,
+      "target_counts": {
+        "DDPG": 64,
+        "DP": 888,
+        "Decision Table": 2097,
+        "Expert": 1951
+      }
+    },
+    "FLL-64x": {
+      "BIRD": 3100934.6250653616,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2599402.9013462067,
+        "DP": 3018110.0,
+        "Decision Table": 2106200.0,
+        "Expert": 3038133.626987357
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3038133.626987357,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1465,
+      "grid_updates": 236,
+      "max_chasing_distance": 2.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        3.0,
+        4.0,
+        1.0,
+        3.0
+      ],
+      "restarts": 197,
+      "revenue_loss_pct": -2.0670913721552973,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "fll",
+      "selector_epsilon": 0.011957783690623043,
+      "selector_multiplier": 64.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 196,
+      "target_counts": {
+        "DDPG": 35,
+        "DP": 1071,
+        "Decision Table": 1296,
+        "Expert": 2598
+      }
+    },
+    "FLL-8x": {
+      "BIRD": 3021408.2084365967,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2599402.9013462067,
+        "DP": 3018110.0,
+        "Decision Table": 2106200.0,
+        "Expert": 3038133.626987357
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3038133.626987357,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1465,
+      "grid_updates": 30,
+      "max_chasing_distance": 2.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        1.0,
+        0.0,
+        2.0,
+        4.0
+      ],
+      "restarts": 30,
+      "revenue_loss_pct": 0.5505162249017194,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "fll",
+      "selector_epsilon": 0.0014947229613278803,
+      "selector_multiplier": 8.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 29,
+      "target_counts": {
+        "DDPG": 62,
+        "DP": 998,
+        "Decision Table": 2008,
+        "Expert": 1932
+      }
+    },
+    "FPL-16x": {
+      "BIRD": 2942756.8686583787,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2599402.9013462067,
+        "DP": 3018110.0,
+        "Decision Table": 2106200.0,
+        "Expert": 3038133.626987357
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3038133.626987357,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1465,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        4.0,
+        3.0,
+        2.0,
+        2.0
+      ],
+      "restarts": 3809,
+      "revenue_loss_pct": 3.1393207159079095,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "fpl",
+      "selector_epsilon": 0.0029894459226557607,
+      "selector_multiplier": 16.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3808,
+      "target_counts": {
+        "DDPG": 1196,
+        "DP": 1353,
+        "Decision Table": 1140,
+        "Expert": 1311
+      }
+    },
+    "FPL-1x": {
+      "BIRD": 2941870.793717093,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2599402.9013462067,
+        "DP": 3018110.0,
+        "Decision Table": 2106200.0,
+        "Expert": 3038133.626987357
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3038133.626987357,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1465,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        4.0,
+        3.0,
+        4.0,
+        1.0
+      ],
+      "restarts": 3798,
+      "revenue_loss_pct": 3.168485823506041,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "fpl",
+      "selector_epsilon": 0.00018684037016598504,
+      "selector_multiplier": 1.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3797,
+      "target_counts": {
+        "DDPG": 1209,
+        "DP": 1283,
+        "Decision Table": 1253,
+        "Expert": 1255
+      }
+    },
+    "FPL-2x": {
+      "BIRD": 2941420.793717093,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2599402.9013462067,
+        "DP": 3018110.0,
+        "Decision Table": 2106200.0,
+        "Expert": 3038133.626987357
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3038133.626987357,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1465,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        4.0,
+        3.0,
+        4.0,
+        1.0
+      ],
+      "restarts": 3798,
+      "revenue_loss_pct": 3.183297548573125,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "fpl",
+      "selector_epsilon": 0.0003736807403319701,
+      "selector_multiplier": 2.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3797,
+      "target_counts": {
+        "DDPG": 1211,
+        "DP": 1287,
+        "Decision Table": 1240,
+        "Expert": 1262
+      }
+    },
+    "FPL-32x": {
+      "BIRD": 2952549.4563026456,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2599402.9013462067,
+        "DP": 3018110.0,
+        "Decision Table": 2106200.0,
+        "Expert": 3038133.626987357
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3038133.626987357,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1465,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        4.0,
+        2.0,
+        0.0,
+        2.0
+      ],
+      "restarts": 3792,
+      "revenue_loss_pct": 2.8169982361696726,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "fpl",
+      "selector_epsilon": 0.005978891845311521,
+      "selector_multiplier": 32.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3791,
+      "target_counts": {
+        "DDPG": 1163,
+        "DP": 1441,
+        "Decision Table": 1014,
+        "Expert": 1382
+      }
+    },
+    "FPL-4x": {
+      "BIRD": 2941420.793717093,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2599402.9013462067,
+        "DP": 3018110.0,
+        "Decision Table": 2106200.0,
+        "Expert": 3038133.626987357
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3038133.626987357,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1465,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        4.0,
+        3.0,
+        4.0,
+        1.0
+      ],
+      "restarts": 3799,
+      "revenue_loss_pct": 3.183297548573125,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "fpl",
+      "selector_epsilon": 0.0007473614806639402,
+      "selector_multiplier": 4.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3798,
+      "target_counts": {
+        "DDPG": 1208,
+        "DP": 1292,
+        "Decision Table": 1230,
+        "Expert": 1270
+      }
+    },
+    "FPL-64x": {
+      "BIRD": 2936962.9841088816,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2599402.9013462067,
+        "DP": 3018110.0,
+        "Decision Table": 2106200.0,
+        "Expert": 3038133.626987357
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3038133.626987357,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1465,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        3.0,
+        2.0,
+        4.0,
+        2.0
+      ],
+      "restarts": 3726,
+      "revenue_loss_pct": 3.330026104835863,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "fpl",
+      "selector_epsilon": 0.011957783690623043,
+      "selector_multiplier": 64.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3725,
+      "target_counts": {
+        "DDPG": 1136,
+        "DP": 1586,
+        "Decision Table": 790,
+        "Expert": 1488
+      }
+    },
+    "FPL-8x": {
+      "BIRD": 2941420.793717093,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2599402.9013462067,
+        "DP": 3018110.0,
+        "Decision Table": 2106200.0,
+        "Expert": 3038133.626987357
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3038133.626987357,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1465,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        4.0,
+        3.0,
+        4.0,
+        1.0
+      ],
+      "restarts": 3801,
+      "revenue_loss_pct": 3.183297548573125,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "fpl",
+      "selector_epsilon": 0.0014947229613278803,
+      "selector_multiplier": 8.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3800,
+      "target_counts": {
+        "DDPG": 1209,
+        "DP": 1306,
+        "Decision Table": 1204,
+        "Expert": 1281
+      }
+    },
+    "FTL": {
+      "BIRD": 3018352.29611029,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2599402.9013462067,
+        "DP": 3018110.0,
+        "Decision Table": 2106200.0,
+        "Expert": 3038133.626987357
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3038133.626987357,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1465,
+      "max_chasing_distance": 2.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        4.0,
+        2.0,
+        1.0,
+        4.0
+      ],
+      "restarts": 7,
+      "revenue_loss_pct": 0.6511014098047562,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "ftl",
+      "selector_epsilon": null,
+      "selector_multiplier": 1.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 6,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 2064,
+        "Decision Table": 0,
+        "Expert": 2936
+      }
+    },
+    "OracleFixed": {
+      "BIRD": 3027578.6610820442,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2599402.9013462067,
+        "DP": 3018110.0,
+        "Decision Table": 2106200.0,
+        "Expert": 3038133.626987357
+      },
+      "best_fixed": "Expert",
+      "best_fixed_revenue": 3038133.626987357,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1465,
+      "max_chasing_distance": 5.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        0.0,
+        4.0,
+        2.0,
+        1.0,
+        3.0
+      ],
+      "restarts": 1,
+      "revenue_loss_pct": 0.3474161179598713,
+      "reward_bound": 60000.0,
+      "seed": 1,
+      "selector": "oracle-fixed",
+      "selector_epsilon": null,
+      "selector_multiplier": 1.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 0,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 0,
+        "Decision Table": 0,
+        "Expert": 5000
+      }
+    }
+  },
+  "2": {
+    "FLL-16x": {
+      "BIRD": 2759013.7094955444,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2586652.9013404846,
+        "DP": 3035045.0,
+        "Decision Table": 2169210.0,
+        "Expert": 2531075.962536138
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3035045.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1467,
+      "grid_updates": 60,
+      "max_chasing_distance": 4.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        0.0,
+        4.0,
+        2.0,
+        2.0,
+        4.0
+      ],
+      "restarts": 60,
+      "revenue_loss_pct": 9.094800587946985,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "fll",
+      "selector_epsilon": 0.0029894459226557607,
+      "selector_multiplier": 16.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 59,
+      "target_counts": {
+        "DDPG": 3222,
+        "DP": 1427,
+        "Decision Table": 311,
+        "Expert": 40
+      }
+    },
+    "FLL-1x": {
+      "BIRD": 2470202.2071037292,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2586652.9013404846,
+        "DP": 3035045.0,
+        "Decision Table": 2169210.0,
+        "Expert": 2531075.962536138
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3035045.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1467,
+      "grid_updates": 5,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        4.0,
+        2.0,
+        4.0,
+        4.0
+      ],
+      "restarts": 5,
+      "revenue_loss_pct": 18.61068922853766,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "fll",
+      "selector_epsilon": 0.00018684037016598504,
+      "selector_multiplier": 1.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 4,
+      "target_counts": {
+        "DDPG": 3530,
+        "DP": 993,
+        "Decision Table": 423,
+        "Expert": 54
+      }
+    },
+    "FLL-2x": {
+      "BIRD": 2384314.159901326,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2586652.9013404846,
+        "DP": 3035045.0,
+        "Decision Table": 2169210.0,
+        "Expert": 2531075.962536138
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3035045.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1467,
+      "grid_updates": 8,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        4.0,
+        2.0,
+        4.0,
+        3.0
+      ],
+      "restarts": 8,
+      "revenue_loss_pct": 21.44056645284251,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "fll",
+      "selector_epsilon": 0.0003736807403319701,
+      "selector_multiplier": 2.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 7,
+      "target_counts": {
+        "DDPG": 3530,
+        "DP": 1056,
+        "Decision Table": 360,
+        "Expert": 54
+      }
+    },
+    "FLL-32x": {
+      "BIRD": 2631930.709903139,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2586652.9013404846,
+        "DP": 3035045.0,
+        "Decision Table": 2169210.0,
+        "Expert": 2531075.962536138
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3035045.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1467,
+      "grid_updates": 111,
+      "max_chasing_distance": 2.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        4.0,
+        2.0,
+        2.0,
+        4.0
+      ],
+      "restarts": 110,
+      "revenue_loss_pct": 13.281987255439734,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "fll",
+      "selector_epsilon": 0.005978891845311521,
+      "selector_multiplier": 32.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 109,
+      "target_counts": {
+        "DDPG": 3111,
+        "DP": 1616,
+        "Decision Table": 247,
+        "Expert": 26
+      }
+    },
+    "FLL-4x": {
+      "BIRD": 2533577.8834301815,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2586652.9013404846,
+        "DP": 3035045.0,
+        "Decision Table": 2169210.0,
+        "Expert": 2531075.962536138
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3035045.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1467,
+      "grid_updates": 14,
+      "max_chasing_distance": 1.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        4.0,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "restarts": 14,
+      "revenue_loss_pct": 16.522559519539858,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "fll",
+      "selector_epsilon": 0.0007473614806639402,
+      "selector_multiplier": 4.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 13,
+      "target_counts": {
+        "DDPG": 3405,
+        "DP": 1250,
+        "Decision Table": 306,
+        "Expert": 39
+      }
+    },
+    "FLL-64x": {
+      "BIRD": 2837260.0845659627,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2586652.9013404846,
+        "DP": 3035045.0,
+        "Decision Table": 2169210.0,
+        "Expert": 2531075.962536138
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3035045.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1467,
+      "grid_updates": 184,
+      "max_chasing_distance": 1.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        1.0,
+        3.0,
+        2.0,
+        3.0
+      ],
+      "restarts": 176,
+      "revenue_loss_pct": 6.516704544217214,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "fll",
+      "selector_epsilon": 0.011957783690623043,
+      "selector_multiplier": 64.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 175,
+      "target_counts": {
+        "DDPG": 2928,
+        "DP": 1964,
+        "Decision Table": 92,
+        "Expert": 16
+      }
+    },
+    "FLL-8x": {
+      "BIRD": 2637092.41597063,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2586652.9013404846,
+        "DP": 3035045.0,
+        "Decision Table": 2169210.0,
+        "Expert": 2531075.962536138
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3035045.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1467,
+      "grid_updates": 30,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        2.0,
+        2.0,
+        4.0,
+        4.0
+      ],
+      "restarts": 30,
+      "revenue_loss_pct": 13.111917089511687,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "fll",
+      "selector_epsilon": 0.0014947229613278803,
+      "selector_multiplier": 8.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 29,
+      "target_counts": {
+        "DDPG": 3227,
+        "DP": 1386,
+        "Decision Table": 343,
+        "Expert": 44
+      }
+    },
+    "FPL-16x": {
+      "BIRD": 2955815.995036084,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2586652.9013404846,
+        "DP": 3035045.0,
+        "Decision Table": 2169210.0,
+        "Expert": 2531075.962536138
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3035045.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1467,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        4.0,
+        4.0,
+        2.0,
+        4.0
+      ],
+      "restarts": 3751,
+      "revenue_loss_pct": 2.610472166439568,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "fpl",
+      "selector_epsilon": 0.0029894459226557607,
+      "selector_multiplier": 16.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3750,
+      "target_counts": {
+        "DDPG": 1230,
+        "DP": 1344,
+        "Decision Table": 1170,
+        "Expert": 1256
+      }
+    },
+    "FPL-1x": {
+      "BIRD": 2973702.835144272,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2586652.9013404846,
+        "DP": 3035045.0,
+        "Decision Table": 2169210.0,
+        "Expert": 2531075.962536138
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3035045.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1467,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        4.0,
+        0.0,
+        1.0,
+        4.0
+      ],
+      "restarts": 3758,
+      "revenue_loss_pct": 2.021128677028773,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "fpl",
+      "selector_epsilon": 0.00018684037016598504,
+      "selector_multiplier": 1.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3757,
+      "target_counts": {
+        "DDPG": 1232,
+        "DP": 1244,
+        "Decision Table": 1264,
+        "Expert": 1260
+      }
+    },
+    "FPL-2x": {
+      "BIRD": 2973702.835144272,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2586652.9013404846,
+        "DP": 3035045.0,
+        "Decision Table": 2169210.0,
+        "Expert": 2531075.962536138
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3035045.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1467,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        4.0,
+        0.0,
+        1.0,
+        4.0
+      ],
+      "restarts": 3752,
+      "revenue_loss_pct": 2.021128677028773,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "fpl",
+      "selector_epsilon": 0.0003736807403319701,
+      "selector_multiplier": 2.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3751,
+      "target_counts": {
+        "DDPG": 1230,
+        "DP": 1251,
+        "Decision Table": 1257,
+        "Expert": 1262
+      }
+    },
+    "FPL-32x": {
+      "BIRD": 2964215.156134831,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2586652.9013404846,
+        "DP": 3035045.0,
+        "Decision Table": 2169210.0,
+        "Expert": 2531075.962536138
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3035045.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1467,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        2.0,
+        4.0,
+        2.0,
+        3.0
+      ],
+      "restarts": 3737,
+      "revenue_loss_pct": 2.3337329056132354,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "fpl",
+      "selector_epsilon": 0.005978891845311521,
+      "selector_multiplier": 32.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3736,
+      "target_counts": {
+        "DDPG": 1224,
+        "DP": 1464,
+        "Decision Table": 1059,
+        "Expert": 1253
+      }
+    },
+    "FPL-4x": {
+      "BIRD": 2973702.835144272,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2586652.9013404846,
+        "DP": 3035045.0,
+        "Decision Table": 2169210.0,
+        "Expert": 2531075.962536138
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3035045.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1467,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        4.0,
+        0.0,
+        1.0,
+        4.0
+      ],
+      "restarts": 3750,
+      "revenue_loss_pct": 2.021128677028773,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "fpl",
+      "selector_epsilon": 0.0007473614806639402,
+      "selector_multiplier": 4.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3749,
+      "target_counts": {
+        "DDPG": 1227,
+        "DP": 1270,
+        "Decision Table": 1241,
+        "Expert": 1262
+      }
+    },
+    "FPL-64x": {
+      "BIRD": 2963259.0561884744,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2586652.9013404846,
+        "DP": 3035045.0,
+        "Decision Table": 2169210.0,
+        "Expert": 2531075.962536138
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3035045.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1467,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "restarts": 3694,
+      "revenue_loss_pct": 2.365234907934663,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "fpl",
+      "selector_epsilon": 0.011957783690623043,
+      "selector_multiplier": 64.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3693,
+      "target_counts": {
+        "DDPG": 1226,
+        "DP": 1694,
+        "Decision Table": 878,
+        "Expert": 1202
+      }
+    },
+    "FPL-8x": {
+      "BIRD": 2965999.654792603,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2586652.9013404846,
+        "DP": 3035045.0,
+        "Decision Table": 2169210.0,
+        "Expert": 2531075.962536138
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3035045.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1467,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        4.0,
+        4.0,
+        1.0,
+        3.0
+      ],
+      "restarts": 3745,
+      "revenue_loss_pct": 2.274936457528534,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "fpl",
+      "selector_epsilon": 0.0014947229613278803,
+      "selector_multiplier": 8.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3744,
+      "target_counts": {
+        "DDPG": 1231,
+        "DP": 1297,
+        "Decision Table": 1211,
+        "Expert": 1261
+      }
+    },
+    "FTL": {
+      "BIRD": 3011008.8271729294,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2586652.9013404846,
+        "DP": 3035045.0,
+        "Decision Table": 2169210.0,
+        "Expert": 2531075.962536138
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3035045.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1467,
+      "max_chasing_distance": 4.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        4.0,
+        1.0,
+        0.0,
+        4.0
+      ],
+      "restarts": 6,
+      "revenue_loss_pct": 0.7919544134294739,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "ftl",
+      "selector_epsilon": null,
+      "selector_multiplier": 1.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 5,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 4867,
+        "Decision Table": 0,
+        "Expert": 133
+      }
+    },
+    "OracleFixed": {
+      "BIRD": 3033580.0,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2586652.9013404846,
+        "DP": 3035045.0,
+        "Decision Table": 2169210.0,
+        "Expert": 2531075.962536138
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3035045.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1467,
+      "max_chasing_distance": 4.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        4.0,
+        1.0,
+        0.0,
+        4.0
+      ],
+      "restarts": 1,
+      "revenue_loss_pct": 0.04826946552687028,
+      "reward_bound": 60000.0,
+      "seed": 2,
+      "selector": "oracle-fixed",
+      "selector_epsilon": null,
+      "selector_multiplier": 1.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 0,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 5000,
+        "Decision Table": 0,
+        "Expert": 0
+      }
+    }
+  },
+  "3": {
+    "FLL-16x": {
+      "BIRD": 2766302.9071692573,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2613373.3758563995,
+        "DP": 3028520.0,
+        "Decision Table": 2156010.0,
+        "Expert": 2903342.083954317
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3028520.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1470,
+      "grid_updates": 61,
+      "max_chasing_distance": 1.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        2.0,
+        2.0,
+        1.0,
+        2.0
+      ],
+      "restarts": 61,
+      "revenue_loss_pct": 8.658258582764608,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "fll",
+      "selector_epsilon": 0.0029894459226557607,
+      "selector_multiplier": 16.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 60,
+      "target_counts": {
+        "DDPG": 2991,
+        "DP": 498,
+        "Decision Table": 1034,
+        "Expert": 477
+      }
+    },
+    "FLL-1x": {
+      "BIRD": 2639117.1905801464,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2613373.3758563995,
+        "DP": 3028520.0,
+        "Decision Table": 2156010.0,
+        "Expert": 2903342.083954317
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3028520.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1470,
+      "grid_updates": 5,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        3.0,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "restarts": 5,
+      "revenue_loss_pct": 12.85785827466398,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "fll",
+      "selector_epsilon": 0.00018684037016598504,
+      "selector_multiplier": 1.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 4,
+      "target_counts": {
+        "DDPG": 2946,
+        "DP": 363,
+        "Decision Table": 1236,
+        "Expert": 455
+      }
+    },
+    "FLL-2x": {
+      "BIRD": 2660109.9669258296,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2613373.3758563995,
+        "DP": 3028520.0,
+        "Decision Table": 2156010.0,
+        "Expert": 2903342.083954317
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3028520.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1470,
+      "grid_updates": 9,
+      "max_chasing_distance": 1.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        3.0,
+        4.0,
+        2.0,
+        1.0
+      ],
+      "restarts": 9,
+      "revenue_loss_pct": 12.164688794334207,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "fll",
+      "selector_epsilon": 0.0003736807403319701,
+      "selector_multiplier": 2.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 8,
+      "target_counts": {
+        "DDPG": 2933,
+        "DP": 374,
+        "Decision Table": 1237,
+        "Expert": 456
+      }
+    },
+    "FLL-32x": {
+      "BIRD": 2938272.4837819934,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2613373.3758563995,
+        "DP": 3028520.0,
+        "Decision Table": 2156010.0,
+        "Expert": 2903342.083954317
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3028520.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1470,
+      "grid_updates": 120,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        4.0,
+        3.0,
+        3.0,
+        4.0
+      ],
+      "restarts": 120,
+      "revenue_loss_pct": 2.97992142095831,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "fll",
+      "selector_epsilon": 0.005978891845311521,
+      "selector_multiplier": 32.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 119,
+      "target_counts": {
+        "DDPG": 2948,
+        "DP": 644,
+        "Decision Table": 875,
+        "Expert": 533
+      }
+    },
+    "FLL-4x": {
+      "BIRD": 2600938.590521463,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2613373.3758563995,
+        "DP": 3028520.0,
+        "Decision Table": 2156010.0,
+        "Expert": 2903342.083954317
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3028520.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1470,
+      "grid_updates": 16,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        4.0,
+        2.0,
+        3.0,
+        3.0
+      ],
+      "restarts": 16,
+      "revenue_loss_pct": 14.118493834563973,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "fll",
+      "selector_epsilon": 0.0007473614806639402,
+      "selector_multiplier": 4.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 15,
+      "target_counts": {
+        "DDPG": 2966,
+        "DP": 355,
+        "Decision Table": 1222,
+        "Expert": 457
+      }
+    },
+    "FLL-64x": {
+      "BIRD": 2836627.9571068403,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2613373.3758563995,
+        "DP": 3028520.0,
+        "Decision Table": 2156010.0,
+        "Expert": 2903342.083954317
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3028520.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1470,
+      "grid_updates": 237,
+      "max_chasing_distance": 2.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        4.0,
+        1.0,
+        2.0,
+        2.0
+      ],
+      "restarts": 237,
+      "revenue_loss_pct": 6.336165615322324,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "fll",
+      "selector_epsilon": 0.011957783690623043,
+      "selector_multiplier": 64.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 236,
+      "target_counts": {
+        "DDPG": 2797,
+        "DP": 987,
+        "Decision Table": 586,
+        "Expert": 630
+      }
+    },
+    "FLL-8x": {
+      "BIRD": 2607502.638294253,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2613373.3758563995,
+        "DP": 3028520.0,
+        "Decision Table": 2156010.0,
+        "Expert": 2903342.083954317
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3028520.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1470,
+      "grid_updates": 30,
+      "max_chasing_distance": 1.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        3.0,
+        3.0,
+        3.0,
+        4.0,
+        1.0
+      ],
+      "restarts": 30,
+      "revenue_loss_pct": 13.901752727594566,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "fll",
+      "selector_epsilon": 0.0014947229613278803,
+      "selector_multiplier": 8.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 29,
+      "target_counts": {
+        "DDPG": 3131,
+        "DP": 383,
+        "Decision Table": 1035,
+        "Expert": 451
+      }
+    },
+    "FPL-16x": {
+      "BIRD": 2970738.331484039,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2613373.3758563995,
+        "DP": 3028520.0,
+        "Decision Table": 2156010.0,
+        "Expert": 2903342.083954317
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3028520.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1470,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        0.0,
+        3.0,
+        4.0,
+        0.0,
+        1.0
+      ],
+      "restarts": 3761,
+      "revenue_loss_pct": 1.9079176797895063,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "fpl",
+      "selector_epsilon": 0.0029894459226557607,
+      "selector_multiplier": 16.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3760,
+      "target_counts": {
+        "DDPG": 1162,
+        "DP": 1346,
+        "Decision Table": 1153,
+        "Expert": 1339
+      }
+    },
+    "FPL-1x": {
+      "BIRD": 2983113.610571026,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2613373.3758563995,
+        "DP": 3028520.0,
+        "Decision Table": 2156010.0,
+        "Expert": 2903342.083954317
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3028520.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1470,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        0.0,
+        3.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "restarts": 3753,
+      "revenue_loss_pct": 1.499293035178045,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "fpl",
+      "selector_epsilon": 0.00018684037016598504,
+      "selector_multiplier": 1.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3752,
+      "target_counts": {
+        "DDPG": 1183,
+        "DP": 1275,
+        "Decision Table": 1257,
+        "Expert": 1285
+      }
+    },
+    "FPL-2x": {
+      "BIRD": 2983113.610571026,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2613373.3758563995,
+        "DP": 3028520.0,
+        "Decision Table": 2156010.0,
+        "Expert": 2903342.083954317
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3028520.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1470,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        0.0,
+        3.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "restarts": 3751,
+      "revenue_loss_pct": 1.499293035178045,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "fpl",
+      "selector_epsilon": 0.0003736807403319701,
+      "selector_multiplier": 2.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3750,
+      "target_counts": {
+        "DDPG": 1182,
+        "DP": 1279,
+        "Decision Table": 1250,
+        "Expert": 1289
+      }
+    },
+    "FPL-32x": {
+      "BIRD": 2977667.743235726,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2613373.3758563995,
+        "DP": 3028520.0,
+        "Decision Table": 2156010.0,
+        "Expert": 2903342.083954317
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3028520.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1470,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        0.0,
+        3.0,
+        3.0,
+        0.0,
+        0.0
+      ],
+      "restarts": 3743,
+      "revenue_loss_pct": 1.6791124629942706,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "fpl",
+      "selector_epsilon": 0.005978891845311521,
+      "selector_multiplier": 32.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3742,
+      "target_counts": {
+        "DDPG": 1145,
+        "DP": 1428,
+        "Decision Table": 1038,
+        "Expert": 1389
+      }
+    },
+    "FPL-4x": {
+      "BIRD": 2982640.491981371,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2613373.3758563995,
+        "DP": 3028520.0,
+        "Decision Table": 2156010.0,
+        "Expert": 2903342.083954317
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3028520.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1470,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        0.0,
+        3.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "restarts": 3750,
+      "revenue_loss_pct": 1.5149151406835406,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "fpl",
+      "selector_epsilon": 0.0007473614806639402,
+      "selector_multiplier": 4.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3749,
+      "target_counts": {
+        "DDPG": 1178,
+        "DP": 1287,
+        "Decision Table": 1240,
+        "Expert": 1295
+      }
+    },
+    "FPL-64x": {
+      "BIRD": 2967862.9241909795,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2613373.3758563995,
+        "DP": 3028520.0,
+        "Decision Table": 2156010.0,
+        "Expert": 2903342.083954317
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3028520.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1470,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        0.0,
+        4.0,
+        3.0,
+        0.0,
+        1.0
+      ],
+      "restarts": 3689,
+      "revenue_loss_pct": 2.0028619856900582,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "fpl",
+      "selector_epsilon": 0.011957783690623043,
+      "selector_multiplier": 64.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3688,
+      "target_counts": {
+        "DDPG": 1119,
+        "DP": 1539,
+        "Decision Table": 833,
+        "Expert": 1509
+      }
+    },
+    "FPL-8x": {
+      "BIRD": 2982640.491981371,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2613373.3758563995,
+        "DP": 3028520.0,
+        "Decision Table": 2156010.0,
+        "Expert": 2903342.083954317
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3028520.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1470,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        0.0,
+        3.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "restarts": 3752,
+      "revenue_loss_pct": 1.5149151406835406,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "fpl",
+      "selector_epsilon": 0.0014947229613278803,
+      "selector_multiplier": 8.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3751,
+      "target_counts": {
+        "DDPG": 1174,
+        "DP": 1306,
+        "Decision Table": 1213,
+        "Expert": 1307
+      }
+    },
+    "FTL": {
+      "BIRD": 2841397.893460491,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2613373.3758563995,
+        "DP": 3028520.0,
+        "Decision Table": 2156010.0,
+        "Expert": 2903342.083954317
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3028520.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1470,
+      "max_chasing_distance": 3.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        1.0,
+        1.0,
+        2.0,
+        4.0
+      ],
+      "restarts": 15,
+      "revenue_loss_pct": 6.178665042314688,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "ftl",
+      "selector_epsilon": null,
+      "selector_multiplier": 1.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 14,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 4010,
+        "Decision Table": 14,
+        "Expert": 976
+      }
+    },
+    "OracleFixed": {
+      "BIRD": 3020025.0,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2613373.3758563995,
+        "DP": 3028520.0,
+        "Decision Table": 2156010.0,
+        "Expert": 2903342.083954317
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3028520.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1470,
+      "max_chasing_distance": 3.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        3.0,
+        2.0,
+        4.0,
+        4.0
+      ],
+      "restarts": 1,
+      "revenue_loss_pct": 0.2805000462272001,
+      "reward_bound": 60000.0,
+      "seed": 3,
+      "selector": "oracle-fixed",
+      "selector_epsilon": null,
+      "selector_multiplier": 1.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 0,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 5000,
+        "Decision Table": 0,
+        "Expert": 0
+      }
+    }
+  },
+  "4": {
+    "FLL-16x": {
+      "BIRD": 2535728.5427062493,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2506205.889471054,
+        "DP": 3016930.0,
+        "Decision Table": 2175670.0,
+        "Expert": 2720136.74753319
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3016930.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1372,
+      "grid_updates": 61,
+      "max_chasing_distance": 2.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        1.0,
+        3.0,
+        4.0,
+        0.0
+      ],
+      "restarts": 59,
+      "revenue_loss_pct": 15.950037199860478,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "fll",
+      "selector_epsilon": 0.0029894459226557607,
+      "selector_multiplier": 16.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 58,
+      "target_counts": {
+        "DDPG": 3537,
+        "DP": 564,
+        "Decision Table": 848,
+        "Expert": 51
+      }
+    },
+    "FLL-1x": {
+      "BIRD": 2182699.5635967255,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2506205.889471054,
+        "DP": 3016930.0,
+        "Decision Table": 2175670.0,
+        "Expert": 2720136.74753319
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3016930.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1372,
+      "grid_updates": 5,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        2.0,
+        4.0,
+        3.0,
+        0.0
+      ],
+      "restarts": 5,
+      "revenue_loss_pct": 27.651633826548,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "fll",
+      "selector_epsilon": 0.00018684037016598504,
+      "selector_multiplier": 1.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 4,
+      "target_counts": {
+        "DDPG": 3385,
+        "DP": 535,
+        "Decision Table": 1065,
+        "Expert": 15
+      }
+    },
+    "FLL-2x": {
+      "BIRD": 2392646.9063327354,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2506205.889471054,
+        "DP": 3016930.0,
+        "Decision Table": 2175670.0,
+        "Expert": 2720136.74753319
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3016930.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1372,
+      "grid_updates": 9,
+      "max_chasing_distance": 1.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        2.0,
+        4.0,
+        3.0,
+        0.0
+      ],
+      "restarts": 9,
+      "revenue_loss_pct": 20.69266087271712,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "fll",
+      "selector_epsilon": 0.0003736807403319701,
+      "selector_multiplier": 2.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 8,
+      "target_counts": {
+        "DDPG": 3379,
+        "DP": 543,
+        "Decision Table": 1065,
+        "Expert": 13
+      }
+    },
+    "FLL-32x": {
+      "BIRD": 2868932.703066756,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2506205.889471054,
+        "DP": 3016930.0,
+        "Decision Table": 2175670.0,
+        "Expert": 2720136.74753319
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3016930.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1372,
+      "grid_updates": 118,
+      "max_chasing_distance": 1.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        2.0,
+        1.0,
+        3.0,
+        4.0
+      ],
+      "restarts": 114,
+      "revenue_loss_pct": 4.905559523530343,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "fll",
+      "selector_epsilon": 0.005978891845311521,
+      "selector_multiplier": 32.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 113,
+      "target_counts": {
+        "DDPG": 3618,
+        "DP": 617,
+        "Decision Table": 667,
+        "Expert": 98
+      }
+    },
+    "FLL-4x": {
+      "BIRD": 2480494.465768814,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2506205.889471054,
+        "DP": 3016930.0,
+        "Decision Table": 2175670.0,
+        "Expert": 2720136.74753319
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3016930.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1372,
+      "grid_updates": 16,
+      "max_chasing_distance": 3.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        1.0,
+        4.0,
+        3.0,
+        3.0
+      ],
+      "restarts": 15,
+      "revenue_loss_pct": 17.7808412601945,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "fll",
+      "selector_epsilon": 0.0007473614806639402,
+      "selector_multiplier": 4.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 14,
+      "target_counts": {
+        "DDPG": 3405,
+        "DP": 562,
+        "Decision Table": 1011,
+        "Expert": 22
+      }
+    },
+    "FLL-64x": {
+      "BIRD": 2966709.016182215,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2506205.889471054,
+        "DP": 3016930.0,
+        "Decision Table": 2175670.0,
+        "Expert": 2720136.74753319
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3016930.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1372,
+      "grid_updates": 232,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        2.0,
+        4.0,
+        2.0,
+        4.0
+      ],
+      "restarts": 225,
+      "revenue_loss_pct": 1.6646386829586715,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "fll",
+      "selector_epsilon": 0.011957783690623043,
+      "selector_multiplier": 64.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 224,
+      "target_counts": {
+        "DDPG": 3757,
+        "DP": 715,
+        "Decision Table": 342,
+        "Expert": 186
+      }
+    },
+    "FLL-8x": {
+      "BIRD": 2382446.8179694526,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2506205.889471054,
+        "DP": 3016930.0,
+        "Decision Table": 2175670.0,
+        "Expert": 2720136.74753319
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3016930.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1372,
+      "grid_updates": 29,
+      "max_chasing_distance": 3.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        2.0,
+        2.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "restarts": 29,
+      "revenue_loss_pct": 21.030755835586092,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "fll",
+      "selector_epsilon": 0.0014947229613278803,
+      "selector_multiplier": 8.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 28,
+      "target_counts": {
+        "DDPG": 3604,
+        "DP": 491,
+        "Decision Table": 871,
+        "Expert": 34
+      }
+    },
+    "FPL-16x": {
+      "BIRD": 2987384.3658915404,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2506205.889471054,
+        "DP": 3016930.0,
+        "Decision Table": 2175670.0,
+        "Expert": 2720136.74753319
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3016930.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1372,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        4.0,
+        0.0,
+        3.0,
+        3.0
+      ],
+      "restarts": 3701,
+      "revenue_loss_pct": 0.9793277970804618,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "fpl",
+      "selector_epsilon": 0.0029894459226557607,
+      "selector_multiplier": 16.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3700,
+      "target_counts": {
+        "DDPG": 1193,
+        "DP": 1367,
+        "Decision Table": 1123,
+        "Expert": 1317
+      }
+    },
+    "FPL-1x": {
+      "BIRD": 2990393.55085815,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2506205.889471054,
+        "DP": 3016930.0,
+        "Decision Table": 2175670.0,
+        "Expert": 2720136.74753319
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3016930.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1372,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        0.0,
+        4.0,
+        3.0,
+        3.0,
+        3.0
+      ],
+      "restarts": 3717,
+      "revenue_loss_pct": 0.8795845161090986,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "fpl",
+      "selector_epsilon": 0.00018684037016598504,
+      "selector_multiplier": 1.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3716,
+      "target_counts": {
+        "DDPG": 1214,
+        "DP": 1279,
+        "Decision Table": 1220,
+        "Expert": 1287
+      }
+    },
+    "FPL-2x": {
+      "BIRD": 2981803.664400014,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2506205.889471054,
+        "DP": 3016930.0,
+        "Decision Table": 2175670.0,
+        "Expert": 2720136.74753319
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3016930.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1372,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        4.0,
+        3.0,
+        3.0,
+        3.0
+      ],
+      "restarts": 3721,
+      "revenue_loss_pct": 1.1643072792536089,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "fpl",
+      "selector_epsilon": 0.0003736807403319701,
+      "selector_multiplier": 2.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3720,
+      "target_counts": {
+        "DDPG": 1213,
+        "DP": 1284,
+        "Decision Table": 1215,
+        "Expert": 1288
+      }
+    },
+    "FPL-32x": {
+      "BIRD": 2982888.7632661005,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2506205.889471054,
+        "DP": 3016930.0,
+        "Decision Table": 2175670.0,
+        "Expert": 2720136.74753319
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3016930.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1372,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        4.0,
+        0.0,
+        3.0,
+        3.0
+      ],
+      "restarts": 3676,
+      "revenue_loss_pct": 1.1283402907558164,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "fpl",
+      "selector_epsilon": 0.005978891845311521,
+      "selector_multiplier": 32.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3675,
+      "target_counts": {
+        "DDPG": 1157,
+        "DP": 1470,
+        "Decision Table": 1020,
+        "Expert": 1353
+      }
+    },
+    "FPL-4x": {
+      "BIRD": 2980903.664400014,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2506205.889471054,
+        "DP": 3016930.0,
+        "Decision Table": 2175670.0,
+        "Expert": 2720136.74753319
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3016930.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1372,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        4.0,
+        3.0,
+        3.0,
+        3.0
+      ],
+      "restarts": 3721,
+      "revenue_loss_pct": 1.194138929308466,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "fpl",
+      "selector_epsilon": 0.0007473614806639402,
+      "selector_multiplier": 4.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3720,
+      "target_counts": {
+        "DDPG": 1210,
+        "DP": 1296,
+        "Decision Table": 1203,
+        "Expert": 1291
+      }
+    },
+    "FPL-64x": {
+      "BIRD": 2996959.78439771,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2506205.889471054,
+        "DP": 3016930.0,
+        "Decision Table": 2175670.0,
+        "Expert": 2720136.74753319
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3016930.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1372,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        1.0,
+        4.0,
+        0.0,
+        2.0,
+        2.0
+      ],
+      "restarts": 3650,
+      "revenue_loss_pct": 0.6619383148528433,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "fpl",
+      "selector_epsilon": 0.011957783690623043,
+      "selector_multiplier": 64.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3649,
+      "target_counts": {
+        "DDPG": 1093,
+        "DP": 1650,
+        "Decision Table": 869,
+        "Expert": 1388
+      }
+    },
+    "FPL-8x": {
+      "BIRD": 2987974.1502208756,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2506205.889471054,
+        "DP": 3016930.0,
+        "Decision Table": 2175670.0,
+        "Expert": 2720136.74753319
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3016930.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1372,
+      "max_chasing_distance": 0.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        4.0,
+        4.0,
+        0.0,
+        3.0,
+        3.0
+      ],
+      "restarts": 3710,
+      "revenue_loss_pct": 0.959778641835388,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "fpl",
+      "selector_epsilon": 0.0014947229613278803,
+      "selector_multiplier": 8.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 3709,
+      "target_counts": {
+        "DDPG": 1200,
+        "DP": 1324,
+        "Decision Table": 1179,
+        "Expert": 1297
+      }
+    },
+    "FTL": {
+      "BIRD": 3019749.5523984856,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2506205.889471054,
+        "DP": 3016930.0,
+        "Decision Table": 2175670.0,
+        "Expert": 2720136.74753319
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3016930.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1372,
+      "max_chasing_distance": 2.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        0.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0
+      ],
+      "restarts": 7,
+      "revenue_loss_pct": -0.09345766718106145,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "ftl",
+      "selector_epsilon": null,
+      "selector_multiplier": 1.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 6,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 4808,
+        "Decision Table": 5,
+        "Expert": 187
+      }
+    },
+    "OracleFixed": {
+      "BIRD": 3027375.0,
+      "C": 205.0,
+      "N_active": 2,
+      "T": 5000,
+      "base_revenue": {
+        "DDPG": 2506205.889471054,
+        "DP": 3016930.0,
+        "Decision Table": 2175670.0,
+        "Expert": 2720136.74753319
+      },
+      "best_fixed": "DP",
+      "best_fixed_revenue": 3016930.0,
+      "dchasing_epsilon": 0.2863564212655271,
+      "epsilon_nosell_steps": 1372,
+      "max_chasing_distance": 4.0,
+      "missing_steps": 0,
+      "remaining_inventory": [
+        1.0,
+        3.0,
+        3.0,
+        4.0,
+        2.0
+      ],
+      "restarts": 1,
+      "revenue_loss_pct": -0.3462128720255359,
+      "reward_bound": 60000.0,
+      "seed": 4,
+      "selector": "oracle-fixed",
+      "selector_epsilon": null,
+      "selector_multiplier": 1.0,
+      "sigma_delta": 2863.5642126552707,
+      "switches": 0,
+      "target_counts": {
+        "DDPG": 0,
+        "DP": 5000,
+        "Decision Table": 0,
+        "Expert": 0
+      }
+    }
+  }
+}
