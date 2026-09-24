@@ -77,6 +77,8 @@ def main():
         for m in MULTIPLIERS:
             configs.append((f"FPL-{m}x", "fpl", float(m)))
             configs.append((f"FLL-{m}x", "fll", float(m)))
+            configs.append((f"FPLstar-{m}x", "fpl-star", float(m)))
+            configs.append((f"FLLstar-{m}x", "fll-star", float(m)))
 
         for label, selector, multiplier in configs:
             r = run_bird(
@@ -99,7 +101,7 @@ def main():
                 "switches": r["switches"],
                 "restarts": r["restarts"],
                 "missing_steps": r["missing_steps"],
-                "selector_multiplier": multiplier if selector in ("fpl","fll") else "",
+                "selector_multiplier": multiplier if selector in ("fpl","fll","fpl-star","fll-star") else "",
                 "selector_epsilon": r["selector_epsilon"] if r["selector_epsilon"] is not None else "",
                 "best_fixed": r["best_fixed"],
             })
