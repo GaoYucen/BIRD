@@ -6,7 +6,7 @@ from pathlib import Path
 import numpy as np
 
 from chasing_pytorch import TorchActor, run_simulation
-from chasing_theory import run_theory_bird
+from chasing_theory import generate_base_trajectories, run_theory_bird
 
 
 def write_csv(path, rows, fields):
@@ -48,6 +48,7 @@ def main():
     ]
 
     for seed in range(args.seeds):
+        base = generate_base_trajectories(actor, seed=seed, T=5000, inventory=200)
         legacy = run_simulation(actor, seed=seed, T=5000, inventory=200)
         rows.append({
             "seed": seed,
@@ -77,6 +78,7 @@ def main():
                 selector=selector,
                 eta_multiplier=eta_mult,
                 epsilon_override=eps,
+                base=base,
             )
             rows.append({
                 "seed": seed,
