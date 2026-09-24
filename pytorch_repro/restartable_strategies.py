@@ -28,10 +28,11 @@ class PairedContext:
     epsilon_mask: np.ndarray
     reward_bound: float
     epsilon: float
+    epsilon_theory: float
     sigma: float
 
 
-def make_context(seed=0, T=5000, inventory=200):
+def make_context(seed=0, T=5000, inventory=200, epsilon_override=None):
     T = int(T)
     m = 5
     N_total = 5
@@ -63,12 +64,14 @@ def make_context(seed=0, T=5000, inventory=200):
     expert_noise = expert_rng.uniform(-1.0, 1.0, size=(T, N_total))
 
     C = float(initial_inventory.max())
-    epsilon = float(np.clip(math.sqrt(C * N_active / T), 0.0, 1.0))
+    epsilon_theory = float(np.clip(math.sqrt(C * N_active / T), 0.0, 1.0))
+    epsilon = epsilon_theory if epsilon_override is None else float(epsilon_override)
+    epsilon = float(np.clip(epsilon, 0.0, 1.0))
     epsilon_mask = epsilon_rng.random(T) <= epsilon
 
-    # Theorem 3, independent-goods + K_j case:
-    # sigma <= epsilon*T + C*N/epsilon.
-    sigma = float(epsilon * T + C * N_active / epsilon)
+    # Theorem 3, independent-goods + K_j case.
+    epsilon_for_bound = max(epsilon, 1e-12)
+    sigma = float(epsilon_for_bound * T + C * N_active / epsilon_for_bound)
 
     # The theoretical expert reward R_j is in [0,1). Map one experimental
     # buyer reward into that scale using a deterministic valid upper bound.
@@ -90,6 +93,7 @@ def make_context(seed=0, T=5000, inventory=200):
         epsilon_mask=epsilon_mask,
         reward_bound=reward_bound,
         epsilon=epsilon,
+        epsilon_theory=epsilon_theory,
         sigma=sigma,
     )
 
@@ -360,6 +364,7 @@ def simulate_base_strategy(name, ctx, actor=None):
     sold = np.zeros((ctx.T, ctx.N_total), dtype=float)
     profit = np.zeros((ctx.T, ctx.N_total), dtype=float)
     inventory_before = np.zeros((ctx.T, ctx.N_total), dtype=float)
+    sold_out_index = np.full(ctx.N_total, np.nan, dtype=float)
 
     for t in range(ctx.T):
         inventory_before[t] = strategy.inventory
@@ -373,6 +378,9 @@ def simulate_base_strategy(name, ctx, actor=None):
             profit[t, j] = q[j] * p[j]
         sold[t] = q
         strategy.update(t, q, p)
+        for j in range(ctx.N_total):
+            if np.isnan(sold_out_index[j]) and strategy.inventory[j] < ctx.m:
+                sold_out_index[j] = float(t)
 
     return {
         "name": name,
@@ -380,6 +388,8 @@ def simulate_base_strategy(name, ctx, actor=None):
         "sold": sold,
         "profit": profit,
         "inventory_before": inventory_before,
+        "sold_out_index": sold_out_index,
+        "category_revenue": profit.sum(axis=0),
         "revenue": float(profit.sum()),
     }
 
