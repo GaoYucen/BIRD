@@ -243,7 +243,7 @@ class DecisionTableStrategy(RestartableStrategy):
         super().update(t, sold, price_vector)
 
 
-@lru_cache(maxsize=8)
+@lru_cache(maxsize=32)
 def _cached_dp_models(inventory_tuple):
     base_price = np.asarray([2000, 2500, 3000, 3500, 4000], dtype=float)
     return tuple(
