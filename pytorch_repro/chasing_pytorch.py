@@ -1,7 +1,9 @@
 import argparse
+import json
 import math
 import random
 import sys
+from functools import lru_cache
 from pathlib import Path
 
 import numpy as np
@@ -14,6 +16,9 @@ sys.path.insert(0, str(ROOT / "RL-DDPG"))
 from DP import AirPrice
 import RL
 from model import ActorNet
+
+
+STRATEGIES = ["Expert", "Decision Table", "DP", "DDPG", "BIRD"]
 
 
 def seed_all(seed):
@@ -80,7 +85,10 @@ class TorchActor:
             c_dim=ckpt.get("c_dim", 128),
             action_range=ckpt.get("action_range", 40.0),
         ).to(self.device)
-        self.model.load_state_dict(ckpt["model_state"])
+        state = ckpt.get("actor_state", ckpt.get("model_state"))
+        if state is None:
+            raise KeyError("checkpoint has neither actor_state nor model_state")
+        self.model.load_state_dict(state)
         self.model.eval()
 
     def action(self, state, c):
@@ -90,24 +98,38 @@ class TorchActor:
             return float(self.model(x, cc).cpu().item())
 
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--actor", default="actor_pretrained.pt")
-    ap.add_argument("--seed", type=int, default=10)
-    ap.add_argument("--T", type=int, default=5000)
-    ap.add_argument("--inventory", type=int, default=200)
-    ap.add_argument("--legacy-epsilon-zero", action="store_true")
-    args = ap.parse_args()
+@lru_cache(maxsize=16)
+def _dp_models(inventory_with_buffer):
+    base_price = np.array([2000, 2500, 3000, 3500, 4000], dtype=float)
+    return tuple(
+        AirPrice(
+            real_min_demand_level=base_price[i] * 0.5,
+            real_max_demand_level=base_price[i] * 1.5,
+            max_days=14,
+            num_tickets=float(inventory_with_buffer),
+        )
+        for i in range(5)
+    )
 
-    seed_all(args.seed)
 
-    T = args.T
+def run_simulation(
+    actor,
+    seed=10,
+    T=5000,
+    inventory=200,
+    epsilon_factor=1.0,
+    epsilon_override=None,
+    legacy_epsilon_zero=False,
+):
+    seed_all(seed)
+
+    T = int(T)
     N = 5
     m = 5
     W = 2
     Gamma = 5
 
-    c = np.full(N, args.inventory + m, dtype=float)
+    c = np.full(N, inventory + m, dtype=float)
     t_a = np.arange(0, T / 2, T / 10)
     t_e = np.arange(T / 5, T / 10 * 7, T / 10)
     T_end = int(T / 10 * 6) + 1
@@ -131,26 +153,14 @@ def main():
     expert_upper_bound = base_price * 1.5
     expert_lower_bound = base_price * 0.5
 
-    DP = [
-        AirPrice(
-            real_min_demand_level=base_price[i] * 0.5,
-            real_max_demand_level=base_price[i] * 1.5,
-            max_days=14,
-            num_tickets=c[i],
-        )
-        for i in range(N)
-    ]
+    DP = _dp_models(int(inventory + m))
     fix_rate_DP = T / 5 / 14
     round_RL = 14
     fix_rate_RL = np.array([(t_e[i] - t_a[i]) / round_RL for i in range(N)]).astype(int)
-    actor = TorchActor(args.actor)
     c_RL = np.zeros(128, dtype=float)
     input_array = np.zeros((5, 3), dtype=float)
 
-    # Baseline strategy simulation.
     for gamma in range(1, Gamma):
-        # These were accidentally re-created inside the innermost legacy loop.
-        # Keep cumulative volumes here so the decision-table thresholds work as intended.
         volume = np.zeros(N)
         volume_round = np.zeros(N)
 
@@ -184,9 +194,13 @@ def main():
                     elif (i - t_a[j]) % max(1, fix_rate_RL[j]) == 0:
                         start_index = max(0, i - fix_rate_RL[j])
                         volume_RL = buy[gamma, start_index:i, j].sum()
+                        remaining_round = max(
+                            0,
+                            round_RL - int((i - t_a[j]) / max(1, fix_rate_RL[j])),
+                        )
                         p[gamma, i, j] = RL.get_price(
                             volume_RL,
-                            max(0, round_RL - int((i - t_a[j]) / max(1, fix_rate_RL[j]))),
+                            remaining_round,
                             c[j],
                             p[gamma, i - 1, j],
                             base_price[j] * 1.5,
@@ -195,10 +209,7 @@ def main():
                         )
                         input_array[:, 0] = p[gamma, i - 1, j]
                         input_array[:, 1] = volume_RL
-                        input_array[:, 2] = max(
-                            0,
-                            round_RL - int((i - t_a[j]) / max(1, fix_rate_RL[j])),
-                        )
+                        input_array[:, 2] = remaining_round
                         p[gamma, i, j] += actor.action(input_array, c_RL)
                     else:
                         p[gamma, i, j] = p[gamma, i - 1, j]
@@ -217,8 +228,14 @@ def main():
                 elif (t_Gamma[gamma, j] == 0) and (i >= t_a[j]) and (i < t_e[j]):
                     t_Gamma[gamma, j] = i
 
-    max_inventory = float(c[0])
-    epsilon = 0.0 if args.legacy_epsilon_zero else math.sqrt(max_inventory * W / T)
+    base_epsilon = math.sqrt(float(c[0]) * W / T)
+    if epsilon_override is not None:
+        epsilon = float(epsilon_override)
+    elif legacy_epsilon_zero:
+        epsilon = 0.0
+    else:
+        epsilon = float(base_epsilon * epsilon_factor)
+
     p_chasing = np.zeros((T, N))
     c_chasing = c.copy()
     buy_chasing = np.zeros((T, N))
@@ -241,7 +258,9 @@ def main():
         profit_add_gamma = np.zeros(Gamma)
         for gamma in range(1, Gamma):
             for j in range(N):
-                profit_add_gamma[gamma] += p[gamma, i, j] * m / math.sqrt(D / (R * R * T))
+                profit_add_gamma[gamma] += (
+                    p[gamma, i, j] * m / math.sqrt(D / (R * R * T))
+                )
 
         select_gamma = int(np.argmax(profit_gamma + profit_add_gamma))
         for j in range(N):
@@ -258,18 +277,74 @@ def main():
                 c_chasing[j] -= sold
                 profit_chasing[i, j] = sold * p_chasing[i, j]
 
-    profit_all = profit.sum(axis=(1, 2))
-    bird = float(profit_chasing.sum())
+    fixed_category = {
+        "Expert": profit[1].sum(axis=0),
+        "Decision Table": profit[2].sum(axis=0),
+        "DP": profit[3].sum(axis=0),
+        "DDPG": profit[4].sum(axis=0),
+    }
+    category_revenue = {k: [float(x) for x in v] for k, v in fixed_category.items()}
+    category_revenue["BIRD"] = [float(x) for x in profit_chasing.sum(axis=0)]
 
-    print("seed", args.seed)
-    print("T", T)
-    print("epsilon", epsilon)
+    revenue = {k: float(np.sum(v)) for k, v in fixed_category.items()}
+    revenue["BIRD"] = float(profit_chasing.sum())
+
+    fixed_best_name = max(
+        ["Expert", "Decision Table", "DP", "DDPG"],
+        key=lambda k: revenue[k],
+    )
+    fixed_best = revenue[fixed_best_name]
+    loss_pct = (fixed_best - revenue["BIRD"]) / fixed_best * 100.0
+
+    return {
+        "seed": int(seed),
+        "T": T,
+        "inventory": int(inventory),
+        "base_epsilon": base_epsilon,
+        "epsilon_factor": float(epsilon_factor),
+        "epsilon": epsilon,
+        "revenue": revenue,
+        "category_revenue": category_revenue,
+        "fixed_best": fixed_best_name,
+        "revenue_loss_pct": float(loss_pct),
+    }
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--actor", default="ddpg_actor_critic.pt")
+    ap.add_argument("--seed", type=int, default=10)
+    ap.add_argument("--T", type=int, default=5000)
+    ap.add_argument("--inventory", type=int, default=200)
+    ap.add_argument("--epsilon-factor", type=float, default=1.0)
+    ap.add_argument("--epsilon", type=float, default=None)
+    ap.add_argument("--legacy-epsilon-zero", action="store_true")
+    ap.add_argument("--json", action="store_true")
+    args = ap.parse_args()
+
+    actor = TorchActor(args.actor)
+    result = run_simulation(
+        actor=actor,
+        seed=args.seed,
+        T=args.T,
+        inventory=args.inventory,
+        epsilon_factor=args.epsilon_factor,
+        epsilon_override=args.epsilon,
+        legacy_epsilon_zero=args.legacy_epsilon_zero,
+    )
+
+    if args.json:
+        print(json.dumps(result, sort_keys=True))
+        return
+
+    print("seed", result["seed"])
+    print("T", result["T"])
+    print("epsilon", result["epsilon"])
     print("Revenue of different pricing strategies:")
-    print("expert pricing:", float(profit_all[1]))
-    print("decision table pricing:", float(profit_all[2]))
-    print("dynamic pricing:", float(profit_all[3]))
-    print("PyTorch RL pricing:", float(profit_all[4]))
-    print("BIRD:", bird)
+    for name in STRATEGIES:
+        print(f"{name}: {result['revenue'][name]}")
+    print("best fixed strategy:", result["fixed_best"])
+    print("BIRD revenue loss (%):", result["revenue_loss_pct"])
 
 
 if __name__ == "__main__":
