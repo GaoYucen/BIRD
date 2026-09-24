@@ -144,15 +144,16 @@ def fig11(data, out):
     r = data["fig11"]
     fig, ax = plt.subplots(figsize=(8.0, 4.8))
     cats = np.arange(1, 6)
+    starts = np.arange(0, r["T"] / 2, r["T"] / 10)
     for method in PAPER_ORDER:
         raw = r["sold_out_index"][method]
         vals = []
         for j, x in enumerate(raw):
-            vals.append(r["T"] if x is None else x)
+            vals.append(np.nan if x is None else x - starts[j])
         ax.plot(cats, vals, marker="o", label=DISPLAY[method])
     ax.set_xticks(cats)
     ax.set_xlabel("Category")
-    ax.set_ylabel("Buyer index at sell-out")
+    ax.set_ylabel("Buyer index since category selling begins")
     ax.set_title("Fig. 11 reproduction: selling speed")
     ax.legend()
     save(fig, out, "fig11_sellout_index")
