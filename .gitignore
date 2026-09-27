@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+build/
+dist/
+.DS_Store
+
+# Commercial research data are local-only.
+data/*
+!data/README.md
+*.csv
+*.xlsx
+*.xls
+*.npy
+*.npz
+*.pkl

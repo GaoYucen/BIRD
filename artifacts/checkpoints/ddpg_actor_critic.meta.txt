@@ -1,0 +1,5 @@
+file=ddpg_actor_critic.pt
+size_bytes=3419918
+sha256=a8e3481eacf575937bcc3ed51a43060e5a28dbc13eafbdf51aeedac43111a2a4
+training_script=pytorch_repro/train_ddpg.py
+main_consumer=pytorch_repro/bird_main.py
